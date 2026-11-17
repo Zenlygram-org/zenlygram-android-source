@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Uzbek strings of the Cloud board, the Cloud / device switch and the Device archive. See values/strings_zenlygram_tasks2.xml. -->
+<resources>
+    <string name="ZG_tasks_scope_cloud">Bulut</string>
+    <string name="ZG_tasks_scope_device">Shu qurilmada</string>
+    <string name="ZG_tasks_archive_segment">Qurilma arxivi</string>
+    <string name="ZG_tasks_cloud_unlinked_title">Bulutdan foydalanish uchun akkauntni bogʻlang</string>
+    <string name="ZG_tasks_cloud_unlinked_text">Bulutdagi vazifalar shu Telegram akkauntiga bogʻlangan Zenlygram akkauntiga tegishli. Shu qurilmadagi vazifalar bogʻlanmasdan ham ishlayveradi.</string>
+    <string name="ZG_tasks_cloud_link_action">Akkauntni bogʻlash</string>
+    <string name="ZG_tasks_cloud_useDevice_action">Shu qurilmadagi vazifalardan foydalanish</string>
+    <string name="ZG_tasks_cloud_unavailable_title">Bulut mavjud emas</string>
+    <string name="ZG_tasks_cloud_paused_title">Bulut sinxronlash toʻxtatilgan</string>
+    <string name="ZG_tasks_cloud_status_pending_one">%1$d ta oʻzgarish yuborilishini kutmoqda</string>
+    <string name="ZG_tasks_cloud_status_pending_other">%1$d ta oʻzgarish yuborilishini kutmoqda</string>
+    <string name="ZG_tasks_cloud_status_issues_one">%1$d ta oʻzgarish eʼtiboringizni talab qiladi</string>
+    <string name="ZG_tasks_cloud_status_issues_other">%1$d ta oʻzgarish eʼtiboringizni talab qiladi</string>
+    <string name="ZG_tasks_cloud_invitations_banner_one">%1$d ta vazifa taklifi</string>
+    <string name="ZG_tasks_cloud_invitations_banner_other">%1$d ta vazifa taklifi</string>
+    <string name="ZG_tasks_cloud_invitations_count">Takliflar (%1$d)</string>
+    <string name="ZG_tasks_cloud_issues_title">Yuborilmagan oʻzgarishlar</string>
+    <string name="ZG_tasks_cloud_issues_count">Yuborilmagan oʻzgarishlar (%1$d)</string>
+    <string name="ZG_tasks_cloud_status_review">Koʻrib chiqish</string>
+    <string name="ZG_tasks_cloud_more">Takliflar va yuborilmagan oʻzgarishlar</string>
+    <string name="ZG_tasks_cloud_row_notSent">Hali yuborilmagan</string>
+    <string name="ZG_tasks_cloud_row_confirming">Sinxronlash tasdigʻi kutilmoqda</string>
+    <string name="ZG_tasks_cloud_row_needsAttention">Yuborilmadi — eʼtiboringiz kerak</string>
+    <string name="ZG_tasks_cloud_row_sharedBy">Topshirdi: %1$s</string>
+    <string name="ZG_tasks_cloud_assignment_pending">Taklif javob kutmoqda</string>
+    <string name="ZG_tasks_cloud_assignment_accepted">Ulashildi — qabul qilindi</string>
+    <string name="ZG_tasks_cloud_assignment_declined">Taklif rad etildi</string>
+    <string name="ZG_tasks_cloud_assignment_revoked">Taklif bekor qilindi</string>
+    <string name="ZG_tasks_cloud_assignment_left">Qabul qiluvchi vazifadan chiqdi</string>
+    <string name="ZG_tasks_cloud_assignment_expired">Taklif muddati tugadi</string>
+    <string name="ZG_tasks_cloud_access_inactive">Kirish huquqingiz faol emas, shuning uchun bu vazifani oʻzgartira olmaysiz. Sizni faqat egasi qayta taklif qila oladi.</string>
+    <string name="ZG_tasks_cloud_import_action">Qurilma vazifalarini bulutga nusxalash…</string>
+    <string name="ZG_tasks_cloud_privacyFooter">Bulut vazifalari Toshkentdagi Zenlygram serverida saqlanadi va qayta ishlanadi; ular uchdan-uchga shifrlanmagan. Oʻzgarishlar ilova ochiqligida va undan chiqqaningizda avtomatik sinxronlanadi — darhol bildirishnoma yoʻq.</string>
+    <string name="ZG_tasks_cloud_lists_footer">Roʻyxatsiz qoʻshilgan vazifalar Bulutdagi asosiy papkaga tushadi.</string>
+    <string name="ZG_tasks_cloud_a11y_pickAssigneeHint">Telegram kontaktini tanlaydi. Masʼulni faqat siz koʻrasiz; kontakt taklif qilinmaydi va xabardor qilinmaydi.</string>
+    <string name="ZG_tasks_cloud_deleteList_textEmpty">Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_cloud_deleteList_text_one">Undagi %1$d ta vazifa ham oʻchiriladi, ulashilgan kishilar uchun ham. Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_cloud_deleteList_text_other">Undagi %1$d ta vazifa ham oʻchiriladi, ulashilgan kishilar uchun ham. Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_archive_banner">Bu vazifalar Bulutga nusxalandi. Oʻzgartirishlarni Bulutda kiriting — bu nusxa faqat oʻqish uchun.</string>
+    <string name="ZG_tasks_archive_newRows_one">Qurilmadagi %1$d ta vazifa hali Bulutda yoʻq.</string>
+    <string name="ZG_tasks_archive_newRows_other">Qurilmadagi %1$d ta vazifa hali Bulutda yoʻq.</string>
+    <string name="ZG_tasks_archive_copy">Bulutga nusxalash</string>
+    <string name="ZG_tasks_archive_copyReturns">Bulutdagi nusxa bu hisob Zenlygram bilan tasdiqlanib, Bulut sinxronlangach shu qurilmaga qaytadi.</string>
+    <string name="ZG_tasks_migration_progress">Qurilmadagi vazifalar Bulutga nusxalanmoqda: %1$d / %2$d</string>
+    <string name="ZG_tasks_migration_done">Qurilmadagi barcha vazifalar Bulutda.</string>
+    <string name="ZG_tasks_migration_keptLocal_one">%1$d ta vazifani nusxalab boʻlmadi, ular shu qurilmada qoladi.</string>
+    <string name="ZG_tasks_migration_keptLocal_other">%1$d ta vazifani nusxalab boʻlmadi, ular shu qurilmada qoladi.</string>
+    <string name="ZG_tasks_migration_busy">Qurilmadagi vazifalar Bulutga nusxalanmoqda. Birozdan soʻng qayta urinib koʻring.</string>
+    <string name="ZG_tasks_error_accountChanged">Bu hisobdan chiqilgan. Hisobga kirib, Vazifalarni qayta oching.</string>
+    <string name="ZG_tasks_error_load">Vazifalarni yuklab boʻlmadi.</string>
+    <string name="ZG_tasks_a11y_openReadOnlyHint">Vazifani koʻrish uchun ochadi</string>
+    <string name="ZG_tasks_addToTasks_unavailable">Hozir Vazifalarga yangi vazifa qoʻshib boʻlmaydi.</string>
+</resources>

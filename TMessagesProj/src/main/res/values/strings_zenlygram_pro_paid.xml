@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Zenlygram Pro while it is a subscription (the signed policy is paid). iOS: Entitlement.Message.PaidModeNotice. -->
+    <string name="ZG_Entitlement_Message_PaidModeNotice">Zenlygram Pro is now a subscription. Your vault, locked chats and tasks stay available, and deleted and edited messages already kept stay readable. Creating new ones needs Zenlygram Pro.</string>
+    <!-- The side-load build: it has no Google Play Billing, so it only uses a grant the account already has. -->
+    <string name="ZG_Pro_Direct_Notice">This copy of Zenlygram was not installed from Google Play and sells nothing itself: payment is made on zenlygram.org. Pro belongs to the Telegram account, so it works here once the account is linked.</string>
+    <string name="ZG_Pro_Refresh_Detail">Checks this account\'s Pro with the server, for example after a purchase on another device.</string>
+    <string name="ZG_Pro_Play_AlreadyActive">This account already has Zenlygram Pro, so no plan is offered here. A Google Play subscription can be started when it ends.</string>
+    <string name="ZG_Pro_OtherAccountCovers">Another account on this device has Zenlygram Pro, so Chat Lock, Tasks and Edit History work here too. The Secret Vault and tasks that sync with the server need this account\'s own Pro.</string>
+    <string name="ZG_Pro_Grace_SyncedTasks">One exception: tasks that sync through Zenlygram\'s server. The server accepts new ones only from an account that already has Zenlygram Pro.</string>
+    <string name="ZG_Pro_Web_Header">On the website</string>
+    <string name="ZG_Pro_Web_Subscribe">Subscribe on zenlygram.org</string>
+    <string name="ZG_Pro_Web_Subscribe_Detail">Pay by bank card on the website. Sign in there with this Telegram account, then come back: Pro turns on here by itself.</string>
+    <string name="ZG_Pro_Web_Manage">Subscription on zenlygram.org</string>
+    <string name="ZG_Pro_Web_Manage_Detail">Plan, renewal and payment history of this account.</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Customer data and consent (W18-AND-8). Wording is normative in design/consent/ui-strings.md (uz / ru / en);
+     Uzbek uses U+02BB / U+02BC. Checked by zenlygram-tests/customer/strings_parity.py. -->
+<resources>
+
+    <!-- Consent wall / prompt (ui-strings §1) -->
+    <string name="ZenlyConsentTitle">Data &amp; consent</string>
+    <string name="ZenlyConsentAccount">Account: %1$s</string>
+    <string name="ZenlyConsentTextLanguage">Text language</string>
+    <string name="ZenlyConsentAgree">I agree</string>
+    <string name="ZenlyConsentDecline">I don\'t agree</string>
+    <string name="ZenlyConsentAgeHint">Confirm your age to continue.</string>
+    <string name="ZenlyConsentModeNoteRequired">Without this consent, Zenlygram can\'t be used with this Telegram account. Your other accounts are not affected.</string>
+    <string name="ZenlyConsentModeNoteOptional">Consent is optional. If you don\'t agree, no profile, statistics or cloud tasks are collected for this account and it is not linked automatically; the app keeps working on this device as before. You can agree later in Settings → Zenlygram → Data &amp; consent.</string>
+    <string name="ZenlyConsentNoticeReconsent">The consent text has changed. Please read it and agree again.</string>
+    <string name="ZenlyConsentNoticeWithdrawn">You withdrew your consent on %1$s.</string>
+    <string name="ZenlyConsentNoticeWithdrawnRemote">Consent for this account was withdrawn on another device on %1$s.</string>
+    <string name="ZenlyConsentNoticeLinkEnded">This account\'s link to our server has ended (for example, its Zenlygram account was deleted). Zenlygram will not link it again by itself until you agree again.</string>
+    <string name="ZenlyConsentTextUnavailable">This version of Zenlygram can\'t show the consent text. Update the app.</string>
+    <string name="ZenlyConsentSaveFailed">Couldn\'t save your choice. Try again.</string>
+
+    <!-- Required mode: the decline page (ui-strings §2; its Delete and Privacy Policy rows reuse ZenlyDataConsentDelete and ZenlyDataConsentPrivacyPolicy, same words) -->
+    <string name="ZenlyConsentDeclinedTitle">Consent needed</string>
+    <string name="ZenlyConsentDeclinedText">Zenlygram keeps your subscription, cloud tasks and account data on its own server, and it needs your consent to do that. Without consent, Zenlygram can\'t be used with this Telegram account.\n\nYou can go back and read the consent again, delete your Zenlygram account and the data on our server, or log out of this account on this device. Logging out does not delete your Telegram account: it keeps working in other Telegram apps. This account\'s Zenlygram data that is stored only on this device (for example local tasks) may be removed when you log out.</string>
+    <string name="ZenlyConsentDeclinedBack">Back</string>
+    <string name="ZenlyConsentDeclinedLogout">Log out of this account</string>
+    <string name="ZenlyConsentSwitchAccount">Use another account</string>
+
+    <!-- Settings -> Zenlygram -> Data & consent (ui-strings §3). Row, MyData and Delete are quoted by the hashed consent text: changing their words needs a new text version. -->
+    <string name="ZenlyDataConsentHeader">Data &amp; privacy</string>
+    <string name="ZenlyDataConsentRow">Data &amp; consent</string>
+    <string name="ZenlyDataConsentValueGranted">Agreed</string>
+    <string name="ZenlyDataConsentValueNone">Not agreed</string>
+    <string name="ZenlyDataConsentValueDeclined">Declined</string>
+    <string name="ZenlyDataConsentValueWithdrawn">Withdrawn</string>
+    <string name="ZenlyDataConsentValueReview">Review needed</string>
+    <string name="ZenlyDataConsentFooter">This section applies only to this Telegram account.</string>
+    <string name="ZenlyDataConsentStatusGranted">Consent given on %1$s (text version %2$s).</string>
+    <string name="ZenlyDataConsentStatusPending">Consent given; not sent to the server yet.</string>
+    <string name="ZenlyDataConsentStatusNone">No consent given. No profile, statistics or cloud tasks are collected for this account.</string>
+    <string name="ZenlyDataConsentStatusDeclined">You declined. No profile, statistics or cloud tasks are collected for this account.</string>
+    <string name="ZenlyDataConsentStatusWithdrawn">You withdrew consent on %1$s. Your data on our server is deleted no later than the next working day.</string>
+    <string name="ZenlyDataConsentStatusWithdrawPending">You withdrew consent on %1$s. The withdrawal hasn\'t reached our server yet; the app keeps trying.</string>
+    <string name="ZenlyDataConsentStatusReconsent">The consent text has changed — please review it.</string>
+    <string name="ZenlyDataConsentStatusLinkEnded">The link to our server has ended. Give consent again to link this account automatically.</string>
+    <string name="ZenlyDataConsentStatusRejected">Your consent couldn\'t be recorded. Update the app and give consent again.</string>
+    <string name="ZenlyDataConsentReadText">Consent text</string>
+    <string name="ZenlyDataConsentGrant">Give consent</string>
+    <string name="ZenlyDataConsentMyData">My data</string>
+    <string name="ZenlyDataConsentWithdraw">Withdraw consent</string>
+    <string name="ZenlyDataConsentDelete">Delete my Zenlygram account and data</string>
+    <string name="ZenlyDataConsentPrivacyPolicy">Privacy Policy</string>
+    <string name="ZenlyDataConsentOperator">Data operator: %1$s · %2$s</string>
+    <string name="ZenlyDataConsentStorage">Data is stored on a server in Tashkent, Uzbekistan.</string>
+    <string name="ZenlyDataConsentResetDebug">Reset consent on this device (debug build)</string>
+    <string name="ZenlyDataConsentActiveElsewhere">Consent for this account is still active on the server because it was given again on another device. To stop it, withdraw it on that device or delete your data at zenlygram.org/account/delete.</string>
+    <string name="ZenlyDataConsentDeletePending">Deletion requested. Waiting for the server to confirm it.</string>
+
+    <!-- Withdraw confirmation (ui-strings §4) -->
+    <string name="ZenlyDataConsentWithdrawTitle">Withdraw consent?</string>
+    <string name="ZenlyDataConsentWithdrawText">Your profile, statistics and cloud tasks will be deleted from our server no later than the next working day after the withdrawal reaches it. Your cloud tasks stay on this device as a read-only copy. The link between this account and your Zenlygram account stays for your subscription; to remove the link and all data too, delete your Zenlygram account instead.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_zero">%1$d unsent task changes will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_one">%1$d unsent task change will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_two">%1$d unsent task changes will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_few">%1$d unsent task changes will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_many">%1$d unsent task changes will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_other">%1$d unsent task changes will be lost.</string>
+    <string name="ZenlyDataConsentWithdrawRequired">After this, you can use Zenlygram with this account only after you agree again.</string>
+    <string name="ZenlyDataConsentWithdrawOptional">The app keeps working on this device and sends no more profile, statistics or cloud tasks for this account.</string>
+    <string name="ZenlyDataConsentWithdrawConfirm">Withdraw</string>
+    <string name="ZenlyDataConsentWithdrawDeleteInstead">Delete my Zenlygram account and data</string>
+    <string name="ZenlyDataConsentWithdrawPendingUpload">This device isn\'t linked to our server, so your withdrawal can\'t be sent from here; it is sent if you link this device again. If you use this Telegram account in Zenlygram on another device, withdraw there too, or delete your data at zenlygram.org/account/delete, or write to the contact shown below.</string>
+    <string name="ZenlyLogoutWithdrawPending">Your consent withdrawal hasn\'t reached the Zenlygram server yet. Logging out sends it once more; if that fails, delete your data at zenlygram.org/account/delete.</string>
+
+    <!-- Account deletion (ui-strings §5; ZenlyDeleteText = Deleted, Kept + Telegram, Timing) -->
+    <string name="ZenlyDeleteTitle">Delete Zenlygram account</string>
+    <string name="ZenlyDeleteText">This deletes your Zenlygram account and the data we hold for it: your profile, devices, statistics, cloud tasks, invitations and the account link. All devices linked to this account are signed out of Zenlygram.\n\nPayment records are kept only as long as the law requires, with the details that identify you removed. A record that you gave and withdrew consent (account number, text versions and dates) is kept for 3 years. Your Telegram account is not deleted.\n\nDeletion starts at once and is completed no later than the next working day. Copies in encrypted backups and server logs disappear within 14 days.</string>
+    <string name="ZenlyDeleteBilling">If you have a subscription, it keeps renewing and you keep being charged until you cancel it in %1$s. Cancel it first if you no longer want it.</string>
+    <string name="ZenlyDeleteManageSubscription">Manage subscription</string>
+    <string name="ZenlyDeleteConfirm">Delete my account and data</string>
+    <string name="ZenlyDeleteConfirm2Title">Delete your Zenlygram account?</string>
+    <string name="ZenlyDeleteConfirm2Text">This can\'t be undone.</string>
+    <string name="ZenlyDeleteConfirm2Action">Delete</string>
+    <string name="ZenlyDeleteDoneTitle">Zenlygram account deleted</string>
+    <string name="ZenlyDeleteDoneText">Your Zenlygram account has been deleted. Copies in our other services are removed no later than the next working day, and copies in encrypted backups and server logs within 14 days. If you keep using Zenlygram with this account, it will ask for your consent again.</string>
+    <string name="ZenlyDeleteNotLinked">This account isn\'t linked to the Zenlygram server from this device. To delete a Zenlygram account, open zenlygram.org/account/delete and sign in with Telegram.</string>
+    <string name="ZenlyDeleteOpenWeb">Open page</string>
+    <string name="ZenlyDeleteErrorOffline">No connection. Check your internet and try again, or use zenlygram.org/account/delete.</string>
+    <string name="ZenlyDeleteErrorRateLimited">Too many attempts. Try again a little later.</string>
+    <string name="ZenlyDeleteErrorUnavailable">The server is unavailable right now. Try again later, or use zenlygram.org/account/delete.</string>
+    <string name="ZenlyDeleteFailed">The account couldn\'t be deleted right now. Check your connection and try again, or use zenlygram.org/account/delete.</string>
+
+    <!-- My data (ui-strings §6) -->
+    <string name="ZenlyMyDataTitle">My data</string>
+    <string name="ZenlyMyDataLoading">Loading…</string>
+    <string name="ZenlyMyDataNotLinked">This account isn\'t linked to the Zenlygram server from this device, so there is no server data to show.</string>
+    <string name="ZenlyMyDataUnavailable">Your data couldn\'t be loaded right now. Try again later.</string>
+    <string name="ZenlyMyDataErrorOffline">No connection.</string>
+    <string name="ZenlyMyDataErrorUnavailable">The server is unavailable. Try again later.</string>
+    <string name="ZenlyMyDataErrorRateLimited">Too many requests. Try again later.</string>
+    <string name="ZenlyMyDataRetry">Try again</string>
+    <string name="ZenlyMyDataSectionAccount">Account</string>
+    <string name="ZenlyMyDataSectionConsent">Consent</string>
+    <string name="ZenlyMyDataSectionHistory">Consent history</string>
+    <string name="ZenlyMyDataSectionProfile">Profile</string>
+    <string name="ZenlyMyDataSectionDevices">Devices</string>
+    <string name="ZenlyMyDataSectionActivity">Activity</string>
+    <string name="ZenlyMyDataSectionEvents">Statistics events (last 180 days)</string>
+    <string name="ZenlyMyDataSectionSubscription">Subscription</string>
+    <string name="ZenlyMyDataSectionRetention">Retention</string>
+    <string name="ZenlyMyDataSourceTelegramAttest">Confirmed by Telegram</string>
+    <string name="ZenlyMyDataSourceTelegramBot">Telegram (via our bot)</string>
+    <string name="ZenlyMyDataSourceClient">From the app</string>
+    <string name="ZenlyMyDataSourceTelegramSession">From your Telegram session</string>
+    <string name="ZenlyMyDataFieldId">Account ID</string>
+    <string name="ZenlyMyDataFieldTelegramId">Telegram ID</string>
+    <string name="ZenlyMyDataFieldCreated">Created</string>
+    <string name="ZenlyMyDataFieldPhone">Phone number</string>
+    <string name="ZenlyMyDataFieldCountry">Country (from the phone code)</string>
+    <string name="ZenlyMyDataFieldUsernames">Usernames</string>
+    <string name="ZenlyMyDataFieldFirstName">First name</string>
+    <string name="ZenlyMyDataFieldLastName">Last name</string>
+    <string name="ZenlyMyDataFieldName">Name</string>
+    <string name="ZenlyMyDataFieldLanguage">Telegram language</string>
+    <string name="ZenlyMyDataFieldPremium">Telegram Premium</string>
+    <string name="ZenlyMyDataFieldModel">Device model</string>
+    <string name="ZenlyMyDataFieldOs">Operating system</string>
+    <string name="ZenlyMyDataFieldApp">App version</string>
+    <string name="ZenlyMyDataFieldVersions">Versions (system / app)</string>
+    <string name="ZenlyMyDataFieldLocale">Region format</string>
+    <string name="ZenlyMyDataFieldTimeZone">Time zone</string>
+    <string name="ZenlyMyDataFieldDistribution">Install source</string>
+    <string name="ZenlyMyDataFieldFirstSeen">First seen</string>
+    <string name="ZenlyMyDataFieldLastSeen">Last seen</string>
+    <string name="ZenlyMyDataFieldFirstActive">First active</string>
+    <string name="ZenlyMyDataFieldLastActive">Last active</string>
+    <string name="ZenlyMyDataFieldActiveDays">Active days</string>
+    <string name="ZenlyMyDataFieldSessions30">Sessions (30 days)</string>
+    <string name="ZenlyMyDataFieldSeconds30">Time in the app (30 days)</string>
+    <string name="ZenlyMyDataEventsTotal">Events in total</string>
+    <string name="ZenlyMyDataFieldRetained">Kept for</string>
+    <string name="ZenlyMyDataPrivacyFeatures">Privacy features: %1$d events</string>
+</resources>

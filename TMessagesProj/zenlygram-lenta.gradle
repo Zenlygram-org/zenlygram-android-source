@@ -1,0 +1,163 @@
+// ZENLYGRAM: build boundary of Lenta (the social feed). Applied from TMessagesProj/build.gradle after
+// zenlygram-identity.gradle, kept in its own file so upstream merges of build.gradle stay easy. Mirrors the iOS
+// `--enableLenta` flag: with Lenta off no Lenta class, string, resource or certificate is in the APK.
+//
+// Gradle properties (command line -P..., or ~/.gradle/gradle.properties outside this repository):
+//   ZG_LENTA              unset: on for debug, off for every other build type; "true": on everywhere; "false": off
+//   ZG_LENTA_API_URL      API_HOST origin                     (default https://api.lenta.zenlygram.com)
+//   ZG_LENTA_UPLOAD_URL   UPLOAD_HOST origin (tus)            (default https://upload.lenta.zenlygram.com)
+//   ZG_LENTA_MEDIA_URL    MEDIA_HOST origin                   (default https://media.lenta.zenlygram.com)
+//   Debug builds only (ignored by every other build type):
+//   ZG_LENTA_CLIENT       X-Lenta-Client value instead of android/<versionCode> (e.g. ios/1 while a backend only
+//                         accepts iOS clients)
+//   ZG_LENTA_PLATFORM     `platform` of POST /v1/auth/exchange instead of android
+//   ZG_LENTA_DEV_REWRITE  "<from-host>=<to-host>": server URLs (media, tus) naming <from-host> are sent to <to-host>
+//                         (port kept) — a dev stack whose bootstrap hosts are localhost, reached from a device
+//   ZG_LENTA_DEV_CA       comma-separated paths of PEM root certificates of a dev stack. They are copied into the
+//                         debug APK only and trusted only for Lenta dev hosts (network security config); never in
+//                         release. Nothing is copied into this repository.
+//
+// Lenta sources live in src/lenta/{java,res}; src/lentaStub/java has the same entry class (LentaModule) answering
+// "disabled". Each build type gets exactly one of them. JVM unit tests: src/lentaTest/java (testDebugUnitTest).
+
+def zgLentaProp = { String name ->
+    def value = project.findProperty(name)
+    return value == null ? "" : value.toString().trim()
+}
+
+def zgLentaFlag = zgLentaProp("ZG_LENTA").toLowerCase()
+if (!(zgLentaFlag in ["", "true", "false"])) {
+    throw new GradleException("ZENLYGRAM: ZG_LENTA must be true or false (got '" + zgLentaFlag + "').")
+}
+
+def zgLentaEnabledFor = { String buildType ->
+    if (zgLentaFlag == "true") return true
+    if (zgLentaFlag == "false") return false
+    return buildType == "debug"
+}
+
+def zgLentaQuote = { String value -> '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"' }
+
+def zgLentaOrigin = { String name, String fallback ->
+    def value = zgLentaProp(name)
+    if (value.isEmpty()) value = fallback
+    if (!(value ==~ /https:\/\/[A-Za-z0-9.-]+(:[0-9]{1,5})?/)) {
+        throw new GradleException("ZENLYGRAM: " + name + " must be an https origin without a path (got '" + value + "').")
+    }
+    return value
+}
+
+def zgLentaApiUrl = zgLentaOrigin("ZG_LENTA_API_URL", "https://api.lenta.zenlygram.com")
+def zgLentaUploadUrl = zgLentaOrigin("ZG_LENTA_UPLOAD_URL", "https://upload.lenta.zenlygram.com")
+def zgLentaMediaUrl = zgLentaOrigin("ZG_LENTA_MEDIA_URL", "https://media.lenta.zenlygram.com")
+def zgLentaClient = zgLentaProp("ZG_LENTA_CLIENT")
+if (!zgLentaClient.isEmpty() && !(zgLentaClient ==~ /(ios|android)\/[0-9]{1,9}/)) {
+    throw new GradleException("ZENLYGRAM: ZG_LENTA_CLIENT must look like android/<build> or ios/<build>.")
+}
+def zgLentaPlatform = zgLentaProp("ZG_LENTA_PLATFORM")
+if (!zgLentaPlatform.isEmpty() && !(zgLentaPlatform in ["ios", "android"])) {
+    throw new GradleException("ZENLYGRAM: ZG_LENTA_PLATFORM must be ios or android.")
+}
+def zgLentaRewrite = zgLentaProp("ZG_LENTA_DEV_REWRITE")
+if (!zgLentaRewrite.isEmpty() && !(zgLentaRewrite ==~ /[A-Za-z0-9.-]+=[A-Za-z0-9.-]+/)) {
+    throw new GradleException("ZENLYGRAM: ZG_LENTA_DEV_REWRITE must be <from-host>=<to-host>.")
+}
+def zgLentaDevCas = zgLentaProp("ZG_LENTA_DEV_CA").split(",").collect { it.trim() }.findAll { !it.isEmpty() }.collect { file(it) }
+zgLentaDevCas.each { ca ->
+    if (!ca.isFile()) {
+        throw new GradleException("ZENLYGRAM: ZG_LENTA_DEV_CA names a missing file: " + ca)
+    }
+}
+
+def zgLentaHost = { String origin -> origin.replaceFirst(/^https:\/\//, "").replaceFirst(/:[0-9]+$/, "") }
+
+android {
+    defaultConfig {
+        buildConfigField "boolean", "LENTA_ENABLED", "false"
+        buildConfigField "String", "LENTA_API_URL", zgLentaQuote(zgLentaApiUrl)
+        buildConfigField "String", "LENTA_UPLOAD_URL", zgLentaQuote(zgLentaUploadUrl)
+        buildConfigField "String", "LENTA_MEDIA_URL", zgLentaQuote(zgLentaMediaUrl)
+        buildConfigField "String", "LENTA_CLIENT_OVERRIDE", '""'
+        buildConfigField "String", "LENTA_PLATFORM_OVERRIDE", '""'
+        buildConfigField "String", "LENTA_DEV_REWRITE", '""'
+        buildConfigField "boolean", "LENTA_DEV_HOOKS", "false"
+        // app_build of the exchange and X-Lenta-Client android/<build>: the base version code (the APK adds an ABI digit).
+        buildConfigField "String", "LENTA_APP_BUILD", zgLentaQuote(zgLentaProp("APP_VERSION_CODE"))
+    }
+
+    buildTypes.all { buildType ->
+        def enabled = zgLentaEnabledFor(buildType.name)
+        buildType.buildConfigField "boolean", "LENTA_ENABLED", enabled ? "true" : "false"
+        if (buildType.name == "debug") {
+            buildType.buildConfigField "String", "LENTA_CLIENT_OVERRIDE", zgLentaQuote(zgLentaClient)
+            buildType.buildConfigField "String", "LENTA_PLATFORM_OVERRIDE", zgLentaQuote(zgLentaPlatform)
+            buildType.buildConfigField "String", "LENTA_DEV_REWRITE", zgLentaQuote(zgLentaRewrite)
+            buildType.buildConfigField "boolean", "LENTA_DEV_HOOKS", "true"
+        }
+        def sourceSet = android.sourceSets.maybeCreate(buildType.name)
+        if (enabled) {
+            sourceSet.java.srcDirs += "src/lenta/java"
+            sourceSet.res.srcDirs += "src/lenta/res"
+        } else {
+            sourceSet.java.srcDirs += "src/lentaStub/java"
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+if (zgLentaEnabledFor("debug")) {
+    android.sourceSets.testDebug.java.srcDirs += "src/lentaTest/java"
+    android.sourceSets.testDebug.resources.srcDirs += "src/lentaTest/resources"
+
+    // The dev stack's root certificates, debug only: generated outside the source tree (build/), never committed.
+    if (!zgLentaDevCas.isEmpty()) {
+        def generated = new File(buildDir, "generated/zgLentaDevNetwork")
+        def raw = new File(generated, "res/raw")
+        def xml = new File(generated, "res/xml")
+        raw.mkdirs()
+        xml.mkdirs()
+        def certificates = new StringBuilder()
+        zgLentaDevCas.eachWithIndex { ca, index ->
+            new File(raw, "zg_lenta_dev_ca_" + index + ".pem").bytes = ca.bytes
+            certificates.append('            <certificates src="@raw/zg_lenta_dev_ca_' + index + '" />\n')
+        }
+        def hosts = ([zgLentaApiUrl, zgLentaUploadUrl, zgLentaMediaUrl].collect { zgLentaHost(it) } + ["localhost", "10.0.2.2"]).unique()
+        if (!zgLentaRewrite.isEmpty()) {
+            hosts += zgLentaRewrite.split("=")[1]
+            hosts = hosts.unique()
+        }
+        def domains = hosts.collect { '        <domain includeSubdomains="false">' + it + '</domain>\n' }.join("")
+        new File(xml, "zg_lenta_dev_network.xml").text =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<!-- Generated by zenlygram-lenta.gradle (ZG_LENTA_DEV_CA), debug builds only. -->\n' +
+                '<network-security-config>\n' +
+                '    <domain-config>\n' + domains +
+                '        <trust-anchors>\n' +
+                '            <certificates src="system" />\n' + certificates +
+                '        </trust-anchors>\n' +
+                '    </domain-config>\n' +
+                '</network-security-config>\n'
+        new File(generated, "AndroidManifest.xml").text =
+                '<?xml version="1.0" encoding="utf-8"?>\n' +
+                '<manifest xmlns:android="http://schemas.android.com/apk/res/android">\n' +
+                '    <application android:networkSecurityConfig="@xml/zg_lenta_dev_network" />\n' +
+                '</manifest>\n'
+        android.sourceSets.debug.res.srcDirs += new File(generated, "res")
+        android.sourceSets.debug.manifest.srcFile new File(generated, "AndroidManifest.xml")
+    }
+}
+
+// Pull to refresh of the Lenta grids, only in build types that carry Lenta.
+android.buildTypes.each { buildType ->
+    if (zgLentaEnabledFor(buildType.name)) {
+        project.dependencies.add(buildType.name + "Implementation", 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0')
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20231013'
+}

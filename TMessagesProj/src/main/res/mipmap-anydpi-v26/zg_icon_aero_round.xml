@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: alternate launcher icon from the iOS pack (Tools/zenlygram/icons/make_alt_icons.sh) -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/zg_icon_aero_background" />
+    <foreground android:drawable="@mipmap/zg_icon_aero_foreground" />
+    <monochrome android:drawable="@drawable/zg_launcher_monochrome" />
+</adaptive-icon>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ZG_Entitlement_Message_PaidModeNotice">Zenlygram Pro endi obuna asosida ishlaydi. Seyf, qulflangan chatlar va vazifalar ochiq qoladi, allaqachon saqlangan oʻchirilgan va tahrirlangan xabarlarni esa avvalgidek oʻqish mumkin. Yangilarini yaratish uchun Zenlygram Pro kerak.</string>
+    <string name="ZG_Pro_Direct_Notice">Zenlygramʼning bu nusxasi Google Playʼdan oʻrnatilmagan va oʻzi hech narsa sotmaydi: toʻlov zenlygram.org saytida qilinadi. Pro Telegram akkauntiga tegishli, shuning uchun akkaunt bogʻlangach shu yerda ishlaydi.</string>
+    <string name="ZG_Pro_Refresh_Detail">Shu akkauntning Pro holatini serverdan tekshiradi — masalan, boshqa qurilmada xarid qilingandan keyin.</string>
+    <string name="ZG_Pro_Play_AlreadyActive">Bu akkauntda Zenlygram Pro allaqachon bor, shuning uchun bu yerda tarif taklif qilinmaydi. Google Play obunasini u tugagach boshlash mumkin.</string>
+    <string name="ZG_Pro_OtherAccountCovers">Shu qurilmadagi boshqa akkauntda Zenlygram Pro bor, shuning uchun chat qulfi, vazifalar va tahrir tarixi bu yerda ham ishlaydi. Maxfiy seyf va server bilan sinxronlanadigan vazifalar uchun shu akkauntning oʻz Pro obunasi kerak.</string>
+    <string name="ZG_Pro_Grace_SyncedTasks">Bitta istisno — Zenlygram serveri orqali sinxronlanadigan vazifalar. Server yangilarini faqat Zenlygram Pro allaqachon bor akkauntdan qabul qiladi.</string>
+    <string name="ZG_Pro_Web_Header">Saytda</string>
+    <string name="ZG_Pro_Web_Subscribe">zenlygram.org saytida obuna boʻlish</string>
+    <string name="ZG_Pro_Web_Subscribe_Detail">Toʻlov saytda bank kartasi bilan qilinadi. U yerda shu Telegram akkaunti bilan kiring va qayting: Pro bu yerda oʻzi yoqiladi.</string>
+    <string name="ZG_Pro_Web_Manage">zenlygram.org saytidagi obuna</string>
+    <string name="ZG_Pro_Web_Manage_Detail">Shu akkauntning tarifi, yangilanishi va toʻlovlar tarixi.</string>
+</resources>

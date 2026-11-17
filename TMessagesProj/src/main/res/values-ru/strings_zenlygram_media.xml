@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Russian strings of the media & calls port (WP-B). See values/strings_zenlygram_media.xml. -->
+<resources>
+    <string name="ZG_Settings_Transcription_Backend_device">На устройстве</string>
+    <string name="ZG_Settings_Transcription_Backend_DeviceNotice">На устройстве: голосовые сообщения и видеосообщения распознаются собственной службой речи телефона, без Telegram Premium. Звук не покидает телефон; языки и качество зависят от телефона.</string>
+    <string name="ZG_VoiceToText_Failed">Не удалось распознать это сообщение на устройстве.</string>
+    <string name="ZG_VoiceToText_ModelDownload">Модели речи для этого языка ещё нет на телефоне. Android загружает её; повторите попытку позже.</string>
+    <string name="ZG_VoiceToText_LanguageUnsupported">Этот телефон не умеет распознавать этот язык на устройстве.</string>
+</resources>

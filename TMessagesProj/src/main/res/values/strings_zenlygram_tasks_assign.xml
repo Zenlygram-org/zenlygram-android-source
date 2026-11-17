@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM Tasks: the assignee pick is the invitation (org.telegram.zenlygram.tasks; iOS SGTasksL10n+Assign, the wire-4 variants). The same keys exist in values, values-ru and values-uz: edit the three files together. Uzbek uses U+02BB in oʻ / gʻ and U+02BC as the tutuq belgisi. -->
+<resources>
+    <string name="ZG_tasks_assign_nameState">%1$s · %2$s</string>
+    <string name="ZG_tasks_assign_state_sending">Sending…</string>
+    <string name="ZG_tasks_assign_state_queued">Queued</string>
+    <string name="ZG_tasks_assign_state_sent">Sent</string>
+    <string name="ZG_tasks_assign_state_accepted">Accepted</string>
+    <string name="ZG_tasks_assign_state_completed">Completed</string>
+    <string name="ZG_tasks_assign_state_declined">Declined</string>
+    <string name="ZG_tasks_assign_state_left">Left the task</string>
+    <string name="ZG_tasks_assign_state_expired">Not accepted in 7 days</string>
+    <string name="ZG_tasks_assign_state_removed">Removed</string>
+    <string name="ZG_tasks_assign_state_notSent">Not sent yet</string>
+    <string name="ZG_tasks_assign_oldEntry">(old entry)</string>
+    <string name="ZG_tasks_assign_resend">Send Again</string>
+    <string name="ZG_tasks_assign_send">Send</string>
+    <string name="ZG_tasks_assign_change">Change Assignee</string>
+    <string name="ZG_tasks_assign_replace_title">Replace the assignee?</string>
+    <string name="ZG_tasks_assign_replace_text">%1$s will no longer see this task.</string>
+    <string name="ZG_tasks_assign_replace_confirm">Replace</string>
+    <string name="ZG_tasks_assign_remove_title">Remove the assignee?</string>
+    <string name="ZG_tasks_assign_remove_confirm">Remove</string>
+    <string name="ZG_tasks_assign_footer_accepted">%1$s sees this task in their Tasks and can mark it done and leave it. Only you change the title, notes, due date and priority, reassign or delete it.</string>
+    <string name="ZG_tasks_assign_footer_pending">Waiting for %1$s to accept. The assignee sees the task once their Zenlygram sync is on; if they start within 7 days, it still reaches them. If it isn\'t accepted in that time, you can send it again.</string>
+    <string name="ZG_tasks_assign_footer_queued">The daily assignment limit is reached. It is sent automatically later.</string>
+    <string name="ZG_tasks_assign_footer_ended">Nobody has this task now. Send it again or choose another assignee.</string>
+    <string name="ZG_tasks_assign_footer_notSent">%1$s was saved as the assignee earlier, but the task hasn\'t been sent to them.</string>
+    <string name="ZG_tasks_assign_footer_completedTask">A completed task can\'t be assigned. Reopen it first.</string>
+    <string name="ZG_tasks_assign_explainer_title">How assigning works</string>
+    <string name="ZG_tasks_assign_explainer_text">The task goes to the assignee\'s Tasks in Zenlygram, not as a Telegram message. They see the title, notes and due date, can mark it done and leave it. They also see your Telegram ID. Your lists and other tasks stay private. The assignee sees the task once their Zenlygram sync is on; if they start within 7 days, it still reaches them. You see their name and what they do with the task.</string>
+    <string name="ZG_tasks_assign_explainer_ok">Got It</string>
+    <string name="ZG_tasks_assign_self">You can\'t assign a task to yourself.</string>
+    <string name="ZG_tasks_assign_limitPerPerson">You can assign up to 5 tasks a day to one person. Try again tomorrow.</string>
+    <string name="ZG_tasks_assign_limitPerMinute">Too many assignments in a row. Try again in a minute.</string>
+    <string name="ZG_tasks_assign_limitTotal">Too many assignments today. Try again tomorrow.</string>
+    <string name="ZG_tasks_assign_limitPending">Too many assignments are waiting for an answer. Try again when some are accepted or expire.</string>
+    <string name="ZG_tasks_assign_needsSync_title">Sync is needed to assign</string>
+    <string name="ZG_tasks_assign_needsSync_text">So that the assignee sees the task in their Tasks, it is stored on the Zenlygram server. That needs your data consent and a linked account.</string>
+    <string name="ZG_tasks_assign_needsSync_action">Turn On Sync</string>
+    <string name="ZG_tasks_assign_waitForSync">Assigning becomes possible in a moment, once sync has started.</string>
+    <string name="ZG_tasks_assigned_header">Assigned to Me</string>
+    <string name="ZG_tasks_assigned_by">Assigned by %1$s</string>
+    <string name="ZG_tasks_assigned_editorTitle">Assigned Task</string>
+    <string name="ZG_tasks_assigned_rights">You can mark it done or not done and leave the task. Only the person who assigned it changes, reassigns or deletes it.</string>
+    <string name="ZG_tasks_invitations_hint">Tasks from people in your Telegram contacts are accepted automatically. Others wait here for your answer.</string>
+</resources>

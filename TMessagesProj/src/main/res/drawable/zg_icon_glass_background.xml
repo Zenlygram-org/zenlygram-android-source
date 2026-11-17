@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: background layer of the Glass alternate launcher icon (border colour of the iOS art) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FF000208" />
+</shape>

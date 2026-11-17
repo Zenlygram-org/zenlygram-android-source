@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM Tasks: the Cloud board, the Cloud / device switch and the Device archive (org.telegram.zenlygram.tasks; iOS SGTasksL10n+Cloud). The same keys exist in values-ru and values-uz: edit the three files together. -->
+<resources>
+    <string name="ZG_tasks_scope_cloud">Cloud</string>
+    <string name="ZG_tasks_scope_device">On This Device</string>
+    <string name="ZG_tasks_archive_segment">Device archive</string>
+    <string name="ZG_tasks_cloud_unlinked_title">Link your account to use Cloud</string>
+    <string name="ZG_tasks_cloud_unlinked_text">Cloud tasks belong to the Zenlygram account linked to this Telegram account. Tasks on this device keep working without linking.</string>
+    <string name="ZG_tasks_cloud_link_action">Link Account</string>
+    <string name="ZG_tasks_cloud_useDevice_action">Use Tasks on This Device</string>
+    <string name="ZG_tasks_cloud_unavailable_title">Cloud is not available</string>
+    <string name="ZG_tasks_cloud_paused_title">Cloud sync is paused</string>
+    <string name="ZG_tasks_cloud_status_pending_one">%1$d change waiting to be sent</string>
+    <string name="ZG_tasks_cloud_status_pending_other">%1$d changes waiting to be sent</string>
+    <string name="ZG_tasks_cloud_status_issues_one">%1$d change needs your attention</string>
+    <string name="ZG_tasks_cloud_status_issues_other">%1$d changes need your attention</string>
+    <string name="ZG_tasks_cloud_invitations_banner_one">%1$d task invitation</string>
+    <string name="ZG_tasks_cloud_invitations_banner_other">%1$d task invitations</string>
+    <string name="ZG_tasks_cloud_invitations_count">Invitations (%1$d)</string>
+    <string name="ZG_tasks_cloud_issues_title">Unsent Changes</string>
+    <string name="ZG_tasks_cloud_issues_count">Unsent Changes (%1$d)</string>
+    <string name="ZG_tasks_cloud_status_review">Review</string>
+    <string name="ZG_tasks_cloud_more">Invitations and unsent changes</string>
+    <string name="ZG_tasks_cloud_row_notSent">Not sent yet</string>
+    <string name="ZG_tasks_cloud_row_confirming">Waiting for sync confirmation</string>
+    <string name="ZG_tasks_cloud_row_needsAttention">Not sent — needs your attention</string>
+    <string name="ZG_tasks_cloud_row_sharedBy">Assigned by %1$s</string>
+    <string name="ZG_tasks_cloud_assignment_pending">Invitation pending</string>
+    <string name="ZG_tasks_cloud_assignment_accepted">Shared — accepted</string>
+    <string name="ZG_tasks_cloud_assignment_declined">Invitation declined</string>
+    <string name="ZG_tasks_cloud_assignment_revoked">Invitation cancelled</string>
+    <string name="ZG_tasks_cloud_assignment_left">Recipient left the task</string>
+    <string name="ZG_tasks_cloud_assignment_expired">Invitation expired</string>
+    <string name="ZG_tasks_cloud_access_inactive">Your access isn’t active, so you can’t change this task. Only the owner can invite you again.</string>
+    <string name="ZG_tasks_cloud_import_action">Copy Device Tasks to Cloud…</string>
+    <string name="ZG_tasks_cloud_privacyFooter">Cloud tasks are stored and processed on the Zenlygram server in Tashkent; they are not end-to-end encrypted. Changes sync automatically while the app is open and when you leave it — there are no instant notifications.</string>
+    <string name="ZG_tasks_cloud_lists_footer">Tasks added without a list go to the Cloud Inbox.</string>
+    <string name="ZG_tasks_cloud_a11y_pickAssigneeHint">Chooses a Telegram contact. Only you see the assignee; the contact is not invited or notified.</string>
+    <string name="ZG_tasks_cloud_deleteList_textEmpty">This can’t be undone.</string>
+    <string name="ZG_tasks_cloud_deleteList_text_one">Its %1$d task is deleted too, including for anyone it’s shared with. This can’t be undone.</string>
+    <string name="ZG_tasks_cloud_deleteList_text_other">Its %1$d tasks are deleted too, including for anyone they’re shared with. This can’t be undone.</string>
+    <string name="ZG_tasks_archive_banner">These tasks were copied to Cloud. Make changes in Cloud — this copy is read-only.</string>
+    <string name="ZG_tasks_archive_newRows_one">%1$d task on this device isn’t in Cloud yet.</string>
+    <string name="ZG_tasks_archive_newRows_other">%1$d tasks on this device aren’t in Cloud yet.</string>
+    <string name="ZG_tasks_archive_copy">Copy to Cloud</string>
+    <string name="ZG_tasks_archive_copyReturns">The Cloud copy returns to this device once this account is confirmed with Zenlygram and Cloud has synced.</string>
+    <string name="ZG_tasks_migration_progress">Copying device tasks to Cloud: %1$d of %2$d</string>
+    <string name="ZG_tasks_migration_done">All device tasks are in Cloud.</string>
+    <string name="ZG_tasks_migration_keptLocal_one">%1$d task could not be copied and stays on this device.</string>
+    <string name="ZG_tasks_migration_keptLocal_other">%1$d tasks could not be copied and stay on this device.</string>
+    <string name="ZG_tasks_migration_busy">Copying your device tasks to Cloud. Try again in a moment.</string>
+    <string name="ZG_tasks_error_accountChanged">This account is no longer signed in. Reopen Tasks after signing in.</string>
+    <string name="ZG_tasks_error_load">Tasks could not be loaded.</string>
+    <string name="ZG_tasks_a11y_openReadOnlyHint">Opens the task to read</string>
+    <string name="ZG_tasks_addToTasks_unavailable">Tasks can’t take a new task right now.</string>
+</resources>

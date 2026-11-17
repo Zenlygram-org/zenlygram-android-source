@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: the Cloud Tasks screens (org.telegram.zenlygram.tasks.cloudui): Invitations, Unsent Changes and the
+     Cloud task editor. The wording is the iOS one (SGTasksL10n+Cloud.swift) unless a comment says otherwise.
+     Written by hand; read only through LocaleController.getString / formatString. Keep values/, values-ru/ and
+     values-uz/ in step. Strings shared with the board are reused from strings_zenlygram_android.xml (ZG_tasks_*) and
+     strings_zenlygram_engine_tasks.xml (ZenlyCloud*). -->
+<resources>
+    <!-- A person: the name this Telegram account knows them by, with their Telegram ID -->
+    <string name="ZG_cloudui_person_withId">%1$s (Telegram ID %2$s)</string>
+    <string name="ZG_cloudui_syncConfirmationPending">Waiting for sync confirmation</string>
+    <string name="ZG_cloudui_needsAttention">Not sent — needs your attention</string>
+    <string name="ZG_cloudui_review">Review</string>
+
+    <!-- Refused or stale actions -->
+    <string name="ZG_cloudui_error_gone">This item is no longer available.</string>
+    <string name="ZG_cloudui_error_title">This title can\'t be used. Titles need visible text, no spaces at the start or end, and at most 200 characters.</string>
+    <string name="ZG_cloudui_error_notes">Notes can be at most 4,096 characters.</string>
+    <string name="ZG_cloudui_error_recipient">Only a Telegram user from your contacts can be chosen.</string>
+    <string name="ZG_cloudui_error_changedElsewhere">This changed while you were deciding. Nothing was sent — look at the current version and try again.</string>
+    <string name="ZG_cloudui_error_notOwner">Only the task\'s owner can do this. Nothing was changed.</string>
+    <string name="ZG_cloudui_error_notAssignee">Your access to this task isn\'t active, so nothing was changed. Only the owner can invite you again.</string>
+    <string name="ZG_cloudui_error_invitationExpired">This invitation has expired.</string>
+
+    <!-- Invitations -->
+    <string name="ZG_cloudui_invitations_empty">No invitations.</string>
+    <string name="ZG_cloudui_invitation_from">From %1$s</string>
+    <string name="ZG_cloudui_invitation_expired">Expired</string>
+    <string name="ZG_cloudui_invitation_block">Block Sender</string>
+    <string name="ZG_cloudui_invitation_blockConfirm">%1$s won\'t be able to send you task invitations, and their pending invitations are hidden. Tasks you already accepted from them stay until you leave them.</string>
+    <string name="ZG_cloudui_invitations_beforeLabel">Before you accept</string>
+    <string name="ZG_cloudui_invitations_before">You see only the title, the deadline and the sender\'s Telegram ID. You can\'t change anything.</string>
+    <string name="ZG_cloudui_invitations_afterLabel">After you accept</string>
+    <string name="ZG_cloudui_invitations_after">You also see the notes, can mark the task done or not done, and can leave at any time. Only the owner edits, shares or deletes it. This access doesn\'t expire.</string>
+    <!-- Android: a sender this account knows is shown by the name from its own Telegram data (iOS shows the ID only) -->
+    <string name="ZG_cloudui_invitations_footer">The owner\'s lists and assignees are never shared. A sender is named only when this Telegram account already knows them; the number is their Telegram ID.</string>
+    <string name="ZG_cloudui_unblock_title">Unblock this sender?</string>
+    <string name="ZG_cloudui_unblock_footer">Unblocking lets this sender invite you again. Invitations hidden while they were blocked do not come back.</string>
+
+    <!-- Who can do what -->
+    <string name="ZG_cloudui_access_header">Who Can Do What</string>
+    <string name="ZG_cloudui_access_youOwner">You — owner</string>
+    <string name="ZG_cloudui_access_ownerRights">Edit, mark done or not done, share and delete. Only you see the list and the assignee.</string>
+    <string name="ZG_cloudui_access_onlyYou">Only you have access to this task.</string>
+    <string name="ZG_cloudui_access_recipientLabel">Recipient\'s access</string>
+    <string name="ZG_cloudui_access_recipient_pendingInvitation">Sync confirmation pending; the recipient\'s access may not reflect this change yet. Until they accept, they see only the title, the deadline and your Telegram ID. A previous recipient may keep access until the change is applied.</string>
+    <string name="ZG_cloudui_access_recipient_invited">Until they accept, only the title, the deadline and your Telegram ID. They can\'t change anything.</string>
+    <string name="ZG_cloudui_access_recipient_accepted">Sees the notes, can mark it done or not done, or leave. Can\'t edit, share or delete. Access doesn\'t expire: it ends when you stop sharing, share with someone else or delete the task, or when they leave.</string>
+    <string name="ZG_cloudui_access_recipient_pendingRevocation">Sync confirmation pending; the recipient\'s access may not reflect this change yet.</string>
+    <string name="ZG_cloudui_access_recipient_ended">No access.</string>
+    <string name="ZG_cloudui_access_youRecipient">You — recipient</string>
+    <string name="ZG_cloudui_access_recipientSelfRights">Mark it done or not done, or leave. You can\'t edit, share or delete it.</string>
+    <string name="ZG_cloudui_access_recipientInactive">Your access isn\'t active, so you can\'t change this task. Only the owner can invite you again.</string>
+    <string name="ZG_cloudui_access_ownerLabel">Owner</string>
+    <string name="ZG_cloudui_access_ownerRightsForRecipient">Edits, shares and deletes. Their lists and assignees aren\'t shared with you.</string>
+    <string name="ZG_cloudui_access_recipientDoesNotExpire">Your access doesn\'t expire. It ends if the owner stops sharing, shares the task with someone else or deletes it, or if you leave.</string>
+
+    <!-- The state of a task's sharing, as its owner reads it -->
+    <string name="ZG_cloudui_assignment_pending">Invitation pending</string>
+    <string name="ZG_cloudui_assignment_accepted">Shared — accepted</string>
+    <string name="ZG_cloudui_assignment_declined">Invitation declined</string>
+    <string name="ZG_cloudui_assignment_revoked">Invitation cancelled</string>
+    <string name="ZG_cloudui_assignment_left">Recipient left the task</string>
+    <string name="ZG_cloudui_assignment_expired">Invitation expired</string>
+
+    <!-- Cloud task editor -->
+    <string name="ZG_cloudui_editor_title">Cloud Task</string>
+    <string name="ZG_cloudui_editor_notes">Notes</string>
+    <string name="ZG_cloudui_priority_none">None</string>
+    <string name="ZG_cloudui_priority_low">Low</string>
+    <string name="ZG_cloudui_priority_medium">Medium</string>
+    <string name="ZG_cloudui_priority_high">High</string>
+    <string name="ZG_cloudui_priority_urgent">Urgent</string>
+    <string name="ZG_cloudui_editor_assigneeFooter">Only you see the assignee. It does not share the task, invite or notify anyone.</string>
+    <string name="ZG_cloudui_editor_complete">Mark as Done</string>
+    <string name="ZG_cloudui_editor_reopen">Mark as Not Done</string>
+    <string name="ZG_cloudui_editor_recipient">Recipient</string>
+    <string name="ZG_cloudui_editor_sharingHeader">Sharing</string>
+    <string name="ZG_cloudui_editor_share">Share with a Contact…</string>
+    <string name="ZG_cloudui_editor_shareAgain">Share with Someone Else…</string>
+    <string name="ZG_cloudui_editor_revoke">Cancel Invitation</string>
+    <string name="ZG_cloudui_editor_removeAccess">Stop Sharing</string>
+    <string name="ZG_cloudui_editor_sharingFooter">Sharing sends an invitation through the Zenlygram Tasks service, not a Telegram message. Until they accept, the recipient sees only the title, the deadline and your Telegram ID; after that, the task without your list or assignee. They see it the next time their app syncs.</string>
+    <string name="ZG_cloudui_editor_completedShareFooter">A completed task can\'t be shared. Reopen it first.</string>
+    <string name="ZG_cloudui_editor_deleteTask">Delete Task</string>
+    <string name="ZG_cloudui_editor_leave">Leave Task</string>
+    <string name="ZG_cloudui_leave_title">Leave this task?</string>
+    <string name="ZG_cloudui_leave_text">It disappears from your Cloud tasks. The owner can see that you left. To get it back, the owner has to invite you again.</string>
+    <string name="ZG_cloudui_share_pickerTitle">Share with</string>
+    <string name="ZG_cloudui_share_title">Share this task?</string>
+    <!-- %1$s = the recipient, %2$s = the task title -->
+    <string name="ZG_cloudui_share_text">%1$s will get an invitation to “%2$s” in Zenlygram Tasks. Until they accept, they see the title, the deadline and your Telegram ID; after accepting, also the notes and whether it\'s done. Your list and assignee stay private. The Zenlygram server processes the invitation; it expires in 7 days if not answered. No Telegram message is sent.</string>
+    <string name="ZG_cloudui_share_replaces">This replaces the current invitation. The previous invitation or shared access ends when the server applies this change.</string>
+    <string name="ZG_cloudui_share_confirm">Send Invitation</string>
+    <string name="ZG_cloudui_share_unsentEdits">Save or discard your edits before sharing.</string>
+    <string name="ZG_cloudui_share_waitForSync">This task has changes that are not sent yet. Sharing becomes available once they are.</string>
+    <string name="ZG_cloudui_revoke_title">Cancel this invitation?</string>
+    <string name="ZG_cloudui_revoke_text">The recipient will no longer see this task.</string>
+    <string name="ZG_cloudui_revoke_keep">Keep Invitation</string>
+    <string name="ZG_cloudui_stopSharing_title">Stop sharing this task?</string>
+    <string name="ZG_cloudui_stopSharing_text">The recipient loses access when the server applies this change. To share again, send a new invitation.</string>
+    <string name="ZG_cloudui_stopSharing_keep">Keep Sharing</string>
+    <string name="ZG_cloudui_conflict_title">Changed elsewhere</string>
+    <string name="ZG_cloudui_conflict_text">The server has a newer version. Keep it, or apply your change on top of it as a new change.</string>
+    <string name="ZG_cloudui_editor_goneWithChanges_title">This task is no longer available</string>
+    <string name="ZG_cloudui_editor_goneWithChanges_text">It was deleted or changed elsewhere. You can save your edits as a new task or discard them.</string>
+    <string name="ZG_cloudui_editor_goneDraftFooter">This task is no longer available to you. Your edits are kept until you save them as a new task or discard them.</string>
+
+    <!-- Unsent Changes -->
+    <string name="ZG_cloudui_issues_title">Unsent Changes</string>
+    <string name="ZG_cloudui_issues_empty">All changes are sent.</string>
+    <string name="ZG_cloudui_issues_footer">Nothing here is merged or re-sent without your choice. Discarding removes the change from this device only.</string>
+    <string name="ZG_cloudui_issues_retry">Try Again</string>
+    <!-- Android: the copies of device tasks still waiting, as one line -->
+    <string name="ZG_cloudui_issues_copiesWaiting">Waiting to be sent: %1$d</string>
+    <!-- Android: the list shows the first changes only -->
+    <string name="ZG_cloudui_issues_more">More changes not shown here: %1$d</string>
+    <string name="ZG_cloudui_op_listCreate">New list</string>
+    <string name="ZG_cloudui_op_listUpdate">List change</string>
+    <string name="ZG_cloudui_op_listDelete">Delete list</string>
+    <string name="ZG_cloudui_op_taskCreate">New task</string>
+    <string name="ZG_cloudui_op_taskUpdate">Task edit</string>
+    <string name="ZG_cloudui_op_taskComplete">Done / not done</string>
+    <string name="ZG_cloudui_op_taskDelete">Delete task</string>
+    <string name="ZG_cloudui_op_inviteRequest">Assignee</string>
+    <string name="ZG_cloudui_op_inviteRespond">Invitation answer</string>
+    <string name="ZG_cloudui_op_inviteRevoke">Remove assignee</string>
+    <string name="ZG_cloudui_op_senderBlock">Block sender</string>
+    <string name="ZG_cloudui_op_senderUnblock">Unblock sender</string>
+    <string name="ZG_cloudui_state_waiting">Waiting to be sent</string>
+    <string name="ZG_cloudui_state_waitingForEarlier">Waits for an earlier change</string>
+    <string name="ZG_cloudui_state_paused">Paused — account not linked</string>
+    <string name="ZG_cloudui_state_sessionProblem">Waiting — link your account to send</string>
+    <string name="ZG_cloudui_state_offline">Waiting for connection</string>
+    <string name="ZG_cloudui_state_serviceUnavailable">Waiting — the Tasks service is unavailable</string>
+    <string name="ZG_cloudui_state_stalled">Couldn\'t be sent after several tries</string>
+    <string name="ZG_cloudui_state_creationNotPermitted">Your current plan doesn\'t allow creating this</string>
+    <string name="ZG_cloudui_state_invalid">The server didn\'t accept this change</string>
+    <string name="ZG_cloudui_state_integrity">Kept for review: the app found an inconsistency</string>
+    <string name="ZG_cloudui_state_conflictRevision">Changed elsewhere since you edited it</string>
+    <string name="ZG_cloudui_state_conflictInvitationChanged">The invitation changed</string>
+    <string name="ZG_cloudui_state_conflictInvitationExpired">The invitation has expired</string>
+    <string name="ZG_cloudui_state_conflictCompletedTask">The task is already completed</string>
+    <!-- Android: a later change is kept, and asked about, after the change it was made on top of was discarded -->
+    <string name="ZG_cloudui_state_dependencyDropped">Not sent: an earlier change it was based on was discarded</string>
+    <string name="ZG_cloudui_state_notFound">It no longer exists on the server</string>
+    <string name="ZG_cloudui_state_accountChanged">Not sent: this Telegram account is now linked to a different Zenlygram account</string>
+    <string name="ZG_cloudui_action_retry">Send Again</string>
+    <string name="ZG_cloudui_action_discard">Discard Change</string>
+    <string name="ZG_cloudui_action_keepServer">Keep Current Version</string>
+    <string name="ZG_cloudui_action_applyMine">Apply My Change Again</string>
+    <string name="ZG_cloudui_action_saveAsNew">Save as New Task</string>
+    <string name="ZG_cloudui_action_repairTask">Edit Task and Send Again…</string>
+    <string name="ZG_cloudui_action_repairList">Rename List and Send Again…</string>
+    <string name="ZG_cloudui_discard_title">Discard this change?</string>
+    <string name="ZG_cloudui_discard_text">It was not sent and will be removed from this device.</string>
+    <string name="ZG_cloudui_accountChanged_copyTitle">Copy to the current account?</string>
+    <string name="ZG_cloudui_accountChanged_copyText">This change was made while this Telegram account was linked to a different Zenlygram account, so it was not sent. Saving it as a new task creates it in the Zenlygram account linked now, under your current plan.</string>
+
+    <!-- Fixing a change the server refused -->
+    <string name="ZG_cloudui_repair_title">Fix Unsent Change</string>
+    <!-- Android: the editor saves with the check mark, not with a Done button -->
+    <string name="ZG_cloudui_repair_explanation">The server didn\'t accept this task as it is — the title, notes or assignee may not fit its rules. Change what needs fixing and save it as a new change. Nothing is sent before you save.</string>
+    <string name="ZG_cloudui_repair_unchanged">Nothing was changed. The same content would be refused again — edit it first, or discard the change.</string>
+    <string name="ZG_cloudui_repair_laterChanges">This task has newer unsent changes. Discard them in Unsent Changes first, then fix this one.</string>
+    <!-- Android: the text of the name alert (iOS shows the task title rule there) -->
+    <string name="ZG_cloudui_repair_listText">The server didn\'t accept this list name. Change it to send the list again.</string>
+</resources>

@@ -1,0 +1,4 @@
+<!-- ZENLYGRAM: same account type as res/xml/auth.xml (resValue zg_account_type); upstream used "org.telegram.messenger" -->
+<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentAuthority="com.android.contacts"
+    android:accountType="@string/zg_account_type"/>

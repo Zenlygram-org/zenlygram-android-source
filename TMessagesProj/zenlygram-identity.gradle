@@ -1,0 +1,112 @@
+// ZENLYGRAM: build identity of the :TMessagesProj library. Applied from TMessagesProj/build.gradle (after its
+// android {} block), kept in its own file so upstream merges of build.gradle stay easy.
+//
+// 1. Telegram API credentials
+//    BuildVars.APP_ID / APP_HASH read BuildConfig.ZG_API_ID / ZG_API_HASH. Their values come from the Gradle
+//    properties ZG_API_ID and ZG_API_HASH: your own api_id / api_hash from https://my.telegram.org
+//    (API development tools).
+//      - CI:    environment variables ORG_GRADLE_PROJECT_ZG_API_ID and ORG_GRADLE_PROJECT_ZG_API_HASH
+//               (.github/workflows/zenlygram-android.yml fills them from the API_ID / API_HASH secrets)
+//      - local: ZG_API_ID=... and ZG_API_HASH=... in ~/.gradle/gradle.properties (outside this repository),
+//               or -PZG_API_ID=... -PZG_API_HASH=... on the command line
+//    Never commit real values. When they are missing (or are the official Telegram pair):
+//      - debug builds fall back to the public upstream values, and a warning is printed;
+//      - every other build type (release, standalone, HA_*) fails before any task runs.
+//
+// 2. App identity strings used by res/xml/auth.xml, sync_contacts.xml and auth_menu.xml
+//    @string/zg_account_type   the Android account type (ZgIdentity.getAccountType() reads the same resource)
+//    @string/zg_application_id the package that the system account settings open
+//    Both are APP_PACKAGE plus the applicationIdSuffix that the app modules use for the same build type, so they
+//    never clash with the official Telegram app.
+
+def zgUpstreamApiId = "4"
+def zgUpstreamApiHash = "014b35b6184100b085b0d0572f9b5103"
+
+def zgProperty = { String name ->
+    def value = project.findProperty(name)
+    return value == null ? "" : value.toString().trim()
+}
+
+def zgApiId = zgProperty("ZG_API_ID")
+def zgApiHash = zgProperty("ZG_API_HASH")
+
+// An empty value counts as missing (GitHub Actions passes "" for a secret that is not set).
+if (!zgApiId.isEmpty() || !zgApiHash.isEmpty()) {
+    if (!(zgApiId ==~ /[1-9][0-9]{0,9}/) || zgApiId.toLong() > Integer.MAX_VALUE) {
+        throw new GradleException("ZENLYGRAM: ZG_API_ID must be the numeric api_id from https://my.telegram.org (got '" + zgApiId + "').")
+    }
+    if (!(zgApiHash ==~ /[0-9a-fA-F]{32}/)) {
+        throw new GradleException("ZENLYGRAM: ZG_API_HASH must be the 32-character hexadecimal api_hash from https://my.telegram.org.")
+    }
+}
+
+def zgOwnApiCredentials = !zgApiId.isEmpty() && zgApiId != zgUpstreamApiId && !zgApiHash.equalsIgnoreCase(zgUpstreamApiHash)
+
+def zgMissingCredentialsMessage = { String what ->
+    return "ZENLYGRAM: " + what + " needs your own Telegram API credentials, but the Gradle properties " +
+            "ZG_API_ID / ZG_API_HASH are not set (or are the official Telegram values).\n" +
+            "Create an app at https://my.telegram.org (API development tools), then set them:\n" +
+            "  - locally: ZG_API_ID=... and ZG_API_HASH=... in ~/.gradle/gradle.properties (outside this repository),\n" +
+            "    or -PZG_API_ID=... -PZG_API_HASH=... on the command line;\n" +
+            "  - in CI: environment variables ORG_GRADLE_PROJECT_ZG_API_ID / ORG_GRADLE_PROJECT_ZG_API_HASH\n" +
+            "    (repository secrets API_ID / API_HASH in .github/workflows/zenlygram-android.yml).\n" +
+            "Never commit them. Debug builds work without them."
+}
+
+android {
+    buildFeatures {
+        // The identity strings below are resValues (on by default in AGP 8, off by default in AGP 9).
+        resValues = true
+    }
+    defaultConfig {
+        buildConfigField "int", "ZG_API_ID", zgOwnApiCredentials ? zgApiId : "0"
+        buildConfigField "String", "ZG_API_HASH", '"' + (zgOwnApiCredentials ? zgApiHash : "") + '"'
+    }
+}
+
+if (!zgOwnApiCredentials) {
+    // A build type's field wins over the defaultConfig field of the same name.
+    android.buildTypes.getByName("debug") {
+        buildConfigField "int", "ZG_API_ID", zgUpstreamApiId
+        buildConfigField "String", "ZG_API_HASH", '"' + zgUpstreamApiHash + '"'
+    }
+
+    logger.warn("ZENLYGRAM WARNING: ZG_API_ID / ZG_API_HASH are not set (or are the official Telegram values). " +
+            "Debug builds use the public upstream Telegram credentials; release, standalone and HA_* builds are blocked. " +
+            "See TMessagesProj/zenlygram-identity.gradle.")
+
+    // Fail fast on requested tasks that name a non-debug build type ...
+    def zgBlockedTask = gradle.startParameter.taskNames.find { it ==~ /(?i).*(release|standalone|ha_private|ha_public|ha_hardcore).*/ }
+    if (zgBlockedTask != null) {
+        throw new GradleException(zgMissingCredentialsMessage("Task '" + zgBlockedTask + "'"))
+    }
+
+    // ... and catch the rest (abbreviated names such as aAR, or aggregates such as assemble / build) once the
+    // task graph is known, still before any task runs: every non-debug build of this library generates its
+    // BuildConfig, which is where the credentials go.
+    gradle.taskGraph.whenReady { graph ->
+        def zgBuildTypes = android.buildTypes.names.findAll { it != "debug" }
+        def zgTask = graph.allTasks.find { task ->
+            task.project == project && zgBuildTypes.any { task.name == "generate" + it.capitalize() + "BuildConfig" }
+        }
+        if (zgTask != null) {
+            throw new GradleException(zgMissingCredentialsMessage("Task '" + zgTask.path + "' (a non-debug build)"))
+        }
+    }
+}
+
+def zgAppPackage = zgProperty("APP_PACKAGE")
+if (zgAppPackage.isEmpty()) {
+    throw new GradleException("ZENLYGRAM: APP_PACKAGE is not set (gradle.properties).")
+}
+
+// applicationIdSuffix of the same build type in the app modules: TMessagesProj_App (debug .beta, standalone .web,
+// release none) and TMessagesProj_AppHockeyApp (HA_* .beta; settings.gradle does not include that module now).
+// Keep this map in sync with them.
+def zgAppIdSuffixes = [debug: ".beta", standalone: ".web", HA_private: ".beta", HA_public: ".beta", HA_hardcore: ".beta"]
+
+android.buildTypes.all { buildType ->
+    def zgApplicationId = zgAppPackage + (zgAppIdSuffixes[buildType.name] ?: "")
+    buildType.resValue "string", "zg_account_type", zgApplicationId
+    buildType.resValue "string", "zg_application_id", zgApplicationId
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM WP-C: strings of the Zenlygram cloud client (org.telegram.zenlygram.cloud / appupdate / customer).
+     Taken from iOS SGLocalizable.strings (release/appstore) with App Store wording changed to Google Play; ZGC_ names never
+     collide with the generated ZG_ names. Keep values/, values-ru/ and values-uz/ in step
+     (zenlygram-tests/customer/strings_parity.py checks it).
+     ZGC_Settings_Data_Consent, ZGC_DataConsent_Title, ZGC_DataConsent_MyData, ZGC_MyData_Title, ZGC_DataConsent_Delete and
+     ZGC_Consent_Declined_Delete are quoted by the hashed consent texts (assets/zenlygram/consent/v1): they read exactly as
+     the texts name them, and changing their words needs a new text version. -->
+<resources>
+    <string name="ZGC_AppUpdate_Required_Title">Update required</string>
+    <string name="ZGC_AppUpdate_Required_Text">This version of Zenlygram is no longer supported. Update the app to continue.</string>
+    <string name="ZGC_AppUpdate_Required_Help">Help</string>
+    <string name="ZGC_AppUpdate_Available_Title">Update available</string>
+    <string name="ZGC_AppUpdate_Available_Update">Update</string>
+    <string name="ZGC_AppUpdate_Available_Later">Later</string>
+    <string name="ZGC_Consent_Wall_Title">Data &amp; consent</string>
+    <string name="ZGC_Consent_Wall_Account">Account: %1$s</string>
+    <string name="ZGC_Consent_Wall_Summary">To use Zenlygram with this account, we need your consent to keep its Telegram ID, phone number, name, usage statistics, subscription status and cloud tasks on our server in Tashkent.</string>
+    <string name="ZGC_Consent_Wall_Language">Text language</string>
+    <string name="ZGC_Consent_Wall_Agree">I agree</string>
+    <string name="ZGC_Consent_Wall_Decline">I don\'t agree</string>
+    <string name="ZGC_Consent_Wall_AgeHint">Confirm your age to continue.</string>
+    <string name="ZGC_Consent_Wall_ModeNote_Optional">Consent is optional. If you don\'t agree, no profile, statistics or cloud tasks are collected for this account and it is not linked automatically; the app keeps working on this device as before. You can agree later in Settings → Zenlygram → Data &amp; consent.</string>
+    <string name="ZGC_Consent_Wall_TextUnavailable">This version of Zenlygram can\'t show the consent text. Update the app.</string>
+    <string name="ZGC_Consent_Wall_SaveFailed">Couldn\'t save your choice. Try again.</string>
+    <string name="ZGC_Consent_Declined_Back">Back</string>
+    <string name="ZGC_DataConsent_Title">Data &amp; consent</string>
+    <string name="ZGC_DataConsent_Status_Granted">Consent given on %1$s (text version %2$s).</string>
+    <string name="ZGC_DataConsent_Status_Pending">Consent given; not sent to the server yet.</string>
+    <string name="ZGC_DataConsent_Status_None">No consent given. No profile, statistics or cloud tasks are collected for this account.</string>
+    <string name="ZGC_DataConsent_Status_Declined">You declined. No profile, statistics or cloud tasks are collected for this account.</string>
+    <string name="ZGC_DataConsent_Status_Withdrawn">You withdrew consent on %1$s. Your data on our server is deleted no later than the next working day.</string>
+    <string name="ZGC_DataConsent_Status_WithdrawPending">You withdrew consent on %1$s. The withdrawal hasn\'t reached our server yet; the app keeps trying.</string>
+    <string name="ZGC_DataConsent_ReadText">Consent text</string>
+    <string name="ZGC_DataConsent_Grant">Give consent</string>
+    <string name="ZGC_DataConsent_MyData">My data</string>
+    <string name="ZGC_DataConsent_Withdraw">Withdraw consent</string>
+    <string name="ZGC_DataConsent_Delete">Delete my Zenlygram account and data</string>
+    <string name="ZGC_DataConsent_Operator">Data operator: %1$s · %2$s</string>
+    <string name="ZGC_DataConsent_Storage">Data is stored on a server in Tashkent, Uzbekistan.</string>
+    <string name="ZGC_DataConsent_Footer">This section applies only to this Telegram account.</string>
+    <string name="ZGC_DataConsent_Withdraw_Confirm_Title">Withdraw consent?</string>
+    <string name="ZGC_DataConsent_Withdraw_Confirm_Action">Withdraw</string>
+    <string name="ZGC_DataConsent_Withdraw_Optional">The app keeps working on this device and sends no more profile, statistics or cloud tasks for this account.</string>
+    <string name="ZGC_DataConsent_Withdraw_PendingUpload">This device isn\'t linked to our server, so your withdrawal can\'t be sent from here; it is sent if you link this device again. If you use this Telegram account in Zenlygram on another device, withdraw there too, or delete your data at zenlygram.org/account/delete, or write to the contact shown below.</string>
+    <string name="ZGC_AccountDelete_Title">Delete Zenlygram account</string>
+    <string name="ZGC_AccountDelete_Deleted">This deletes your Zenlygram account and the data we hold for it: your profile, devices, statistics, cloud tasks, invitations and the account link. All devices linked to this account are signed out of Zenlygram.</string>
+    <string name="ZGC_AccountDelete_Kept">Payment records are kept only as long as the law requires, with the details that identify you removed. A record that you gave and withdrew consent (account number, text versions and dates) is kept for 3 years.</string>
+    <string name="ZGC_AccountDelete_Telegram">Your Telegram account is not deleted.</string>
+    <string name="ZGC_AccountDelete_Timing">Deletion starts at once and is completed no later than the next working day. Copies in encrypted backups and server logs disappear within 14 days.</string>
+    <string name="ZGC_AccountDelete_NotLinked">This account isn\'t linked to the Zenlygram server from this device. To delete a Zenlygram account, open zenlygram.org/account/delete and sign in with Telegram.</string>
+    <string name="ZGC_AccountDelete_OpenWeb">Open page</string>
+    <string name="ZGC_MyData_Title">My data</string>
+    <string name="ZGC_MyData_NotLinked">This account isn\'t linked to the Zenlygram server from this device, so there is no server data to show.</string>
+    <string name="ZGC_Settings_Data_Header">Data &amp; privacy</string>
+    <string name="ZGC_Settings_Data_Consent">Data &amp; consent</string>
+    <string name="ZGC_Settings_Data_State_Granted">Agreed</string>
+    <string name="ZGC_Settings_Data_State_None">Not agreed</string>
+    <string name="ZGC_Settings_Data_State_Declined">Declined</string>
+    <string name="ZGC_Settings_Data_State_Withdrawn">Withdrawn</string>
+    <string name="ZGC_Settings_Data_PrivacyPolicy">Privacy Policy</string>
+    <string name="ZGC_AppUpdate_Required_Button">Open Google Play</string>
+    <string name="ZGC_AppUpdate_Required_DeviceNote">If the update isn\'t offered for this device, it may need a newer Android version; Google Play may also show it with a delay.</string>
+    <string name="ZGC_AppUpdate_Available_Text">Zenlygram %1$s is available on Google Play.</string>
+    <string name="ZGC_DataConsent_OperatorMissing">This build cannot show the consent text yet: the data operator details are not filled in. Nothing is collected or sent.</string>
+    <string name="ZGC_Pro_Policy_Verified">Signed server policy: %1$s, revision %2$s, checked %3$s</string>
+    <string name="ZGC_Pro_Policy_Free">free</string>
+    <string name="ZGC_Pro_Policy_Paid">paid</string>
+    <string name="ZGC_Pro_Policy_None">No signed server policy yet: Pro is free on this device.</string>
+    <!-- Required-mode consent wall (iOS SGConsentWallView / decline page, SGLocalizable.strings release/appstore) -->
+    <string name="ZGC_Consent_Wall_ModeNote_Required">Without this consent, Zenlygram can\'t be used with this Telegram account. Your other accounts are not affected.</string>
+    <string name="ZGC_Consent_Wall_Notice_Reconsent">The consent text has changed. Please read it and agree again.</string>
+    <string name="ZGC_Consent_Wall_Notice_Withdrawn">You withdrew your consent on %1$s.</string>
+    <string name="ZGC_Consent_Wall_Notice_WithdrawnRemote">Consent for this account was withdrawn on another device on %1$s.</string>
+    <string name="ZGC_Consent_Wall_Notice_LinkEnded">This account\'s link to our server has ended (for example, its Zenlygram account was deleted). Zenlygram will not link it again by itself until you agree again.</string>
+    <string name="ZGC_Consent_Declined_Title">Consent needed</string>
+    <string name="ZGC_Consent_Declined_Text">Zenlygram keeps your subscription, cloud tasks and account data on its own server, and it needs your consent to do that. Without consent, Zenlygram can\'t be used with this Telegram account.\n\nYou can go back and read the consent again, delete your Zenlygram account and the data on our server, or log out of this account on this device. Logging out does not delete your Telegram account: it keeps working in other Telegram apps. This account\'s Zenlygram data that is stored only on this device (for example local tasks) may be removed when you log out.</string>
+    <string name="ZGC_Consent_Declined_Delete">Delete my Zenlygram account and data</string>
+    <string name="ZGC_Consent_Declined_Logout">Log out of this account</string>
+    <string name="ZGC_Consent_Declined_SwitchAccount">Use another account</string>
+    <string name="ZGC_Consent_Declined_PrivacyPolicy">Privacy Policy</string>
+    <string name="ZGC_Consent_Declined_Logout_LastAccount">This is the only account signed in on this device. Logging out also deletes this device\'s Zenlygram data: local tasks, the cloud task copy, call recordings, and the Secret Vault and Chat Lock settings.</string>
+    <string name="ZGC_DataConsent_Withdraw_Required">After this, you can use Zenlygram with this account only after you agree again.</string>
+    <string name="ZGC_AppUpdate_Required_Button_Direct">Open zenlygram.org</string>
+    <string name="ZGC_AppUpdate_Required_DeviceNote_Direct">If the new version doesn\'t install on this device, it may need a newer Android version.</string>
+    <string name="ZGC_AppUpdate_Available_Text_Direct">Zenlygram %1$s is available on zenlygram.org.</string>
+</resources>

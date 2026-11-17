@@ -1,0 +1,23 @@
+include ':TMessagesProj'
+include ':TMessagesProj_App'
+// ZENLYGRAM: Zenlygram builds only TMessagesProj_App. The other upstream app modules still carry Telegram's
+// identity (google-services.json / agconnect-services.json for org.telegram.messenger*, a library account type
+// that does not fit their applicationId), so any build of them fails or gets a wrong account type; they would
+// also break aggregate tasks such as ./gradlew assembleDebug. Include one again only after giving it Zenlygram's
+// identity (see TMessagesProj/zenlygram-identity.gradle and TMessagesProj_App).
+//include ':TMessagesProj_AppHuawei'
+//include ':TMessagesProj_AppHockeyApp'
+//include ':TMessagesProj_AppStandalone'
+//include ':TMessagesProj_AppTests'
+include ':jlatexmath'
+project(':jlatexmath').projectDir = file('TMessagesProj/lib/jlatexmath/jlatexmath')
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+gradle.ext.androidxMediaModulePrefix = 'TMessagesProj_Modules:media3:media-'
+apply from: file("TMessagesProj_Modules/media/core_settings.gradle")

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ZG_Entitlement_Message_PaidModeNotice">Zenlygram Pro теперь доступен по подписке. Хранилище, заблокированные чаты и задачи остаются доступными, а уже сохранённые удалённые и изменённые сообщения можно по-прежнему читать. Для создания новых нужна подписка Zenlygram Pro.</string>
+    <string name="ZG_Pro_Direct_Notice">Эта версия Zenlygram установлена не из Google Play и сама ничего не продаёт: оплата проходит на zenlygram.org. Pro принадлежит аккаунту Telegram, поэтому работает здесь, когда аккаунт привязан.</string>
+    <string name="ZG_Pro_Refresh_Detail">Проверяет Pro этого аккаунта на сервере — например, после покупки на другом устройстве.</string>
+    <string name="ZG_Pro_Play_AlreadyActive">У этого аккаунта уже есть Zenlygram Pro, поэтому планы здесь не предлагаются. Подписку в Google Play можно будет оформить, когда он закончится.</string>
+    <string name="ZG_Pro_OtherAccountCovers">У другого аккаунта на этом устройстве есть Zenlygram Pro, поэтому блокировка чатов, задачи и история изменений работают и здесь. Для секретного хранилища и задач, которые синхронизируются с сервером, нужен собственный Pro этого аккаунта.</string>
+    <string name="ZG_Pro_Grace_SyncedTasks">Одно исключение — задачи, которые синхронизируются через сервер Zenlygram. Сервер принимает новые только от аккаунта, у которого уже есть Zenlygram Pro.</string>
+    <string name="ZG_Pro_Web_Header">На сайте</string>
+    <string name="ZG_Pro_Web_Subscribe">Оформить на zenlygram.org</string>
+    <string name="ZG_Pro_Web_Subscribe_Detail">Оплата банковской картой на сайте. Войдите там с этим аккаунтом Telegram и вернитесь: Pro включится здесь сам.</string>
+    <string name="ZG_Pro_Web_Manage">Подписка на zenlygram.org</string>
+    <string name="ZG_Pro_Web_Manage_Detail">План, продление и история платежей этого аккаунта.</string>
+</resources>

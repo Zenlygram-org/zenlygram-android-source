@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Uzbek Android-only strings of the Zenlygram settings screens. See values/strings_zenlygram_android.xml. -->
+<resources>
+    <string name="ZG_SettingsProEntry">Zenlygram Pro</string>
+    <string name="ZG_NewBadge">YANGI</string>
+
+    <string name="ZG_Header_About">Zenlygram haqida</string>
+    <string name="ZG_About_BasedOn">Android uchun Telegram %1$s asosida</string>
+    <string name="ZG_About_Website">Veb-sayt</string>
+    <string name="ZG_About_SourceCode">Manba kodi</string>
+    <string name="ZG_About_SourceCode_Soon">Zenlygram — erkin dasturiy taʼminot (GPL). Manba kodi havolasi shu yerda paydo boʻladi.</string>
+    <string name="ZG_About_NotAffiliated">U Telegram FZ-LLC bilan bogʻliq emas va Telegram tarmogʻiga rasmiy API orqali ulanadi.</string>
+
+    <string name="ZG_Header_EditHistory">Tahrir tarixi</string>
+
+    <string name="ZG_Pro_Features_Header">Pro imkoniyatlari</string>
+
+    <string name="ZG_Header_Developer">Dasturchilar uchun</string>
+    <string name="ZG_Developer_PreviewAllRows">Barcha qatorlarni koʻrsatish</string>
+    <string name="ZG_Developer_PreviewAllRows_Desc">Androidga hali koʻchirilmagan funksiyalar qatorlarini kulrang holda koʻrsatadi, shunda joylashuvni tekshirish mumkin. Faqat debug yigʻmalarida.</string>
+    <string name="ZG_Developer_PreviewAllRows_Banner">Kulrang qatorlar — bu yigʻmada hali yoʻq funksiyalar, ulardan foydalanib boʻlmaydi. Ularni yashirish uchun pastdagi «%2$s» boʻlimida «%1$s»ni oʻchiring.</string>
+    <!-- ZENLYGRAM Tasks: BEGIN (org.telegram.zenlygram.tasks; iOS SGTasksL10n) -->
+    <string name="ZG_tasks_tab">Vazifalar</string>
+    <string name="ZG_tasks_lists_title">Roʻyxatlar</string>
+    <string name="ZG_tasks_filter_all">Hammasi</string>
+    <string name="ZG_tasks_filter_newList">Yangi roʻyxat</string>
+    <string name="ZG_tasks_inbox_title">Kiruvchi</string>
+    <string name="ZG_tasks_a11y_openCountNone">Ochiq vazifalar yoʻq</string>
+    <string name="ZG_tasks_a11y_openCount_one">%1$d ta ochiq vazifa</string>
+    <string name="ZG_tasks_a11y_openCount_other">%1$d ta ochiq vazifa</string>
+    <string name="ZG_tasks_quickAdd_placeholder">Vazifa qoʻshing</string>
+    <string name="ZG_tasks_quickAdd_placeholderInList">“%1$s” roʻyxatiga qoʻshing</string>
+    <string name="ZG_tasks_quickAdd_submit">Vazifani qoʻshish</string>
+    <string name="ZG_tasks_completed_header">Bajarilgan (%1$d)</string>
+    <string name="ZG_tasks_a11y_expanded">Ochiq</string>
+    <string name="ZG_tasks_a11y_collapsed">Yopiq</string>
+    <string name="ZG_tasks_a11y_completedHint_show">Bajarilgan vazifalarni koʻrsatadi</string>
+    <string name="ZG_tasks_a11y_completedHint_hide">Bajarilgan vazifalarni yashiradi</string>
+    <string name="ZG_tasks_empty_noTasks_title">Hozircha vazifalar yoʻq</string>
+    <string name="ZG_tasks_empty_noTasks_text">Qoʻshish uchun vazifani pastdagi maydonga yozing.</string>
+    <string name="ZG_tasks_empty_listEmpty_text">Bu roʻyxatda vazifalar yoʻq. Pastdagi maydonda qoʻshing.</string>
+    <string name="ZG_tasks_empty_allDone_title">Hammasi bajarildi</string>
+    <string name="ZG_tasks_empty_allDone_text">Bu yerda bajariladigan ish qolmadi.</string>
+    <string name="ZG_tasks_a11y_markDone">Bajarildi deb belgilash</string>
+    <string name="ZG_tasks_a11y_markNotDone">Bajarilmadi deb belgilash</string>
+    <string name="ZG_tasks_a11y_stateDone">Bajarilgan</string>
+    <string name="ZG_tasks_a11y_stateOpen">Bajarilmagan</string>
+    <string name="ZG_tasks_a11y_editHint">Vazifani tahrirlaydi</string>
+    <string name="ZG_tasks_action_edit">Tahrirlash</string>
+    <string name="ZG_tasks_taskDeleted">Vazifa oʻchirildi</string>
+    <string name="ZG_tasks_error_generic">Oʻzgarishni saqlab boʻlmadi. Qaytadan urinib koʻring.</string>
+    <string name="ZG_tasks_error_restore">Vazifani tiklab boʻlmadi. Uning roʻyxati oʻchirilgan boʻlishi mumkin.</string>
+    <string name="ZG_tasks_error_titleTooLong">Nom juda uzun. Koʻpi bilan %1$d ta belgi kiriting.</string>
+    <string name="ZG_tasks_assignee_title">Masʼul</string>
+    <string name="ZG_tasks_deadline_title">Muddat</string>
+    <string name="ZG_tasks_metadata_none">Yoʻq</string>
+    <string name="ZG_tasks_assignee_remove">Masʼulni olib tashlash</string>
+    <string name="ZG_tasks_deadline_remove">Muddatni olib tashlash</string>
+    <string name="ZG_tasks_assignee_pickerTitle">Masʼulni tanlang</string>
+    <string name="ZG_tasks_editTask_screenTitle">Vazifani tahrirlash</string>
+    <string name="ZG_tasks_editTask_nameHeader">Vazifa nomi</string>
+    <string name="ZG_tasks_newTask_placeholder">Vazifa</string>
+    <string name="ZG_tasks_metadata_localFooter">Masʼul va muddat faqat shu qurilmada saqlanadi. Kontaktga xabar berilmaydi.</string>
+    <string name="ZG_tasks_a11y_assigneeValue">Masʼul: %1$s</string>
+    <string name="ZG_tasks_a11y_deadlineValue">Muddat: %1$s</string>
+    <string name="ZG_tasks_a11y_pickAssigneeHint">Telegram kontaktini tanlaydi. Faqat shu qurilmada saqlanadi; kontaktga xabar berilmaydi.</string>
+    <string name="ZG_tasks_a11y_pickDeadlineHint">Sana va vaqtni tanlaydi</string>
+    <string name="ZG_tasks_assignee_notContact">Telegram kontaktlaringizdan birini tanlang.</string>
+    <string name="ZG_tasks_relative_today">Bugun</string>
+    <string name="ZG_tasks_relative_tomorrow">Ertaga</string>
+    <string name="ZG_tasks_deadline_nextWeek">Bir haftadan soʻng</string>
+    <string name="ZG_tasks_a11y_deadlineShortcutHint">Sanani oʻzgartiradi, vaqt oʻzgarmaydi. Saqlaganingizda qoʻllanadi.</string>
+    <string name="ZG_tasks_deadline_outOfRange">Bu sanani saqlab boʻlmaydi. 1970 va 2038 yillar orasidagi sanani tanlang.</string>
+    <string name="ZG_tasks_discardChanges_title">Saqlamasdan chiqilsinmi?</string>
+    <string name="ZG_tasks_discardChanges_text">Oʻzgarishlaringiz saqlanmagan.</string>
+    <string name="ZG_tasks_discardChanges_keepEditing">Tahrirlashni davom ettirish</string>
+    <string name="ZG_tasks_discardChanges_discard">Saqlamaslik</string>
+    <string name="ZG_tasks_calendar_viewList">Roʻyxat</string>
+    <string name="ZG_tasks_calendar_viewCalendar">Kalendar</string>
+    <string name="ZG_tasks_calendar_label">Muddatlar kalendari</string>
+    <string name="ZG_tasks_calendar_noDeadline">Muddatsiz</string>
+    <string name="ZG_tasks_calendar_todayHint">Bugun muddati tugaydigan vazifalarni koʻrsatadi</string>
+    <string name="ZG_tasks_calendar_noDeadlineHint">Muddati belgilanmagan vazifalarni koʻrsatadi</string>
+    <string name="ZG_tasks_calendar_taskCountNone">Vazifalar yoʻq</string>
+    <string name="ZG_tasks_calendar_taskCount_one">%1$d ta vazifa</string>
+    <string name="ZG_tasks_calendar_taskCount_other">%1$d ta vazifa</string>
+    <string name="ZG_tasks_calendar_monthToggleHint">Oyni koʻrsatadi yoki yashiradi</string>
+    <string name="ZG_tasks_calendar_monthShown">Oy koʻrsatilgan</string>
+    <string name="ZG_tasks_calendar_monthHidden">Oy yashirilgan</string>
+    <string name="ZG_tasks_calendar_previousMonth">Oldingi oy</string>
+    <string name="ZG_tasks_calendar_nextMonth">Keyingi oy</string>
+    <string name="ZG_tasks_calendar_chooseMonth">Oy va yilni tanlash</string>
+    <string name="ZG_tasks_calendar_emptyDay_title">Bu kunga vazifalar yoʻq</string>
+    <string name="ZG_tasks_calendar_emptyDay_text">Muddati shu kunga belgilangan vazifalar shu yerda chiqadi. Boshqa kunni tanlang yoki Roʻyxatga oʻting.</string>
+    <string name="ZG_tasks_calendar_emptyUndated_title">Muddatsiz vazifalar yoʻq</string>
+    <string name="ZG_tasks_calendar_emptyUndated_text">Muddatsiz vazifalar shu yerda chiqadi. Muddatli vazifalarni koʻrish uchun kunni tanlang.</string>
+    <string name="ZG_tasks_lists_headerCount_one">Roʻyxatlar — %1$d ta</string>
+    <string name="ZG_tasks_lists_headerCount_other">Roʻyxatlar — %1$d ta</string>
+    <string name="ZG_tasks_lists_headerProgress">%1$s · %2$d/%3$d bajarildi</string>
+    <string name="ZG_tasks_folders_empty">Hozircha roʻyxatlar yoʻq. Yaratish uchun “+” tugmasini bosing.</string>
+    <string name="ZG_tasks_newFolder_prompt">Roʻyxat nomini kiriting</string>
+    <string name="ZG_tasks_newFolder_placeholder">Roʻyxat nomi</string>
+    <string name="ZG_tasks_renameFolder_title">Roʻyxatni qayta nomlash</string>
+    <string name="ZG_tasks_action_rename">Qayta nomlash</string>
+    <string name="ZG_tasks_action_open">Ochish</string>
+    <string name="ZG_tasks_deleteFolder_title">Roʻyxat oʻchirilsinmi?</string>
+    <string name="ZG_tasks_deleteFolder_textEmpty">Roʻyxat oʻchiriladi. Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_deleteFolder_text_one">Roʻyxat va undagi %1$d ta vazifa oʻchiriladi. Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_deleteFolder_text_other">Roʻyxat va undagi %1$d ta vazifa oʻchiriladi. Buni qaytarib boʻlmaydi.</string>
+    <string name="ZG_tasks_addToTasks">Vazifalarga qoʻshish</string>
+    <string name="ZG_tasks_addedToTasks">Vazifalarga qoʻshildi</string>
+    <!-- ZENLYGRAM Tasks: END -->
+    <!-- ZENLYGRAM Edit history / kept deleted messages (org.telegram.zenlygram.history): START -->
+    <string name="ZG_History_ShowDeletedMessages_Desc">Boshqalar oʻchirgan xabarlar nusxasini saqlaydi va 🗑 belgisi bilan belgilaydi. Faqat shu qurilmada saqlanadi va 30 kundan soʻng avtomatik oʻchiriladi.</string>
+    <string name="ZG_History_EditHistory_Desc">Tahrirlangan xabarlarning oldingi versiyalarini faqat shu qurilmada saqlaydi: har bir xabar uchun 20 tagacha, har biri 30 kundan soʻng oʻchiriladi. Ochish: xabarni bosib turing → «Tahrir tarixi». Oʻchirilsa, saqlangan versiyalar oʻchiriladi.</string>
+    <string name="ZG_History_EditHistory_File">Fayl</string>
+    <string name="ZG_History_EditHistory_Media">Media</string>
+    <string name="ZG_History_EditHistory_Empty">Bu xabarning oldingi versiyalari shu qurilmada saqlanmagan.</string>
+    <string name="ZG_History_ShowDeletedMessages_Notice">Telegram xabarni kim oʻchirganini bildirmaydi, shuning uchun shaxsiy chatlar va kichik guruhlarda boshqa qurilmada oʻzingiz uchun oʻchirgan xabarlar ham saqlanib qolishi mumkin. Saqlanmaydi: oʻz xabarlaringiz, «Saqlangan xabarlar», xizmat va oʻzi oʻchadigan xabarlar, sizning xabarlaringiz bilan birga oʻchirilganlar (masalan, chat tozalanganda) va boshqalarning xabarini oʻchira oladigan chatlaringiz. Har bir akkaunt uchun koʻpi bilan 5000 ta xabar saqlanadi. Telegram keshini tozalash saqlangan xabarlarning medialarini ham butunlay oʻchiradi, mahalliy maʼlumotlar bazasini tozalash («Maʼlumotlar va xotira» → «Xotiradan foydalanish») yoki uzoq vaqt oflayn boʻlish esa saqlangan xabarlarning oʻzini ham butunlay oʻchiradi. Saqlangan xabarni olib tashlash uchun uni bosib turing → «Oʻchirish». Oʻchirib qoʻyilsa, saqlangan barcha xabarlar oʻchiriladi.</string>
+    <!-- ZENLYGRAM Edit history / kept deleted messages: END -->
+    <!-- ZENLYGRAM Media & network (org.telegram.zenlygram.media, Calls > Force TCP): START -->
+    <string name="ZG_Calls_ForceTcpToast">Bu qoʻngʻiroq TCP orqali ketmoqda. Sifati pastroq boʻlishi mumkin.</string>
+    <!-- ZENLYGRAM Media & network: END -->
+    <!-- ZENLYGRAM Profile rows (org.telegram.zenlygram.profile.ZgProfileInfo): START. Grey label under the value. -->
+    <string name="ZG_Profile_DataCenter">Maʼlumotlar markazi</string>
+    <string name="ZG_Profile_CreationDate">Yaratilgan sana</string>
+    <!-- ZENLYGRAM Profile rows: END -->
+    <!-- ZENLYGRAM Lock core + Chat Lock (org.telegram.zenlygram.lock, org.telegram.zenlygram.chatlock): BEGIN -->
+    <string name="ZG_Lock_SetPin">PIN oʻrnating</string>
+    <string name="ZG_Lock_SetPinSubtitle">4 raqamli kod</string>
+    <string name="ZG_Lock_ConfirmPin">PINni tasdiqlang</string>
+    <string name="ZG_Lock_ConfirmPinSubtitle">Kodni qayta kiriting</string>
+    <string name="ZG_Lock_SetPassword">Parol oʻrnating</string>
+    <string name="ZG_Lock_SetPasswordSubtitle">Harfli-raqamli parol</string>
+    <string name="ZG_Lock_ConfirmPassword">Parolni tasdiqlang</string>
+    <string name="ZG_Lock_ConfirmPasswordSubtitle">Parolni qayta kiriting</string>
+    <string name="ZG_Lock_EnterPin">PIN kiriting</string>
+    <string name="ZG_Lock_EnterPassword">Parol kiriting</string>
+    <string name="ZG_Lock_PasswordField">Parol</string>
+    <string name="ZG_Lock_CodesMismatch">Kod mos kelmadi</string>
+    <string name="ZG_Lock_PasswordsMismatch">Parol mos kelmadi</string>
+    <string name="ZG_Lock_WrongCode">Notoʻgʻri kod</string>
+    <string name="ZG_Lock_WrongPassword">Notoʻgʻri parol</string>
+    <string name="ZG_Lock_TooManyAttempts">Juda koʻp urinish. %1$d soniyadan keyin urinib koʻring.</string>
+    <string name="ZG_Lock_RecoveryHint">Unutdingizmi? Pastdagi variantdan foydalaning.</string>
+    <string name="ZG_Lock_PasswordEmpty">Parolni kiriting.</string>
+    <string name="ZG_Lock_PasswordNoSpaces">Parolda boʻsh joy boʻlmasligi kerak.</string>
+    <string name="ZG_Lock_CheckFailed">Kodni tekshirib boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZG_Lock_BiometricChanged">Bu qurilmada biometrika oʻzgargan. Pinkodni kiriting.</string>
+    <string name="ZG_Lock_A11y_PinDots">%2$d ta raqamdan %1$d tasi kiritildi</string>
+    <string name="ZG_Lock_A11y_Biometric">Biometrika bilan ochish</string>
+    <string name="ZG_Lock_UsePincode">Pinkoddan foydalanish</string>
+    <string name="ZG_Lock_BiometricOffer_Title">Biometrika bilan ochilsinmi?</string>
+    <string name="ZG_Lock_BiometricOffer_Text">Pinkod yozish oʻrniga bu qurilmada roʻyxatdan oʻtgan barmoq izi yoki yuzdan foydalaning. Pinkod ham ishlashda davom etadi.</string>
+    <string name="ZG_Lock_BiometricOffer_Use">Foydalanish</string>
+    <string name="ZG_Lock_BiometricOffer_Skip">Hozir emas</string>
+    <string name="ZG_Lock_BiometricKeepTitle">Biometrika oʻzgardi</string>
+    <string name="ZG_Lock_BiometricKeepText">Bu pinkod oʻrnatilgandan keyin qurilmaga yuz yoki barmoq izi qoʻshilgan yoki oʻchirilgan. Bu yerda biometrikadan foydalanishda davom etasizmi yoki faqat pinkod bilan ochasizmi?</string>
+    <string name="ZG_Lock_BiometricKeep">Biometrikadan foydalanishda davom etish</string>
+    <string name="ZG_Lock_BiometricPinOnly">Faqat pinkod bilan</string>
+    <string name="ZG_ChatLock_NeedsSetup">Sozlash kerak</string>
+    <string name="ZG_ChatLock_MenuSet">Pinkod qoʻyish</string>
+    <string name="ZG_ChatLock_MenuRemove">Pinkodni olib tashlash</string>
+    <string name="ZG_ChatLock_LockedChatPreview">Qulflangan chat</string>
+    <string name="ZG_ChatLock_LockedChatA11yHint">Ochish uchun PIN kerak</string>
+    <string name="ZG_ChatLock_CoverTitle">Bu chat qulflangan</string>
+    <string name="ZG_ChatLock_Unlock">Ochish</string>
+    <string name="ZG_ChatLock_ChatIsLocked">Chat qulflangan</string>
+    <string name="ZG_ChatLock_EnterMasterPin">Asosiy pinkodni kiriting</string>
+    <string name="ZG_ChatLock_EnterMasterPassword">Asosiy parolni kiriting</string>
+    <string name="ZG_ChatLock_MasterSubtitle">Chatni ochadi va uning pinkodini olib tashlaydi</string>
+    <string name="ZG_ChatLock_DisableSubtitle">Chat qulfini oʻchiradi va barcha chatlarni ochadi</string>
+    <string name="ZG_ChatLock_RemovePinSubtitle">Olib tashlash uchun amaldagi kodni kiriting</string>
+    <string name="ZG_ChatLock_RemovePasswordSubtitle">Olib tashlash uchun amaldagi parolni kiriting</string>
+    <string name="ZG_ChatLock_SetMasterPin">Asosiy PIN oʻrnating</string>
+    <string name="ZG_ChatLock_SetMasterPassword">Asosiy parol oʻrnating</string>
+    <string name="ZG_ChatLock_SetMasterSubtitle">U pinkodi unutilgan har qanday qulflangan chatni ochadi.</string>
+    <string name="ZG_ChatLock_SetChatSubtitle">“%1$s” uchun pinkod</string>
+    <string name="ZG_ChatLock_ForgotPincode">Pinkodni unutdingizmi?</string>
+    <string name="ZG_ChatLock_BiometricReason">Chatni biometrika bilan oching</string>
+    <string name="ZG_ChatLock_DisableBiometricReason">Chat qulfini biometrika bilan oʻchiring</string>
+    <string name="ZG_ChatLock_ResetButton">Chat qulfini reset qilish</string>
+    <string name="ZG_ChatLock_ResetConfirmTitle">Chat qulfi reset qilinsinmi?</string>
+    <string name="ZG_ChatLock_ResetConfirmText">Bu asosiy pinkodni oʻchiradi va barcha chatlarni ochadi. Xabarlaringiz oʻchmaydi.</string>
+    <string name="ZG_ChatLock_ResetAction">Reset qilish</string>
+    <string name="ZG_ChatLock_ResetReason">Chat qulfini reset qilish uchun shaxsingizni tasdiqlang</string>
+    <string name="ZG_ChatLock_ResetUnavailableTitle">Reset qilib boʻlmaydi</string>
+    <string name="ZG_ChatLock_ResetUnavailableText">Chat qulfini reset qilish uchun bu qurilma sizniki ekanini isbotlash kerak: oʻzgarmagan biometrika yoki ekran qulfi. Android sozlamalarida ekran qulfini yoqing va yana urinib koʻring, yoxud Zenlygram sozlamalarida asosiy pinkod bilan Chat qulfini oʻchiring. Xabarlaringiz hech qachon yoʻqolmaydi.</string>
+    <string name="ZG_ChatLock_ResetChangedText">Asosiy pinkod oʻrnatilgandan keyin bu qurilmadagi barmoq izlari yoki yuzlar oʻzgargan, shuning uchun ular endi pinkod oʻrnini bosa olmaydi. Chat qulfini reset qilish uchun ekran qulfi bilan tasdiqlang. Xabarlaringiz oʻchmaydi.</string>
+    <string name="ZG_ChatLock_LostTitle">Chat qulfiga yangi pinkod kerak</string>
+    <string name="ZG_ChatLock_LostText">Qulflangan chatlarning pinkodlarini bu qurilmada endi tekshirib boʻlmaydi. Barchasi uchun bitta yangi pinkod oʻrnatmaguningizcha yoki Chat qulfini oʻchirmaguningizcha chatlar qulflangan qoladi. Ikkalasi ham ekran qulfini talab qiladi. Xabarlaringiz oʻchmaydi.</string>
+    <string name="ZG_ChatLock_SetNewPinForLocked">Qulflangan chatlarga yangi pinkod</string>
+    <string name="ZG_ChatLock_TurnOff">Chat qulfini oʻchirish</string>
+    <string name="ZG_ChatLock_LostReason">Chat qulfini tiklash uchun shaxsingizni tasdiqlang</string>
+    <string name="ZG_ChatLock_TurnOffNoProofText">Bu qurilmada ekran qulfi yoʻq, shuning uchun uning egasini boshqa yoʻl bilan tasdiqlab boʻlmaydi. Chat qulfini oʻchirish barcha chatlarni ochadi. Xabarlaringiz oʻchmaydi.</string>
+    <string name="ZG_ChatLock_Bulletin_Locked">Chat qulflandi</string>
+    <string name="ZG_ChatLock_Bulletin_Unlocked">Pinkod olib tashlandi</string>
+    <string name="ZG_ChatLock_Bulletin_On">Chat qulfi yoqildi. Roʻyxatda chatni tanlang va ⋮ menyusida «Pinkod qoʻyish»ni bosing.</string>
+    <string name="ZG_ChatLock_Bulletin_Off">Chat qulfi oʻchirildi. Barcha chatlar ochildi.</string>
+    <string name="ZG_ChatLock_SaveFailed">Pinkodni saqlab boʻlmadi. Qayta urinib koʻring.</string>
+    <!-- ZENLYGRAM Lock core + Chat Lock: END -->
+    <!-- ZENLYGRAM Secret Vault (org.telegram.zenlygram.vault): BEGIN -->
+    <string name="ZG_Vault_AddToVault">Seyfga qoʻshish</string>
+    <string name="ZG_Vault_RemoveFromVault">Seyfdan olib tashlash</string>
+    <string name="ZG_Vault_RemoveConfirmTitle">Seyfdan olib tashlansinmi?</string>
+    <string name="ZG_Vault_RemoveConfirmText">Bu chat yana chatlar roʻyxatingizda koʻrinadi.</string>
+    <string name="ZG_Vault_RemoveConfirmAction">Olib tashlash</string>
+    <string name="ZG_Vault_ChatHidden">Chat berkitildi</string>
+    <string name="ZG_Vault_ChatsHidden">Berkitilgan chatlar: %1$d</string>
+    <string name="ZG_Vault_ChatUnhidden">Chat yana koʻrinadi</string>
+    <string name="ZG_Vault_HideFailed">Chatni berkitib boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZG_Vault_SaveFailed">Oʻzgarishni saqlab boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZG_Vault_NoKeystore">Bu qurilma hozir seyfning himoyalangan xotirasini saqlay olmaydi, shuning uchun Maxfiy seyfni yoqib boʻlmaydi. Keyinroq urinib koʻring.</string>
+    <string name="ZG_Vault_EmptyTitle">Yashirin chatlar yoʻq</string>
+    <string name="ZG_Vault_EmptyText">Berkitgan chatlaringiz shu yerda koʻrinadi va asosiy roʻyxatda chiqmaydi.</string>
+    <string name="ZG_Vault_RevealHint_LongPress">Seyfni ochish uchun chatlar roʻyxati tepasidagi ilova nomini bosib turing.</string>
+    <string name="ZG_Vault_BiometricReason">Bu siz ekaningizni tasdiqlang</string>
+    <string name="ZG_Vault_ForgotBiometricReason">Yashirin chatlarga kirishni tiklash uchun biometrikadan foydalaning</string>
+    <string name="ZG_Vault_MasterSubtitle">Seyf PIN\'i oʻrniga Maxfiy seyfni ochadi</string>
+    <string name="ZG_Vault_EnableSubtitle">Maxfiy seyfni qayta yoqish uchun seyf PIN\'ini kiriting</string>
+    <string name="ZG_Vault_DisableSubtitle">Maxfiy seyfni oʻchiradi va barcha yashirin chatlarni yana koʻrsatadi</string>
+    <string name="ZG_Vault_ChangePinSubtitle">Amaldagi seyf PIN\'ini kiriting</string>
+    <string name="ZG_Vault_Bulletin_Off">Maxfiy seyf oʻchirildi. Barcha yashirin chatlar roʻyxatga qaytdi.</string>
+    <string name="ZG_Vault_Bulletin_PinChanged">Seyf PIN\'i saqlandi</string>
+    <string name="ZG_Vault_UnverifiableTitle">Seyf PIN\'ini tekshirib boʻlmaydi</string>
+    <string name="ZG_Vault_UnverifiableText">Bu qurilmada saqlangan seyf PIN\'ini tekshirish uchun kerakli maʼlumot qolmagan, shuning uchun toʻgʻri PIN ham qabul qilinmaydi. Seyfdan yana foydalanish uchun yangi PIN oʻrnating — yashirin chatlar yashirinligicha qoladi. Buning uchun ekran qulfi kerak. Xabarlaringizga hech narsa boʻlmaydi.</string>
+    <string name="ZG_Vault_LostTitle">Maxfiy seyfga yangi PIN kerak</string>
+    <string name="ZG_Vault_LostText">Bu qurilma yashirin chatlar roʻyxatini himoya qilgan kalitni yoʻqotdi, shuning uchun bu chatlar yana koʻrinadi. Seyfdan yana foydalanish uchun yangi PIN oʻrnating yoki uni oʻchiring. Ikkalasi ham ekran qulfini talab qiladi. Xabarlaringizga hech narsa boʻlmaydi.</string>
+    <string name="ZG_Vault_SetNewPin">Yangi seyf PIN\'ini oʻrnatish</string>
+    <string name="ZG_Vault_TurnOff">Maxfiy seyfni oʻchirish</string>
+    <string name="ZG_Vault_RecoveryReason">Maxfiy seyfni tiklash uchun shaxsingizni tasdiqlang</string>
+    <string name="ZG_Vault_NoScreenLockText">Bu qurilmada ekran qulfi yoʻq, shuning uchun uning egasini boshqa yoʻl bilan tasdiqlab boʻlmaydi. Davom etilsinmi? Xabarlaringiz oʻchmaydi.</string>
+    <string name="ZG_Vault_Continue">Davom etish</string>
+    <string name="ZG_Vault_RecoveryUnavailableTitle">Tiklash imkonsiz</string>
+    <string name="ZG_Vault_RecoveryUnavailableText">Seyf PIN\'ini bu qurilmada tiklab boʻlmaydi. U shu ilova ichidagi qulf va unga qurilmaning ekran qulfi hech qachon qabul qilinmaydi: uning oʻrnini faqat PIN oʻrnatilgan paytdagi biometrika yoki oʻshanda allaqachon mavjud boʻlgan Chat qulfi asosiy pinkodi bosa oladi. Ular ham yordam bermasa, seyfni olib tashlashning yagona yoʻli — Zenlygram\'da oʻsha Telegram hisobidan chiqib, qayta kirish (yoki ilovani qayta oʻrnatish). Shunda yashirin chatlar qaytadi, lekin bu qurilmadagi oʻsha hisobning maxfiy chatlari hamda Zenlygram saqlagan oʻchirilgan va tahrirlangan xabarlar ham oʻchib ketadi. Bulutdagi chatlaringiz Telegram\'da qoladi.</string>
+    <string name="ZG_Vault_TryAgainTitle">Birozdan soʻng qayta urining</string>
+    <string name="ZG_Vault_TryAgainText">Hozir seyf PIN\'ini tekshirib boʻlmaydi. Qurilma qulfini oching, biroz kuting va qayta urinib koʻring.</string>
+    <string name="ZG_Vault_Settings_RecoveryNotice">Yangi PIN oʻrnatilmaguncha Maxfiy seyfdan bu qurilmada foydalanib boʻlmaydi. Uni tiklash yoki oʻchirish uchun «Maxfiy seyf»ni bosing. Xabarlaringizga taʼsir qilmaydi.</string>
+    <string name="ZG_Vault_NoRecoveryTitle">Bu PIN\'ni tiklab boʻlmaydi</string>
+    <string name="ZG_Vault_NoRecoveryText">Bu telefonda barmoq izi (yoki boshqa ishonchli biometrika) sozlanmagan, Chat qulfining esa asosiy pinkodi yoʻq. Seyf PIN\'ini unutsangiz, ilovadagi hech narsa seyfni ocholmaydi va uni oʻchira olmaydi. PIN\'ni xavfsiz joyda saqlang yoki avval telefon sozlamalarida barmoq izi qoʻshing yoxud Chat qulfini sozlang.</string>
+    <string name="ZG_Vault_NoRecoveryContinue">Baribir PIN oʻrnatish</string>
+    <!-- ZENLYGRAM Secret Vault: END -->
+    <!-- ZENLYGRAM chatlist-chats: BEGIN -->
+    <string name="ZG_ChatlistChats_CompactNote">Chat roʻyxatini ham ikki qatorli koʻrinishga oʻtkazadi.</string>
+    <string name="ZG_ChatlistChats_SameAsTelegram">Telegram sozlamalaridagi «%1$s» bilan bir xil.</string>
+    <string name="ZG_ChatlistChats_SwipeNote">Oʻchirilganda, roʻyxatni surish jildlarni almashtiradi.</string>
+    <string name="ZG_ChatlistChats_ChannelPanelDesc">Obuna boʻlgan kanallar pastida ovoz tugmasi bor panelni koʻrsatish. «Qoʻshilish» tugmasi doim qoladi.</string>
+    <!-- ZENLYGRAM chatlist-chats: END -->
+    <!-- ZENLYGRAM wide-channel-posts: BEGIN -->
+    <string name="ZG_wide_channel_posts_SideButtonsNote">Yon tugmalar (ulashish, AI xulosasi, tezkor tarjima) xabar menyusiga koʻchadi: postni bosib turing.</string>
+    <!-- ZENLYGRAM wide-channel-posts: END -->
+    <!-- ZENLYGRAM Folders, tabs, stories (org.telegram.zenlygram.chatlist): BEGIN -->
+    <string name="ZG_FoldersTabsStories_HideTabBar_Desc">Pastki oynalar panelini yashirish. Kontaktlar, qoʻngʻiroqlar, sozlamalar, profilingiz va hisoblar chatlar roʻyxatidagi ⋮ menyusiga koʻchadi; Vazifalar oynasi yoqilgan boʻlsa, vazifalar ham.</string>
+    <string name="ZG_FoldersTabsStories_ShowCalls_Desc">Tab panelida Sozlamalar oʻrniga Qoʻngʻiroqlar oynasini koʻrsatish. Sozlamalar chatlar roʻyxatidagi ⋮ menyusida boʻladi. Joriy hisob uchun amal qiladi (Telegram sozlamasi).</string>
+    <string name="ZG_FoldersTabsStories_SwitchAccount">Hisobni almashtirish</string>
+    <string name="ZG_FoldersTabsStories_CompactNames_Desc">Koʻproq jild sigʻishi uchun jild oynalari orasidagi masofani kamaytiradi.</string>
+    <!-- ZENLYGRAM Folders, tabs, stories: END -->
+    <!-- ZENLYGRAM Composing & input, message menu, stickers (input-stickers): START -->
+    <string name="ZG_InputStickers_SendWithEnterKey">Enter tugmasi bilan yuborish</string>
+    <string name="ZG_InputStickers_SendWithEnterKey_Desc">Enter xabarni yuboradi. Jismoniy klaviaturada Shift+Enter yangi qator qoʻshadi. Bu Telegram suhbat sozlamalaridagi \"Enter orqali yuborish\" sozlamasining oʻzi.</string>
+    <string name="ZG_InputStickers_ContextShowSaveGallery_Desc">Xabar menyusida rasm va videolar uchun \"Galereyaga saqlash\" bandini koʻrsatish.</string>
+    <string name="ZG_InputStickers_SelectFromUser_Limit">Bir vaqtning oʻzida faqat oxirgi %1$d ta yuklangan xabarni tanlash mumkin.</string>
+    <string name="ZG_InputStickers_SelectFromUser_None">Bu muallifning boshqa yuklangan xabarlari yoʻq.</string>
+    <string name="ZG_InputStickers_Json_Error">Bu xabarni JSON koʻrinishida koʻrsatib boʻlmadi.</string>
+    <string name="ZG_InputStickers_Json_Copied">JSON buferga nusxalandi.</string>
+    <!-- ZENLYGRAM input-stickers: END -->
+    <!-- ZENLYGRAM Translate & voice (org.telegram.zenlygram.translate, org.telegram.zenlygram.voice): START -->
+    <string name="ZG_Translate_Notice_Telegram">Boshqa xizmatga avtomatik oʻtilmaydi. Telegram Premium\'siz butun chatni tarjima qilish faqat %1$s orqali ishlaydi.</string>
+    <string name="ZG_Translate_Notice_Google">Tezkor tarjima va butun chat tarjimasi (mahkamlangan xabar va javoblardagi iqtiboslar bilan birga) matnni qurilmangizdan Google Translate\'ga yuboradi. Xabar menyusidagi tarjima oynasi Telegram\'dan foydalanadi, Google Translate\'dan esa faqat Telegram tarjima qila olmaydigan joyda.</string>
+    <string name="ZG_Translate_TelegramUnavailable">Telegram bu yerda xabarlarni tarjima qila olmaydi. Ularni tarjima qilish uchun Zenlygram sozlamalari → Xabarlarni tarjima qilish → Xizmat boʻlimida %1$s\'ni tanlang.</string>
+    <string name="ZG_Translate_ByGoogle">Bu yerdagi tarjimalarni **Google Translate** bajaradi.</string>
+    <string name="ZG_QuickTranslate_Desc">Kiruvchi xabarlar yonida tarjima tugmasini koʻrsatish; asl matnni koʻrish uchun uni yana bosing. Kanallardagi keng postlarda u xabar menyusida boʻladi. Maxfiy chatlarda, nusxa olish taqiqlangan xabarlarda va oʻchirilgan xabarlarning saqlangan nusxalarida taklif qilinmaydi (oʻchirilishidan oldin tarjima qilingan nusxani asl matnga qaytarish mumkin).</string>
+    <!-- ZENLYGRAM Translate & voice: END -->
+    <!-- ZENLYGRAM Extras A (org.telegram.zenlygram.dialogs / autoaccept / pins / reminder / download): START -->
+    <string name="ZG_ExtrasA_BlockForeignUsers_Notice">Davlat kodi siznikidan farq qiluvchi shaxsiy chatlarni faqat «Barcha chatlar» roʻyxatida yashiradi: jildlar, arxiv va qidiruvda ular qoladi. Faqat mahalliy vizual filtr — hech kimni bloklamaydi va raqamini yashirganlarni yashira olmaydi.</string>
+    <string name="ZG_ExtrasA_AutoAcceptRequests_Notice">Aʼzo qoʻsha oladigan barcha guruh va kanallaringizda, barcha akkauntlaringizda qoʻshilish soʻrovini yuborgan hammani qabul qiladi. Soʻrovlarni oʻzingiz koʻrib chiqish uchun oʻchirib qoʻying.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Title">Oʻqilmagan xabarlar</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_one">Sizda %1$d ta oʻqilmagan xabar bor. Uni koʻrishni unutmang.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_other">Sizda %1$d ta oʻqilmagan xabar bor. Ularni koʻrishni unutmang.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_NotificationsOff">Zenlygram uchun bildirishnomalar oʻchirilgan, shuning uchun eslatma chiqmaydi.</string>
+    <!-- ZENLYGRAM Extras A: END -->
+    <!-- ZENLYGRAM extras-b: View First Message, Round Video from Gallery -->
+    <string name="ZG_ExtrasB_ViewFirstMessage">Birinchi xabar</string>
+    <string name="ZG_ExtrasB_SendAsRoundVideo">Dumaloq video sifatida yuborish</string>
+    <string name="ZG_ExtrasB_RoundVideoUnsupported">Bu videoni ushbu qurilmada dumaloq videoga aylantirib boʻlmaydi.</string>
+    <!-- ZENLYGRAM extras-b: END -->
+    <!-- ZENLYGRAM Phase 2 review fixes: START -->
+    <string name="ZG_Translate_Backend_TelegramOnly">Faqat Telegram (Googlesiz)</string>
+    <string name="ZG_Translate_Notice_Default">Rasmiy ilovadagidek: Telegram oʻzi tarjima qila olmaydigan joyda matn Google Translate\'ga yuborilishi mumkin. Google hech qachon ishlatilmasligi uchun «%1$s»ni tanlang. Telegram Premium\'siz butun chatni tarjima qilish faqat %2$s orqali ishlaydi.</string>
+    <string name="ZG_QuickTranslate_MenuItem">Tezkor tarjima</string>
+    <string name="ZG_ContextMenu_Enabled">Zenlygram bandlari</string>
+    <string name="ZG_ContextMenu_Enabled_Desc">Xabar menyusiga Zenlygram bandlarini qoʻshadi («Bulutga saqlash», «Muallifdan tanlash», JSON va boshqalar); quyida oʻchirilgan bandlar «Zenlygram» pastki menyusiga oʻtadi. Oʻchiq boʻlsa, bu bandlar boʻlmaydi. «Tahrir tarixi», «Vazifalarga qoʻshish» hamda oʻchirilgan xabarlar va keng postlar bandlari oʻz sozlamalariga bogʻliq.</string>
+    <string name="ZG_ExtrasB_RoundVideoFromGallery_Notice">Chatda biriktirish menyusini oching, bitta videoni tanlang, soʻng «Yuborish» tugmasini bosib turing va «Dumaloq video sifatida yuborish»ni tanlang. Izohli, narxli, spoylerli, muqovali yoki tahrirlangan videoda bu taklif qilinmaydi.</string>
+    <string name="ZG_FoldersTabsStories_ShowTasks_Desc">Tab panelida Vazifalar oynasini koʻrsatish. Yashirilsa, xabar menyusidan «Vazifalarga qoʻshish», ⋮ menyusidan esa «Vazifalar» ham olib tashlanadi; vazifalaringiz saqlanadi va pastdagi «Vositalar» boʻlimidagi «Vazifalar» orqali ochiladi.</string>
+    <string name="ZG_FoldersTabsStories_BottomTab_Desc">Jildlarni ekranning pastki panelida koʻrsatish.</string>
+    <string name="ZG_FoldersTabsStories_RememberLast">Oxirgi jildni ochish</string>
+    <string name="ZG_FoldersTabsStories_RememberLast_Desc">Ishga tushganda oxirgi ochilgan jildni qayta ochish.</string>
+    <string name="ZG_FoldersTabsStories_AllChatsHidden_Desc">«Barcha chatlar» jildi oynasini yashirish.</string>
+    <string name="ZG_Settings_DisabledHint_TurnOff">Avval «%1$s»ni oʻchiring.</string>
+    <string name="ZG_Settings_DisabledHint_TurnOn">Avval «%1$s»ni yoqing.</string>
+    <string name="ZG_Developer_Unlocked">Dasturchilar uchun sozlamalar endi shu ekranning pastida koʻrsatiladi.</string>
+    <string name="ZG_ExtrasB_RoundVideoDrops">Dumaloq videoda izoh, narx, spoyler, muqova yoki tahrirlar boʻlmaydi. Bu videoni dumaloq video sifatida yuborish uchun ularni olib tashlang.</string>
+    <string name="ZG_QuickTranslate_Unavailable_Notice">Tanlangan xizmat bilan Telegram bu hisob uchun xabarlarni tarjima qilmaydi, shuning uchun tezkor tarjima tugmasi chiqmaydi. Undan foydalanish uchun yuqoridagi «Xizmat» boʻlimida %1$s\'ni tanlang.</string>
+    <!-- ZENLYGRAM Phase 2 review fixes: END -->
+</resources>

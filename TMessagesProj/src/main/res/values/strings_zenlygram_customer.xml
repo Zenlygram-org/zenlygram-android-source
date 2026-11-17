@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: strings of the customer-data screens (org.telegram.zenlygram.customer) that neither strings_zenlygram_cloud.xml
+     (ZGC_*, the first Android wall) nor strings_zenlygram_engine_consent.xml (Zenly*, the cloud client's screens) had.
+     iOS wording (SGLocalizable.strings: DataConsent.Withdraw.Sending, DataConsent.Withdraw.Confirm.UnsentUnknown).
+     Keep values/, values-ru/ and values-uz/ in step; Uzbek uses U+02BB / U+02BC
+     (zenlygram-tests/customer/strings_parity.py checks both). -->
+<resources>
+    <string name="ZGC_DataConsent_Withdraw_Sending">Sending your withdrawal…</string>
+    <string name="ZGC_DataConsent_Withdraw_Confirm_UnsentUnknown">Task changes that haven\'t reached the server yet will be lost.</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Customer data and consent (W18-AND-8). Wording is normative in design/consent/ui-strings.md (uz / ru / en);
+     Uzbek uses U+02BB / U+02BC. Checked by zenlygram-tests/customer/strings_parity.py. -->
+<resources>
+
+    <!-- Consent wall / prompt (ui-strings §1) -->
+    <string name="ZenlyConsentTitle">Maʼlumotlar va rozilik</string>
+    <string name="ZenlyConsentAccount">Akkaunt: %1$s</string>
+    <string name="ZenlyConsentTextLanguage">Matn tili</string>
+    <string name="ZenlyConsentAgree">Roziman</string>
+    <string name="ZenlyConsentDecline">Rozi emasman</string>
+    <string name="ZenlyConsentAgeHint">Davom etish uchun yoshingizni tasdiqlang.</string>
+    <string name="ZenlyConsentModeNoteRequired">Bu rozilik boʻlmasa, shu Telegram akkaunti bilan Zenlygramdan foydalanib boʻlmaydi. Boshqa akkauntlaringizga taʼsir qilmaydi.</string>
+    <string name="ZenlyConsentModeNoteOptional">Rozilik ixtiyoriy. Rozi boʻlmasangiz, bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi va akkaunt avtomatik bogʻlanmaydi; ilova shu qurilmada avvalgidek ishlayveradi. Keyinroq Sozlamalar → Zenlygram → Maʼlumotlar va rozilik boʻlimida rozilik berishingiz mumkin.</string>
+    <string name="ZenlyConsentNoticeReconsent">Rozilik matni yangilandi. Uni oʻqib chiqing va qayta rozilik bering.</string>
+    <string name="ZenlyConsentNoticeWithdrawn">Siz %1$s kuni rozilikni qaytarib olgansiz.</string>
+    <string name="ZenlyConsentNoticeWithdrawnRemote">Bu akkaunt uchun rozilik %1$s kuni boshqa qurilmada qaytarib olingan.</string>
+    <string name="ZenlyConsentNoticeLinkEnded">Bu akkauntning serverimiz bilan bogʻlanishi tugagan (masalan, uning Zenlygram hisobi oʻchirilgan). Qayta rozilik bermaguningizcha Zenlygram uni oʻzi qayta bogʻlamaydi.</string>
+    <string name="ZenlyConsentTextUnavailable">Zenlygramning bu versiyasi rozilik matnini koʻrsata olmaydi. Ilovani yangilang.</string>
+    <string name="ZenlyConsentSaveFailed">Tanlovingizni saqlab boʻlmadi. Qayta urinib koʻring.</string>
+
+    <!-- Required mode: the decline page (ui-strings §2; its Delete and Privacy Policy rows reuse ZenlyDataConsentDelete and ZenlyDataConsentPrivacyPolicy, same words) -->
+    <string name="ZenlyConsentDeclinedTitle">Rozilik kerak</string>
+    <string name="ZenlyConsentDeclinedText">Zenlygram obunangizni, bulutdagi vazifalaringizni va akkaunt maʼlumotlaringizni oʻz serverida saqlaydi va buning uchun roziligingiz kerak. Rozilik boʻlmasa, shu Telegram akkaunti bilan Zenlygramdan foydalanib boʻlmaydi.\n\nRozilik matnini qayta oʻqishingiz, Zenlygram hisobingizni va serverimizdagi maʼlumotlarni oʻchirishingiz yoki shu qurilmada bu akkauntdan chiqishingiz mumkin. Akkauntdan chiqish Telegram akkauntingizni oʻchirmaydi: u boshqa Telegram ilovalarida ishlashda davom etadi. Bu akkauntning faqat shu qurilmada saqlangan Zenlygram maʼlumotlari (masalan, mahalliy vazifalar) chiqishda oʻchishi mumkin.</string>
+    <string name="ZenlyConsentDeclinedBack">Orqaga</string>
+    <string name="ZenlyConsentDeclinedLogout">Bu akkauntdan chiqish</string>
+    <string name="ZenlyConsentSwitchAccount">Boshqa akkauntdan foydalanish</string>
+
+    <!-- Settings -> Zenlygram -> Data & consent (ui-strings §3). Row, MyData and Delete are quoted by the hashed consent text: changing their words needs a new text version. -->
+    <string name="ZenlyDataConsentHeader">Maʼlumotlar va maxfiylik</string>
+    <string name="ZenlyDataConsentRow">Maʼlumotlar va rozilik</string>
+    <string name="ZenlyDataConsentValueGranted">Berilgan</string>
+    <string name="ZenlyDataConsentValueNone">Berilmagan</string>
+    <string name="ZenlyDataConsentValueDeclined">Rad etilgan</string>
+    <string name="ZenlyDataConsentValueWithdrawn">Qaytarib olingan</string>
+    <string name="ZenlyDataConsentValueReview">Koʻrib chiqing</string>
+    <string name="ZenlyDataConsentFooter">Bu boʻlim faqat shu Telegram akkauntiga tegishli.</string>
+    <string name="ZenlyDataConsentStatusGranted">Rozilik berilgan: %1$s (matn versiyasi %2$s).</string>
+    <string name="ZenlyDataConsentStatusPending">Rozilik berilgan; serverga hali yuborilmagan.</string>
+    <string name="ZenlyDataConsentStatusNone">Rozilik berilmagan. Bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi.</string>
+    <string name="ZenlyDataConsentStatusDeclined">Siz rozilik bermadingiz. Bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi.</string>
+    <string name="ZenlyDataConsentStatusWithdrawn">Siz %1$s kuni rozilikni qaytarib oldingiz. Serverimizdagi maʼlumotlaringiz keyingi ish kunidan kechiktirmay oʻchiriladi.</string>
+    <string name="ZenlyDataConsentStatusWithdrawPending">Siz %1$s kuni rozilikni qaytarib oldingiz. Bu xabar hali serverimizga yetib bormagan; ilova yuborishga urinishda davom etadi.</string>
+    <string name="ZenlyDataConsentStatusReconsent">Rozilik matni yangilangan — qayta koʻrib chiqing.</string>
+    <string name="ZenlyDataConsentStatusLinkEnded">Serverimiz bilan bogʻlanish tugagan. Akkaunt avtomatik bogʻlanishi uchun qayta rozilik bering.</string>
+    <string name="ZenlyDataConsentStatusRejected">Roziligingizni qayd etib boʻlmadi. Ilovani yangilang va qayta rozilik bering.</string>
+    <string name="ZenlyDataConsentReadText">Rozilik matni</string>
+    <string name="ZenlyDataConsentGrant">Rozilik berish</string>
+    <string name="ZenlyDataConsentMyData">Mening maʼlumotlarim</string>
+    <string name="ZenlyDataConsentWithdraw">Rozilikni qaytarib olish</string>
+    <string name="ZenlyDataConsentDelete">Zenlygram hisobim va maʼlumotlarimni oʻchirish</string>
+    <string name="ZenlyDataConsentPrivacyPolicy">Maxfiylik siyosati</string>
+    <string name="ZenlyDataConsentOperator">Maʼlumotlar operatori: %1$s · %2$s</string>
+    <string name="ZenlyDataConsentStorage">Maʼlumotlar Toshkentdagi (Oʻzbekiston) serverda saqlanadi.</string>
+    <string name="ZenlyDataConsentResetDebug">Reset consent on this device (debug build)</string>
+    <string name="ZenlyDataConsentActiveElsewhere">Bu akkaunt uchun rozilik serverda hali ham amal qilmoqda, chunki u boshqa qurilmada qayta berilgan. Uni toʻxtatish uchun oʻsha qurilmada rozilikni qaytarib oling yoki maʼlumotlaringizni zenlygram.org/account/delete sahifasida oʻchiring.</string>
+    <string name="ZenlyDataConsentDeletePending">Oʻchirish soʻraldi. Server tasdigʻi kutilmoqda.</string>
+
+    <!-- Withdraw confirmation (ui-strings §4) -->
+    <string name="ZenlyDataConsentWithdrawTitle">Rozilik qaytarib olinsinmi?</string>
+    <string name="ZenlyDataConsentWithdrawText">Rozilikni qaytarib olganingiz haqidagi xabar serverimizga yetib kelgach, profilingiz, statistikangiz va bulutdagi vazifalaringiz keyingi ish kunidan kechiktirmay oʻchiriladi. Bulutdagi vazifalaringiz shu qurilmada faqat oʻqish uchun nusxa sifatida qoladi. Bu akkaunt bilan Zenlygram hisobingiz oʻrtasidagi bogʻlanish obuna uchun saqlanadi; bogʻlanishni va barcha maʼlumotlarni ham olib tashlash uchun buning oʻrniga Zenlygram hisobingizni oʻchiring.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_zero">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_one">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_two">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_few">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_many">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_other">Hali yuborilmagan %1$d ta vazifa oʻzgarishi yoʻqoladi.</string>
+    <string name="ZenlyDataConsentWithdrawRequired">Shundan keyin bu akkaunt bilan Zenlygramdan faqat qayta rozilik berib foydalanish mumkin.</string>
+    <string name="ZenlyDataConsentWithdrawOptional">Ilova shu qurilmada ishlashda davom etadi va bu akkaunt uchun profil, statistika yoki bulutdagi vazifalarni boshqa yubormaydi.</string>
+    <string name="ZenlyDataConsentWithdrawConfirm">Qaytarib olish</string>
+    <string name="ZenlyDataConsentWithdrawDeleteInstead">Zenlygram hisobim va maʼlumotlarimni oʻchirish</string>
+    <string name="ZenlyDataConsentWithdrawPendingUpload">Bu qurilma serverimizga bogʻlanmagan, shuning uchun rozilikni qaytarib olganingiz haqidagi xabarni bu yerdan yuborib boʻlmaydi; qurilmani yana bogʻlasangiz, u yuboriladi. Bu Telegram akkauntidan boshqa qurilmadagi Zenlygramda ham foydalansangiz, u yerda ham rozilikni qaytarib oling yoki maʼlumotlaringizni zenlygram.org/account/delete sahifasida oʻchiring yoxud quyida koʻrsatilgan manzilga yozing.</string>
+    <string name="ZenlyLogoutWithdrawPending">Rozilikni qaytarib olganingiz haqidagi xabar hali Zenlygram serveriga yetib bormadi. Chiqishda ilova uni yana bir marta yuboradi; bu amalga oshmasa, maʼlumotlaringizni zenlygram.org/account/delete sahifasida oʻchiring.</string>
+
+    <!-- Account deletion (ui-strings §5; ZenlyDeleteText = Deleted, Kept + Telegram, Timing) -->
+    <string name="ZenlyDeleteTitle">Zenlygram hisobini oʻchirish</string>
+    <string name="ZenlyDeleteText">Zenlygram hisobingiz va u uchun saqlanayotgan maʼlumotlar oʻchiriladi: profil, qurilmalar, statistika, bulutdagi vazifalar, takliflar va akkaunt bogʻlanishi. Bu hisobga bogʻlangan barcha qurilmalar Zenlygramdan chiqariladi.\n\nToʻlov yozuvlari faqat qonun talab qiladigan muddat saqlanadi, ulardan sizni aniqlashga imkon beradigan maʼlumotlar olib tashlanadi. Rozilik berganingiz va qaytarib olganingiz haqidagi yozuv (hisob raqami, matn versiyalari va sanalar) 3 yil saqlanadi. Telegram akkauntingiz oʻchirilmaydi.\n\nOʻchirish darhol boshlanadi va keyingi ish kunidan kechiktirmay yakunlanadi. Shifrlangan zaxira nusxalar va server jurnallaridagi nusxalar 14 kun ichida yoʻqoladi.</string>
+    <string name="ZenlyDeleteBilling">Obunangiz boʻlsa, uni %1$s ilovasida bekor qilmaguningizcha u yangilanib, toʻlov olinishda davom etadi. Kerak boʻlmasa, avval obunani bekor qiling.</string>
+    <string name="ZenlyDeleteManageSubscription">Obunani boshqarish</string>
+    <string name="ZenlyDeleteConfirm">Hisobim va maʼlumotlarimni oʻchirish</string>
+    <string name="ZenlyDeleteConfirm2Title">Zenlygram hisobingiz oʻchirilsinmi?</string>
+    <string name="ZenlyDeleteConfirm2Text">Buni ortga qaytarib boʻlmaydi.</string>
+    <string name="ZenlyDeleteConfirm2Action">Oʻchirish</string>
+    <string name="ZenlyDeleteDoneTitle">Zenlygram hisobi oʻchirildi</string>
+    <string name="ZenlyDeleteDoneText">Zenlygram hisobingiz oʻchirildi. Boshqa xizmatlarimizdagi nusxalar keyingi ish kunidan kechiktirmay, shifrlangan zaxira nusxalar va server jurnallaridagilar esa 14 kun ichida oʻchiriladi. Bu akkaunt bilan Zenlygramdan yana foydalansangiz, rozilik qaytadan soʻraladi.</string>
+    <string name="ZenlyDeleteNotLinked">Bu akkaunt shu qurilmadan Zenlygram serveriga bogʻlanmagan. Zenlygram hisobini oʻchirish uchun zenlygram.org/account/delete sahifasini oching va Telegram orqali kiring.</string>
+    <string name="ZenlyDeleteOpenWeb">Sahifani ochish</string>
+    <string name="ZenlyDeleteErrorOffline">Internet aloqasi yoʻq. Aloqani tekshirib, qayta urinib koʻring yoki zenlygram.org/account/delete sahifasidan foydalaning.</string>
+    <string name="ZenlyDeleteErrorRateLimited">Urinishlar juda koʻp. Birozdan keyin qayta urinib koʻring.</string>
+    <string name="ZenlyDeleteErrorUnavailable">Server hozir javob bermayapti. Keyinroq urinib koʻring yoki zenlygram.org/account/delete sahifasidan foydalaning.</string>
+    <string name="ZenlyDeleteFailed">Hisobni hozir oʻchirib boʻlmadi. Internet aloqasini tekshirib, qayta urinib koʻring yoki zenlygram.org/account/delete sahifasidan foydalaning.</string>
+
+    <!-- My data (ui-strings §6) -->
+    <string name="ZenlyMyDataTitle">Mening maʼlumotlarim</string>
+    <string name="ZenlyMyDataLoading">Yuklanmoqda…</string>
+    <string name="ZenlyMyDataNotLinked">Bu akkaunt shu qurilmadan Zenlygram serveriga bogʻlanmagan, shuning uchun koʻrsatadigan server maʼlumotlari yoʻq.</string>
+    <string name="ZenlyMyDataUnavailable">Hozir maʼlumotlarni yuklab boʻlmadi. Keyinroq urinib koʻring.</string>
+    <string name="ZenlyMyDataErrorOffline">Internet aloqasi yoʻq.</string>
+    <string name="ZenlyMyDataErrorUnavailable">Server hozir javob bermayapti. Keyinroq urinib koʻring.</string>
+    <string name="ZenlyMyDataErrorRateLimited">Soʻrovlar juda koʻp. Keyinroq urinib koʻring.</string>
+    <string name="ZenlyMyDataRetry">Qayta urinish</string>
+    <string name="ZenlyMyDataSectionAccount">Hisob</string>
+    <string name="ZenlyMyDataSectionConsent">Rozilik</string>
+    <string name="ZenlyMyDataSectionHistory">Rozilik tarixi</string>
+    <string name="ZenlyMyDataSectionProfile">Profil</string>
+    <string name="ZenlyMyDataSectionDevices">Qurilmalar</string>
+    <string name="ZenlyMyDataSectionActivity">Faollik</string>
+    <string name="ZenlyMyDataSectionEvents">Statistika hodisalari (oxirgi 180 kun)</string>
+    <string name="ZenlyMyDataSectionSubscription">Obuna</string>
+    <string name="ZenlyMyDataSectionRetention">Saqlash muddatlari</string>
+    <string name="ZenlyMyDataSourceTelegramAttest">Telegram tasdiqlagan</string>
+    <string name="ZenlyMyDataSourceTelegramBot">Telegram (bot orqali)</string>
+    <string name="ZenlyMyDataSourceClient">Ilovadan</string>
+    <string name="ZenlyMyDataSourceTelegramSession">Telegram seansidan</string>
+    <string name="ZenlyMyDataFieldId">Hisob ID</string>
+    <string name="ZenlyMyDataFieldTelegramId">Telegram ID</string>
+    <string name="ZenlyMyDataFieldCreated">Yaratilgan</string>
+    <string name="ZenlyMyDataFieldPhone">Telefon raqami</string>
+    <string name="ZenlyMyDataFieldCountry">Mamlakat (telefon kodi boʻyicha)</string>
+    <string name="ZenlyMyDataFieldUsernames">Foydalanuvchi nomlari</string>
+    <string name="ZenlyMyDataFieldFirstName">Ism</string>
+    <string name="ZenlyMyDataFieldLastName">Familiya</string>
+    <string name="ZenlyMyDataFieldName">Ism va familiya</string>
+    <string name="ZenlyMyDataFieldLanguage">Telegram tili</string>
+    <string name="ZenlyMyDataFieldPremium">Telegram Premium</string>
+    <string name="ZenlyMyDataFieldModel">Qurilma modeli</string>
+    <string name="ZenlyMyDataFieldOs">Operatsion tizim</string>
+    <string name="ZenlyMyDataFieldApp">Ilova versiyasi</string>
+    <string name="ZenlyMyDataFieldVersions">Versiyalar (tizim / ilova)</string>
+    <string name="ZenlyMyDataFieldLocale">Mintaqaviy format</string>
+    <string name="ZenlyMyDataFieldTimeZone">Vaqt mintaqasi</string>
+    <string name="ZenlyMyDataFieldDistribution">Oʻrnatish manbai</string>
+    <string name="ZenlyMyDataFieldFirstSeen">Birinchi marta koʻrilgan</string>
+    <string name="ZenlyMyDataFieldLastSeen">Oxirgi marta koʻrilgan</string>
+    <string name="ZenlyMyDataFieldFirstActive">Birinchi faollik</string>
+    <string name="ZenlyMyDataFieldLastActive">Oxirgi faollik</string>
+    <string name="ZenlyMyDataFieldActiveDays">Faol kunlar</string>
+    <string name="ZenlyMyDataFieldSessions30">Seanslar (30 kun)</string>
+    <string name="ZenlyMyDataFieldSeconds30">Foydalanish vaqti (30 kun)</string>
+    <string name="ZenlyMyDataEventsTotal">Hodisalar soni</string>
+    <string name="ZenlyMyDataFieldRetained">Saqlash muddati</string>
+    <string name="ZenlyMyDataPrivacyFeatures">Maxfiylik funksiyalari: %1$d ta hodisa</string>
+</resources>

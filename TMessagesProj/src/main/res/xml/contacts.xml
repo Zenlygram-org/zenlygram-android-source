@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: own contact MIME types (upstream vnd.org.telegram.messenger.android.*). They must be literals: the
+     Contacts app parses this file with its own resources. Keep in sync with ZgIdentity.CONTACT_MIME_* and AndroidManifest.xml. -->
+<ContactsAccountType xmlns:android="http://schemas.android.com/apk/res/android">
+    <ContactsDataKind android:icon="@drawable/ic_launcher_dr"
+        android:mimeType="vnd.android.cursor.item/vnd.org.zenlygram.android.profile"
+        android:summaryColumn="data2"
+        android:detailColumn="data3"
+        android:detailSocialSummary="true"/>
+    <ContactsDataKind android:icon="@drawable/ic_launcher_dr"
+        android:mimeType="vnd.android.cursor.item/vnd.org.zenlygram.android.call"
+        android:summaryColumn="data2"
+        android:detailColumn="data3"
+        android:detailSocialSummary="true"/>
+    <ContactsDataKind android:icon="@drawable/ic_launcher_dr"
+        android:mimeType="vnd.android.cursor.item/vnd.org.zenlygram.android.call.video"
+        android:summaryColumn="data2"
+        android:detailColumn="data3"
+        android:detailSocialSummary="true"/>
+</ContactsAccountType>

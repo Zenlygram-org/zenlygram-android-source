@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: strings of the account link (org.telegram.zenlygram.pro.ZgLinkAccountActivity, the "Telegram Account"
+     rows of the settings hub and of the Zenlygram Pro screen). Texts are the iOS SGLocalizable ones that the generated
+     strings_zenlygram.xml does not have yet (LinkAccount.*.Free, LinkAccount.Linking, Settings.AccountData.Header), plus
+     the few Android-only ones. ZGL_ names never collide with the generated ZG_ names. Read only through
+     LocaleController.getString / formatString. Keep values/, values-ru/ and values-uz/ in step. -->
+<resources>
+    <string name="ZGL_Hub_AccountData_Header">Account &amp; data</string>
+    <string name="ZGL_LinkAccount_Intro">Linking proves which Telegram account this is, so your data consent and Cloud Tasks follow you to your other devices and come back after a reinstall. Your hidden chats and locked chats stay on this device. With your data consent, your tasks are kept in the cloud.</string>
+    <string name="ZGL_LinkAccount_Linking">Linking…</string>
+    <string name="ZGL_LinkAccount_Code_Hint_NoBot">Send this code to the Zenlygram bot in Telegram.</string>
+    <string name="ZGL_LinkAccount_Success_Text">Zenlygram now recognises this Telegram account on every device you link.</string>
+    <string name="ZGL_LinkAccount_Unlink_Text">Unlinking signs this device out of your Zenlygram account. Your vault, locked chats, tasks and saved versions are never touched. While your data consent is on, Zenlygram will not link this account again by itself; link it again here.</string>
+    <string name="ZGL_LinkAccount_Error_Update">Update Zenlygram to link this account.</string>
+    <string name="ZGL_LinkAccount_Error_Storage">The link could not be saved on this device. Try again.</string>
+    <string name="ZGL_LinkAccount_Error_Unlink">This device could not be unlinked. Try again.</string>
+    <string name="ZGL_Pro_LinkAccount_Auto">Your account is linked automatically after your data consent.</string>
+</resources>

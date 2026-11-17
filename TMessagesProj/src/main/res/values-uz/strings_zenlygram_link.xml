@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: strings of the account link, see values/strings_zenlygram_link.xml. -->
+<resources>
+    <string name="ZGL_Hub_AccountData_Header">Akkaunt va maʼlumotlar</string>
+    <string name="ZGL_LinkAccount_Intro">Bogʻlash bu qaysi Telegram akkaunti ekanini tasdiqlaydi: shunda maʼlumotlarga roziligingiz va bulutdagi vazifalaringiz boshqa qurilmalaringizda ham ishlaydi va qayta oʻrnatgandan keyin tiklanadi. Yashirin va qulflangan chatlaringiz shu qurilmada qoladi. Maʼlumotlarga roziligingiz bilan vazifalaringiz bulutda saqlanadi.</string>
+    <string name="ZGL_LinkAccount_Linking">Bogʻlanmoqda…</string>
+    <string name="ZGL_LinkAccount_Code_Hint_NoBot">Bu kodni Telegramda Zenlygram botiga yuboring.</string>
+    <string name="ZGL_LinkAccount_Success_Text">Endi Zenlygram siz bogʻlagan har bir qurilmada shu Telegram akkauntini taniydi.</string>
+    <string name="ZGL_LinkAccount_Unlink_Text">Uzish shu qurilmadagi Zenlygram seansini tugatadi. Seyf, qulflangan chatlar, vazifalar va saqlangan versiyalarga tegilmaydi. Maʼlumotlarga roziligingiz amalda boʻlsa ham, Zenlygram bu akkauntni oʻzi qayta bogʻlamaydi; uni shu yerda qayta bogʻlang.</string>
+    <string name="ZGL_LinkAccount_Error_Update">Bu akkauntni bogʻlash uchun Zenlygramni yangilang.</string>
+    <string name="ZGL_LinkAccount_Error_Storage">Bogʻlanishni bu qurilmada saqlab boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZGL_LinkAccount_Error_Unlink">Bu qurilmani uzib boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZGL_Pro_LinkAccount_Auto">Maʼlumotlarga rozilik berganingizdan keyin akkauntingiz avtomatik bogʻlanadi.</string>
+</resources>

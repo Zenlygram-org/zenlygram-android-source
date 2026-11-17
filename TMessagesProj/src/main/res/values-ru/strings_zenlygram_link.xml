@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: strings of the account link, see values/strings_zenlygram_link.xml. -->
+<resources>
+    <string name="ZGL_Hub_AccountData_Header">Аккаунт и данные</string>
+    <string name="ZGL_LinkAccount_Intro">Привязка подтверждает, какой это аккаунт Telegram: так ваше согласие на обработку данных и облачные задачи работают на других ваших устройствах и возвращаются после переустановки. Скрытые и заблокированные чаты остаются на этом устройстве. С вашим согласием на обработку данных задачи хранятся в облаке.</string>
+    <string name="ZGL_LinkAccount_Linking">Привязываем…</string>
+    <string name="ZGL_LinkAccount_Code_Hint_NoBot">Отправьте этот код боту Zenlygram в Telegram.</string>
+    <string name="ZGL_LinkAccount_Success_Text">Теперь Zenlygram узнаёт этот аккаунт Telegram на всех привязанных устройствах.</string>
+    <string name="ZGL_LinkAccount_Unlink_Text">Отвязка выйдет из аккаунта Zenlygram на этом устройстве. Хранилище, заблокированные чаты, задачи и сохранённые версии не затрагиваются. Даже при действующем согласии на обработку данных Zenlygram не будет сам заново привязывать этот аккаунт; привяжите его снова здесь.</string>
+    <string name="ZGL_LinkAccount_Error_Update">Обновите Zenlygram, чтобы привязать этот аккаунт.</string>
+    <string name="ZGL_LinkAccount_Error_Storage">Не удалось сохранить привязку на этом устройстве. Попробуйте ещё раз.</string>
+    <string name="ZGL_LinkAccount_Error_Unlink">Не удалось отвязать это устройство. Попробуйте ещё раз.</string>
+    <string name="ZGL_Pro_LinkAccount_Auto">После согласия на обработку данных ваш аккаунт привязывается автоматически.</string>
+</resources>

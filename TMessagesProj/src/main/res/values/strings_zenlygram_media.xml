@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Android-only strings of the media & calls port (WP-B): on-device voice-to-text. -->
+<resources>
+    <string name="ZG_Settings_Transcription_Backend_device">On this device</string>
+    <string name="ZG_Settings_Transcription_Backend_DeviceNotice">On this device: voice and round video messages are recognized by this phone\'s own speech service, without Telegram Premium. The audio does not leave the phone; the languages and the quality depend on the phone.</string>
+    <string name="ZG_VoiceToText_Failed">This message could not be recognized on this device.</string>
+    <string name="ZG_VoiceToText_ModelDownload">The speech model for this language is not on the phone yet. Android is downloading it; try again later.</string>
+    <string name="ZG_VoiceToText_LanguageUnsupported">This phone cannot recognize this language on the device.</string>
+</resources>

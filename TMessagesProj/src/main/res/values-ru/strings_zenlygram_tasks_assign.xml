@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM Tasks: the assignee pick is the invitation (org.telegram.zenlygram.tasks; iOS SGTasksL10n+Assign, the wire-4 variants). The same keys exist in values, values-ru and values-uz: edit the three files together. Uzbek uses U+02BB in oʻ / gʻ and U+02BC as the tutuq belgisi. -->
+<resources>
+    <string name="ZG_tasks_assign_nameState">%1$s · %2$s</string>
+    <string name="ZG_tasks_assign_state_sending">Отправляется…</string>
+    <string name="ZG_tasks_assign_state_queued">В очереди</string>
+    <string name="ZG_tasks_assign_state_sent">Отправлено</string>
+    <string name="ZG_tasks_assign_state_accepted">Принял(а)</string>
+    <string name="ZG_tasks_assign_state_completed">Выполнена</string>
+    <string name="ZG_tasks_assign_state_declined">Отклонил(а)</string>
+    <string name="ZG_tasks_assign_state_left">Вышел(ла) из задачи</string>
+    <string name="ZG_tasks_assign_state_expired">Не принято за 7 дней</string>
+    <string name="ZG_tasks_assign_state_removed">Снят(а)</string>
+    <string name="ZG_tasks_assign_state_notSent">Ещё не отправлено</string>
+    <string name="ZG_tasks_assign_oldEntry">(старая запись)</string>
+    <string name="ZG_tasks_assign_resend">Отправить снова</string>
+    <string name="ZG_tasks_assign_send">Отправить</string>
+    <string name="ZG_tasks_assign_change">Сменить исполнителя</string>
+    <string name="ZG_tasks_assign_replace_title">Сменить исполнителя?</string>
+    <string name="ZG_tasks_assign_replace_text">%1$s больше не увидит эту задачу.</string>
+    <string name="ZG_tasks_assign_replace_confirm">Сменить</string>
+    <string name="ZG_tasks_assign_remove_title">Убрать исполнителя?</string>
+    <string name="ZG_tasks_assign_remove_confirm">Убрать</string>
+    <string name="ZG_tasks_assign_footer_accepted">%1$s видит задачу в своих «Задачах» и может отметить выполнение и выйти из неё. Название, заметки, срок и приоритет меняете, переназначаете и удаляете только вы.</string>
+    <string name="ZG_tasks_assign_footer_pending">Ждём, когда %1$s примет задачу. Исполнитель увидит её, когда у него включена синхронизация в Zenlygram; если он начнёт в течение 7 дней, задача всё равно до него дойдёт. Если её не примут за это время, её можно отправить снова.</string>
+    <string name="ZG_tasks_assign_footer_queued">Дневной лимит назначений исчерпан. Задача отправится позже автоматически.</string>
+    <string name="ZG_tasks_assign_footer_ended">Сейчас задача никому не поручена. Отправьте снова или выберите другого исполнителя.</string>
+    <string name="ZG_tasks_assign_footer_notSent">%1$s ранее сохранён(а) как исполнитель, но задача ему (ей) не отправлена.</string>
+    <string name="ZG_tasks_assign_footer_completedTask">Выполненную задачу нельзя поручить. Сначала откройте её снова.</string>
+    <string name="ZG_tasks_assign_explainer_title">Как работает назначение</string>
+    <string name="ZG_tasks_assign_explainer_text">Задача попадает в «Задачи» Zenlygram исполнителя, а не приходит сообщением Telegram. Исполнитель видит название, заметки и срок, может отметить выполнение и выйти из задачи. Он(а) также видит ваш Telegram ID. Ваши списки и другие задачи остаются скрытыми. Исполнитель увидит задачу, когда у него включена синхронизация в Zenlygram; если он начнёт в течение 7 дней, задача до него дойдёт. Вы видите имя исполнителя и что он(а) делает с задачей.</string>
+    <string name="ZG_tasks_assign_explainer_ok">Понятно</string>
+    <string name="ZG_tasks_assign_self">Нельзя поручить задачу самому себе.</string>
+    <string name="ZG_tasks_assign_limitPerPerson">Одному человеку можно поручить до 5 задач в день. Попробуйте завтра.</string>
+    <string name="ZG_tasks_assign_limitPerMinute">Слишком много назначений подряд. Попробуйте через минуту.</string>
+    <string name="ZG_tasks_assign_limitTotal">Слишком много назначений за сегодня. Попробуйте завтра.</string>
+    <string name="ZG_tasks_assign_limitPending">Слишком много назначений ждут ответа. Повторите, когда часть из них будет принята или истечёт.</string>
+    <string name="ZG_tasks_assign_needsSync_title">Для назначения нужна синхронизация</string>
+    <string name="ZG_tasks_assign_needsSync_text">Чтобы исполнитель видел задачу в своих «Задачах», она хранится на сервере Zenlygram. Для этого нужны согласие на обработку данных и привязанный аккаунт.</string>
+    <string name="ZG_tasks_assign_needsSync_action">Включить синхронизацию</string>
+    <string name="ZG_tasks_assign_waitForSync">Назначение станет доступно, как только начнётся синхронизация.</string>
+    <string name="ZG_tasks_assigned_header">Поручено мне</string>
+    <string name="ZG_tasks_assigned_by">Поручил(а): %1$s</string>
+    <string name="ZG_tasks_assigned_editorTitle">Порученная задача</string>
+    <string name="ZG_tasks_assigned_rights">Вы можете отмечать выполнение и выйти из задачи. Изменять, переназначать и удалять её может только тот, кто её поручил.</string>
+    <string name="ZG_tasks_invitations_hint">Задачи от людей из ваших контактов Telegram принимаются автоматически. Остальные ждут здесь вашего ответа.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM Tasks: the assignee pick is the invitation (org.telegram.zenlygram.tasks; iOS SGTasksL10n+Assign, the wire-4 variants). The same keys exist in values, values-ru and values-uz: edit the three files together. Uzbek uses U+02BB in oʻ / gʻ and U+02BC as the tutuq belgisi. -->
+<resources>
+    <string name="ZG_tasks_assign_nameState">%1$s · %2$s</string>
+    <string name="ZG_tasks_assign_state_sending">Yuborilmoqda…</string>
+    <string name="ZG_tasks_assign_state_queued">Navbatda</string>
+    <string name="ZG_tasks_assign_state_sent">Yuborildi</string>
+    <string name="ZG_tasks_assign_state_accepted">Qabul qildi</string>
+    <string name="ZG_tasks_assign_state_completed">Bajarildi</string>
+    <string name="ZG_tasks_assign_state_declined">Rad etdi</string>
+    <string name="ZG_tasks_assign_state_left">Vazifadan chiqdi</string>
+    <string name="ZG_tasks_assign_state_expired">7 kun ichida qabul qilinmadi</string>
+    <string name="ZG_tasks_assign_state_removed">Olib tashlandi</string>
+    <string name="ZG_tasks_assign_state_notSent">Hali yuborilmagan</string>
+    <string name="ZG_tasks_assign_oldEntry">(eski yozuv)</string>
+    <string name="ZG_tasks_assign_resend">Qayta yuborish</string>
+    <string name="ZG_tasks_assign_send">Yuborish</string>
+    <string name="ZG_tasks_assign_change">Masʼulni almashtirish</string>
+    <string name="ZG_tasks_assign_replace_title">Masʼul almashtirilsinmi?</string>
+    <string name="ZG_tasks_assign_replace_text">%1$s bu vazifani boshqa koʻrmaydi.</string>
+    <string name="ZG_tasks_assign_replace_confirm">Almashtirish</string>
+    <string name="ZG_tasks_assign_remove_title">Masʼul olib tashlansinmi?</string>
+    <string name="ZG_tasks_assign_remove_confirm">Olib tashlash</string>
+    <string name="ZG_tasks_assign_footer_accepted">%1$s bu vazifani oʻz Vazifalarida koʻradi, uni bajarildi deb belgilashi va undan chiqishi mumkin. Sarlavha, izohlar, muddat va ustuvorlikni faqat siz oʻzgartirasiz, boshqa masʼul tanlaysiz yoki oʻchirasiz.</string>
+    <string name="ZG_tasks_assign_footer_pending">%1$s qabul qilishi kutilmoqda. Masʼul vazifani Zenlygramda sinxronlash yoqilganda koʻradi; 7 kun ichida boshlasa ham, vazifa unga yetib boradi. Shu muddatda qabul qilinmasa, qayta yuborishingiz mumkin.</string>
+    <string name="ZG_tasks_assign_footer_queued">Kunlik topshirish chegarasi toʻldi. Vazifa keyinroq avtomatik yuboriladi.</string>
+    <string name="ZG_tasks_assign_footer_ended">Bu vazifa hozir hech kimga topshirilmagan. Qayta yuboring yoki boshqa masʼul tanlang.</string>
+    <string name="ZG_tasks_assign_footer_notSent">%1$s avval masʼul sifatida saqlangan, lekin vazifa unga yuborilmagan.</string>
+    <string name="ZG_tasks_assign_footer_completedTask">Bajarilgan vazifani topshirib boʻlmaydi. Avval uni qayta oching.</string>
+    <string name="ZG_tasks_assign_explainer_title">Masʼul tayinlash qanday ishlaydi</string>
+    <string name="ZG_tasks_assign_explainer_text">Vazifa masʼulga Telegram xabari sifatida emas, uning Zenlygram Vazifalariga tushadi. U sarlavha, izohlar va muddatni koʻradi, bajarildi deb belgilashi va vazifadan chiqishi mumkin. U sizning Telegram IDʼingizni ham koʻradi. Roʻyxatlaringiz va boshqa vazifalaringiz unga koʻrinmaydi. Masʼul vazifani Zenlygramda sinxronlash yoqilganda koʻradi; 7 kun ichida boshlasa, vazifa unga yetib boradi. Siz uning ismini va vazifa bilan nima qilganini koʻrasiz.</string>
+    <string name="ZG_tasks_assign_explainer_ok">Tushunarli</string>
+    <string name="ZG_tasks_assign_self">Vazifani oʻzingizga topshirib boʻlmaydi.</string>
+    <string name="ZG_tasks_assign_limitPerPerson">Bir kishiga kuniga 5 tagacha vazifa topshirish mumkin. Ertaga qayta urinib koʻring.</string>
+    <string name="ZG_tasks_assign_limitPerMinute">Ketma-ket juda koʻp vazifa topshirildi. Bir daqiqadan soʻng qayta urinib koʻring.</string>
+    <string name="ZG_tasks_assign_limitTotal">Bugun juda koʻp vazifa topshirildi. Ertaga qayta urinib koʻring.</string>
+    <string name="ZG_tasks_assign_limitPending">Javob kutayotgan topshiriqlar juda koʻp. Ulardan baʼzilari qabul qilingach yoki muddati tugagach qayta urinib koʻring.</string>
+    <string name="ZG_tasks_assign_needsSync_title">Masʼul tayinlash uchun sinxronlash kerak</string>
+    <string name="ZG_tasks_assign_needsSync_text">Masʼul vazifani oʻz Vazifalarida koʻrishi uchun u Zenlygram serverida saqlanadi. Buning uchun maʼlumotlar roziligi va bogʻlangan akkaunt kerak.</string>
+    <string name="ZG_tasks_assign_needsSync_action">Sinxronlashni yoqish</string>
+    <string name="ZG_tasks_assign_waitForSync">Sinxronlash boshlangach, birozdan soʻng masʼul tayinlash mumkin boʻladi.</string>
+    <string name="ZG_tasks_assigned_header">Menga topshirilgan</string>
+    <string name="ZG_tasks_assigned_by">Topshirdi: %1$s</string>
+    <string name="ZG_tasks_assigned_editorTitle">Topshirilgan vazifa</string>
+    <string name="ZG_tasks_assigned_rights">Siz uni bajarildi/bajarilmadi deb belgilashingiz va vazifadan chiqishingiz mumkin. Oʻzgartirish, boshqa masʼul tanlash va oʻchirish faqat topshirgan odamda.</string>
+    <string name="ZG_tasks_invitations_hint">Telegram kontaktlaringizdagi odamlardan kelgan vazifalar avtomatik qabul qilinadi. Boshqalar shu yerda javobingizni kutadi.</string>
+</resources>

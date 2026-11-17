@@ -1,0 +1,48 @@
+// ZENLYGRAM: the Zenlygram cloud client (org.telegram.zenlygram.cloud / appupdate / customer). Applied from
+// TMessagesProj/build.gradle after zenlygram-lenta.gradle, in its own file so upstream merges stay easy.
+// See docs/zenlygram-cloud-android.md.
+//
+// Gradle properties (command line -P..., or ~/.gradle/gradle.properties outside this repository):
+//   ZG_CONSENT_OPERATOR_NAME, ZG_CONSENT_OPERATOR_STIR, ZG_CONSENT_OPERATOR_PERSON, ZG_CONSENT_OPERATOR_EMAIL
+//       The data operator values the consent text names (iOS sg_config.consent_operator). Public values, not secrets,
+//       owner-confirmed defaults are committed below; a missing / invalid value fails closed, like iOS.
+//
+// JVM unit tests of the pure cloud core: src/zgTest/java (every testXxxUnitTest variant, Lenta on or off).
+
+def zgCloudProp = { String name ->
+    def value = project.findProperty(name)
+    return value == null ? "" : value.toString().trim()
+}
+// The data operator named by the consent text: public values (every user reads them in the text), owner-confirmed
+// 2026-11-13; rendering iOS v1/en.md with them gives the text_sha256 the owner's iPhone recorded on consent
+// (ZgConsentTextTest). A Gradle property of the same name overrides one.
+def zgCloudOperatorDefaults = [
+    ZG_CONSENT_OPERATOR_NAME  : '"ZENLYGRAM" MCHJ',
+    ZG_CONSENT_OPERATOR_STIR  : '313454883',
+    ZG_CONSENT_OPERATOR_PERSON: 'Abdurahmonov Abdurashid',
+    ZG_CONSENT_OPERATOR_EMAIL : 'info@zenlygram.com',
+]
+def zgCloudOperator = { String name ->
+    def value = zgCloudProp(name)
+    return value.isEmpty() ? zgCloudOperatorDefaults[name] : value
+}
+def zgCloudQuote = { String value -> '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"' }
+
+android {
+    defaultConfig {
+        buildConfigField "String", "ZG_CONSENT_OPERATOR_NAME", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_NAME"))
+        buildConfigField "String", "ZG_CONSENT_OPERATOR_STIR", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_STIR"))
+        buildConfigField "String", "ZG_CONSENT_OPERATOR_PERSON", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_PERSON"))
+        buildConfigField "String", "ZG_CONSENT_OPERATOR_EMAIL", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_EMAIL"))
+        // The cloud client (org.telegram.messenger.zenlygram.customer) reads the same values under these names.
+        // required = no use of a signed-in account without the data consent (the iOS build's consent_mode).
+        buildConfigField "String", "ZENLYGRAM_CONSENT_MODE", zgCloudQuote("required")
+        buildConfigField "String", "ZENLYGRAM_CONSENT_OPERATOR_NAME", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_NAME"))
+        buildConfigField "String", "ZENLYGRAM_CONSENT_OPERATOR_STIR", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_STIR"))
+        buildConfigField "String", "ZENLYGRAM_CONSENT_OPERATOR_RESPONSIBLE_PERSON", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_PERSON"))
+        buildConfigField "String", "ZENLYGRAM_CONSENT_OPERATOR_CONTACT_EMAIL", zgCloudQuote(zgCloudOperator("ZG_CONSENT_OPERATOR_EMAIL"))
+    }
+    sourceSets {
+        test.java.srcDirs += "src/zgTest/java"
+    }
+}

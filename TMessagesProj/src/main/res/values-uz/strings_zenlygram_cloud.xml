@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM WP-C: strings of the Zenlygram cloud client (org.telegram.zenlygram.cloud / appupdate / customer).
+     Taken from iOS SGLocalizable.strings (release/appstore) with App Store wording changed to Google Play; ZGC_ names never
+     collide with the generated ZG_ names. Keep values/, values-ru/ and values-uz/ in step
+     (zenlygram-tests/customer/strings_parity.py checks it).
+     ZGC_Settings_Data_Consent, ZGC_DataConsent_Title, ZGC_DataConsent_MyData, ZGC_MyData_Title, ZGC_DataConsent_Delete and
+     ZGC_Consent_Declined_Delete are quoted by the hashed consent texts (assets/zenlygram/consent/v1): they read exactly as
+     the texts name them, and changing their words needs a new text version. -->
+<resources>
+    <string name="ZGC_AppUpdate_Required_Title">Yangilash talab qilinadi</string>
+    <string name="ZGC_AppUpdate_Required_Text">Zenlygramning bu versiyasi endi qoʻllab-quvvatlanmaydi. Davom etish uchun ilovani yangilang.</string>
+    <string name="ZGC_AppUpdate_Required_Help">Yordam</string>
+    <string name="ZGC_AppUpdate_Available_Title">Yangilanish mavjud</string>
+    <string name="ZGC_AppUpdate_Available_Update">Yangilash</string>
+    <string name="ZGC_AppUpdate_Available_Later">Keyinroq</string>
+    <string name="ZGC_Consent_Wall_Title">Maʼlumotlar va rozilik</string>
+    <string name="ZGC_Consent_Wall_Account">Akkaunt: %1$s</string>
+    <string name="ZGC_Consent_Wall_Summary">Zenlygramdan shu akkaunt bilan foydalanish uchun uning Telegram ID, telefon raqami, ismi, foydalanish statistikasi, obuna holati va bulutdagi vazifalarini Toshkentdagi serverimizda saqlashga roziligingiz kerak.</string>
+    <string name="ZGC_Consent_Wall_Language">Matn tili</string>
+    <string name="ZGC_Consent_Wall_Agree">Roziman</string>
+    <string name="ZGC_Consent_Wall_Decline">Rozi emasman</string>
+    <string name="ZGC_Consent_Wall_AgeHint">Davom etish uchun yoshingizni tasdiqlang.</string>
+    <string name="ZGC_Consent_Wall_ModeNote_Optional">Rozilik ixtiyoriy. Rozi boʻlmasangiz, bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi va akkaunt avtomatik bogʻlanmaydi; ilova shu qurilmada avvalgidek ishlayveradi. Keyinroq Sozlamalar → Zenlygram → Maʼlumotlar va rozilik boʻlimida rozilik berishingiz mumkin.</string>
+    <string name="ZGC_Consent_Wall_TextUnavailable">Zenlygramning bu versiyasi rozilik matnini koʻrsata olmaydi. Ilovani yangilang.</string>
+    <string name="ZGC_Consent_Wall_SaveFailed">Tanlovingizni saqlab boʻlmadi. Qayta urinib koʻring.</string>
+    <string name="ZGC_Consent_Declined_Back">Orqaga</string>
+    <string name="ZGC_DataConsent_Title">Maʼlumotlar va rozilik</string>
+    <string name="ZGC_DataConsent_Status_Granted">Rozilik berilgan: %1$s (matn versiyasi %2$s).</string>
+    <string name="ZGC_DataConsent_Status_Pending">Rozilik berilgan; serverga hali yuborilmagan.</string>
+    <string name="ZGC_DataConsent_Status_None">Rozilik berilmagan. Bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi.</string>
+    <string name="ZGC_DataConsent_Status_Declined">Siz rozilik bermadingiz. Bu akkaunt uchun profil, statistika va bulutdagi vazifalar yigʻilmaydi.</string>
+    <string name="ZGC_DataConsent_Status_Withdrawn">Siz %1$s kuni rozilikni qaytarib oldingiz. Serverimizdagi maʼlumotlaringiz keyingi ish kunidan kechiktirmay oʻchiriladi.</string>
+    <string name="ZGC_DataConsent_Status_WithdrawPending">Siz %1$s kuni rozilikni qaytarib oldingiz. Bu xabar hali serverimizga yetib bormagan; ilova yuborishga urinishda davom etadi.</string>
+    <string name="ZGC_DataConsent_ReadText">Rozilik matni</string>
+    <string name="ZGC_DataConsent_Grant">Rozilik berish</string>
+    <string name="ZGC_DataConsent_MyData">Mening maʼlumotlarim</string>
+    <string name="ZGC_DataConsent_Withdraw">Rozilikni qaytarib olish</string>
+    <string name="ZGC_DataConsent_Delete">Zenlygram hisobim va maʼlumotlarimni oʻchirish</string>
+    <string name="ZGC_DataConsent_Operator">Maʼlumotlar operatori: %1$s · %2$s</string>
+    <string name="ZGC_DataConsent_Storage">Maʼlumotlar Toshkentdagi (Oʻzbekiston) serverda saqlanadi.</string>
+    <string name="ZGC_DataConsent_Footer">Bu boʻlim faqat shu Telegram akkauntiga tegishli.</string>
+    <string name="ZGC_DataConsent_Withdraw_Confirm_Title">Rozilik qaytarib olinsinmi?</string>
+    <string name="ZGC_DataConsent_Withdraw_Confirm_Action">Qaytarib olish</string>
+    <string name="ZGC_DataConsent_Withdraw_Optional">Ilova shu qurilmada ishlashda davom etadi va bu akkaunt uchun profil, statistika yoki bulutdagi vazifalarni boshqa yubormaydi.</string>
+    <string name="ZGC_DataConsent_Withdraw_PendingUpload">Bu qurilma serverimizga bogʻlanmagan, shuning uchun rozilikni qaytarib olganingiz haqidagi xabarni bu yerdan yuborib boʻlmaydi; qurilmani yana bogʻlasangiz, u yuboriladi. Bu Telegram akkauntidan boshqa qurilmadagi Zenlygramda ham foydalansangiz, u yerda ham rozilikni qaytarib oling yoki maʼlumotlaringizni zenlygram.org/account/delete sahifasida oʻchiring yoxud quyida koʻrsatilgan manzilga yozing.</string>
+    <string name="ZGC_AccountDelete_Title">Zenlygram hisobini oʻchirish</string>
+    <string name="ZGC_AccountDelete_Deleted">Zenlygram hisobingiz va u uchun saqlanayotgan maʼlumotlar oʻchiriladi: profil, qurilmalar, statistika, bulutdagi vazifalar, takliflar va akkaunt bogʻlanishi. Bu hisobga bogʻlangan barcha qurilmalar Zenlygramdan chiqariladi.</string>
+    <string name="ZGC_AccountDelete_Kept">Toʻlov yozuvlari faqat qonun talab qiladigan muddat saqlanadi, ulardan sizni aniqlashga imkon beradigan maʼlumotlar olib tashlanadi. Rozilik berganingiz va qaytarib olganingiz haqidagi yozuv (hisob raqami, matn versiyalari va sanalar) 3 yil saqlanadi.</string>
+    <string name="ZGC_AccountDelete_Telegram">Telegram akkauntingiz oʻchirilmaydi.</string>
+    <string name="ZGC_AccountDelete_Timing">Oʻchirish darhol boshlanadi va keyingi ish kunidan kechiktirmay yakunlanadi. Shifrlangan zaxira nusxalar va server jurnallaridagi nusxalar 14 kun ichida yoʻqoladi.</string>
+    <string name="ZGC_AccountDelete_NotLinked">Bu akkaunt shu qurilmadan Zenlygram serveriga bogʻlanmagan. Zenlygram hisobini oʻchirish uchun zenlygram.org/account/delete sahifasini oching va Telegram orqali kiring.</string>
+    <string name="ZGC_AccountDelete_OpenWeb">Sahifani ochish</string>
+    <string name="ZGC_MyData_Title">Mening maʼlumotlarim</string>
+    <string name="ZGC_MyData_NotLinked">Bu akkaunt shu qurilmadan Zenlygram serveriga bogʻlanmagan, shuning uchun koʻrsatadigan server maʼlumotlari yoʻq.</string>
+    <string name="ZGC_Settings_Data_Header">Maʼlumotlar va maxfiylik</string>
+    <string name="ZGC_Settings_Data_Consent">Maʼlumotlar va rozilik</string>
+    <string name="ZGC_Settings_Data_State_Granted">Berilgan</string>
+    <string name="ZGC_Settings_Data_State_None">Berilmagan</string>
+    <string name="ZGC_Settings_Data_State_Declined">Rad etilgan</string>
+    <string name="ZGC_Settings_Data_State_Withdrawn">Qaytarib olingan</string>
+    <string name="ZGC_Settings_Data_PrivacyPolicy">Maxfiylik siyosati</string>
+    <string name="ZGC_AppUpdate_Required_Button">Google Playni ochish</string>
+    <string name="ZGC_AppUpdate_Required_DeviceNote">Yangilanish bu qurilma uchun taklif qilinmasa, yangiroq Android kerak boʻlishi mumkin; Google Play ham uni kechikib koʻrsatishi mumkin.</string>
+    <string name="ZGC_AppUpdate_Available_Text">Google Playda Zenlygram %1$s versiyasi mavjud.</string>
+    <string name="ZGC_DataConsent_OperatorMissing">Bu build hozircha rozilik matnini koʻrsata olmaydi: maʼlumotlar operatori rekvizitlari toʻldirilmagan. Hech narsa yigʻilmaydi va yuborilmaydi.</string>
+    <string name="ZGC_Pro_Policy_Verified">Server imzolagan siyosat: %1$s, reviziya %2$s, tekshirilgan %3$s</string>
+    <string name="ZGC_Pro_Policy_Free">bepul</string>
+    <string name="ZGC_Pro_Policy_Paid">pullik</string>
+    <string name="ZGC_Pro_Policy_None">Server imzolagan siyosat hali yoʻq: Pro bu qurilmada bepul.</string>
+    <!-- Required-mode consent wall (iOS SGConsentWallView / decline page, SGLocalizable.strings release/appstore) -->
+    <string name="ZGC_Consent_Wall_ModeNote_Required">Bu rozilik boʻlmasa, shu Telegram akkaunti bilan Zenlygramdan foydalanib boʻlmaydi. Boshqa akkauntlaringizga taʼsir qilmaydi.</string>
+    <string name="ZGC_Consent_Wall_Notice_Reconsent">Rozilik matni yangilandi. Uni oʻqib chiqing va qayta rozilik bering.</string>
+    <string name="ZGC_Consent_Wall_Notice_Withdrawn">Siz %1$s kuni rozilikni qaytarib olgansiz.</string>
+    <string name="ZGC_Consent_Wall_Notice_WithdrawnRemote">Bu akkaunt uchun rozilik %1$s kuni boshqa qurilmada qaytarib olingan.</string>
+    <string name="ZGC_Consent_Wall_Notice_LinkEnded">Bu akkauntning serverimiz bilan bogʻlanishi tugagan (masalan, uning Zenlygram hisobi oʻchirilgan). Qayta rozilik bermaguningizcha Zenlygram uni oʻzi qayta bogʻlamaydi.</string>
+    <string name="ZGC_Consent_Declined_Title">Rozilik kerak</string>
+    <string name="ZGC_Consent_Declined_Text">Zenlygram obunangizni, bulutdagi vazifalaringizni va akkaunt maʼlumotlaringizni oʻz serverida saqlaydi va buning uchun roziligingiz kerak. Rozilik boʻlmasa, shu Telegram akkaunti bilan Zenlygramdan foydalanib boʻlmaydi.\n\nRozilik matnini qayta oʻqishingiz, Zenlygram hisobingizni va serverimizdagi maʼlumotlarni oʻchirishingiz yoki shu qurilmada bu akkauntdan chiqishingiz mumkin. Akkauntdan chiqish Telegram akkauntingizni oʻchirmaydi: u boshqa Telegram ilovalarida ishlashda davom etadi. Bu akkauntning faqat shu qurilmada saqlangan Zenlygram maʼlumotlari (masalan, mahalliy vazifalar) chiqishda oʻchishi mumkin.</string>
+    <string name="ZGC_Consent_Declined_Delete">Zenlygram hisobim va maʼlumotlarimni oʻchirish</string>
+    <string name="ZGC_Consent_Declined_Logout">Bu akkauntdan chiqish</string>
+    <string name="ZGC_Consent_Declined_SwitchAccount">Boshqa akkauntdan foydalanish</string>
+    <string name="ZGC_Consent_Declined_PrivacyPolicy">Maxfiylik siyosati</string>
+    <string name="ZGC_Consent_Declined_Logout_LastAccount">Bu qurilmada faqat shu akkaunt kirgan. Akkauntdan chiqish bu qurilmadagi Zenlygram maʼlumotlarini ham oʻchiradi: mahalliy vazifalar, bulutdagi vazifalar nusxasi, qoʻngʻiroq yozuvlari hamda Maxfiy seyf va Chat qulfi sozlamalari.</string>
+    <string name="ZGC_DataConsent_Withdraw_Required">Shundan keyin bu akkaunt bilan Zenlygramdan faqat qayta rozilik berib foydalanish mumkin.</string>
+    <string name="ZGC_AppUpdate_Required_Button_Direct">zenlygram.org saytini ochish</string>
+    <string name="ZGC_AppUpdate_Required_DeviceNote_Direct">Yangi versiya bu qurilmaga oʻrnatilmasa, yangiroq Android kerak boʻlishi mumkin.</string>
+    <string name="ZGC_AppUpdate_Available_Text_Direct">zenlygram.org saytida Zenlygram %1$s versiyasi mavjud.</string>
+</resources>

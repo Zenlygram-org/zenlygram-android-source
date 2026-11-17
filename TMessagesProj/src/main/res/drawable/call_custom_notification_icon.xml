@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Zenlygram brand blue (was Telegram's #2ca5e0) and the Z centred (the -2dp left shift was for the plane) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="40dp"
+        android:height="40dp">
+        <shape android:shape="oval">
+            <solid android:color="#1F7FFF" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/notification"
+		android:gravity="center"
+        android:width="24dp"
+        android:height="24dp" />
+</layer-list>

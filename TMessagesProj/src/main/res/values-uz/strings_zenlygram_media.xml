@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Uzbek strings of the media & calls port (WP-B). See values/strings_zenlygram_media.xml. -->
+<resources>
+    <string name="ZG_Settings_Transcription_Backend_device">Shu qurilmada</string>
+    <string name="ZG_Settings_Transcription_Backend_DeviceNotice">Shu qurilmada: ovozli va dumaloq video xabarlar telefonning oʻz nutq xizmati bilan, Telegram Premium’siz matnga aylantiriladi. Ovoz telefondan chiqmaydi; tillar va sifat telefonga bogʻliq.</string>
+    <string name="ZG_VoiceToText_Failed">Bu xabarni shu qurilmada matnga aylantirib boʻlmadi.</string>
+    <string name="ZG_VoiceToText_ModelDownload">Bu til uchun nutq modeli telefonda hali yoʻq. Android uni yuklab olmoqda; keyinroq qayta urinib koʻring.</string>
+    <string name="ZG_VoiceToText_LanguageUnsupported">Bu telefon ushbu tilni qurilmaning oʻzida taniy olmaydi.</string>
+</resources>

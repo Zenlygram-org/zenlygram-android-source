@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ZENLYGRAM: own account type (resValue from TMessagesProj/zenlygram-identity.gradle, = applicationId); upstream used "org.telegram.messenger", which clashes with an installed official Telegram -->
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="@string/zg_account_type"
+    android:icon="@drawable/ic_launcher_dr"
+    android:smallIcon="@drawable/ic_launcher_dr"
+    android:label="@string/AppName"
+    android:accountPreferences="@xml/auth_menu"/>

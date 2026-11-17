@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Customer data and consent (W18-AND-8). Wording is normative in design/consent/ui-strings.md (uz / ru / en);
+     Uzbek uses U+02BB / U+02BC. Checked by zenlygram-tests/customer/strings_parity.py. -->
+<resources>
+
+    <!-- Consent wall / prompt (ui-strings §1) -->
+    <string name="ZenlyConsentTitle">Данные и согласие</string>
+    <string name="ZenlyConsentAccount">Аккаунт: %1$s</string>
+    <string name="ZenlyConsentTextLanguage">Язык текста</string>
+    <string name="ZenlyConsentAgree">Принимаю</string>
+    <string name="ZenlyConsentDecline">Не принимаю</string>
+    <string name="ZenlyConsentAgeHint">Чтобы продолжить, подтвердите возраст.</string>
+    <string name="ZenlyConsentModeNoteRequired">Без этого согласия пользоваться Zenlygram с этим аккаунтом Telegram нельзя. На другие ваши аккаунты это не влияет.</string>
+    <string name="ZenlyConsentModeNoteOptional">Согласие необязательно. Если вы не согласитесь, для этого аккаунта не будут собираться профиль, статистика и облачные задачи, и аккаунт не будет привязан автоматически; приложение продолжит работать на этом устройстве как раньше. Дать согласие можно позже в разделе Настройки → Zenlygram → Данные и согласие.</string>
+    <string name="ZenlyConsentNoticeReconsent">Текст согласия изменился. Прочитайте его и дайте согласие снова.</string>
+    <string name="ZenlyConsentNoticeWithdrawn">Вы отозвали согласие %1$s.</string>
+    <string name="ZenlyConsentNoticeWithdrawnRemote">Согласие для этого аккаунта отозвано на другом устройстве %1$s.</string>
+    <string name="ZenlyConsentNoticeLinkEnded">Связь этого аккаунта с нашим сервером прекращена (например, его учётная запись Zenlygram удалена). Пока вы снова не дадите согласие, Zenlygram не будет сам привязывать его заново.</string>
+    <string name="ZenlyConsentTextUnavailable">Эта версия Zenlygram не может показать текст согласия. Обновите приложение.</string>
+    <string name="ZenlyConsentSaveFailed">Не удалось сохранить ваш выбор. Попробуйте ещё раз.</string>
+
+    <!-- Required mode: the decline page (ui-strings §2; its Delete and Privacy Policy rows reuse ZenlyDataConsentDelete and ZenlyDataConsentPrivacyPolicy, same words) -->
+    <string name="ZenlyConsentDeclinedTitle">Нужно согласие</string>
+    <string name="ZenlyConsentDeclinedText">Zenlygram хранит вашу подписку, облачные задачи и данные аккаунта на собственном сервере, и для этого нужно ваше согласие. Без согласия пользоваться Zenlygram с этим аккаунтом Telegram нельзя.\n\nВы можете вернуться и ещё раз прочитать согласие, удалить учётную запись Zenlygram и данные на нашем сервере или выйти из этого аккаунта на этом устройстве. Выход не удаляет ваш аккаунт Telegram: он продолжит работать в других приложениях Telegram. Данные Zenlygram этого аккаунта, которые хранятся только на этом устройстве (например, локальные задачи), при выходе могут быть удалены.</string>
+    <string name="ZenlyConsentDeclinedBack">Назад</string>
+    <string name="ZenlyConsentDeclinedLogout">Выйти из этого аккаунта</string>
+    <string name="ZenlyConsentSwitchAccount">Использовать другой аккаунт</string>
+
+    <!-- Settings -> Zenlygram -> Data & consent (ui-strings §3). Row, MyData and Delete are quoted by the hashed consent text: changing their words needs a new text version. -->
+    <string name="ZenlyDataConsentHeader">Данные и конфиденциальность</string>
+    <string name="ZenlyDataConsentRow">Данные и согласие</string>
+    <string name="ZenlyDataConsentValueGranted">Дано</string>
+    <string name="ZenlyDataConsentValueNone">Не дано</string>
+    <string name="ZenlyDataConsentValueDeclined">Отклонено</string>
+    <string name="ZenlyDataConsentValueWithdrawn">Отозвано</string>
+    <string name="ZenlyDataConsentValueReview">Требует внимания</string>
+    <string name="ZenlyDataConsentFooter">Этот раздел относится только к этому аккаунту Telegram.</string>
+    <string name="ZenlyDataConsentStatusGranted">Согласие дано %1$s (версия текста %2$s).</string>
+    <string name="ZenlyDataConsentStatusPending">Согласие дано; ещё не отправлено на сервер.</string>
+    <string name="ZenlyDataConsentStatusNone">Согласие не дано. Профиль, статистика и облачные задачи для этого аккаунта не собираются.</string>
+    <string name="ZenlyDataConsentStatusDeclined">Вы отказались. Профиль, статистика и облачные задачи для этого аккаунта не собираются.</string>
+    <string name="ZenlyDataConsentStatusWithdrawn">Вы отозвали согласие %1$s. Ваши данные на нашем сервере удаляются не позднее следующего рабочего дня.</string>
+    <string name="ZenlyDataConsentStatusWithdrawPending">Вы отозвали согласие %1$s. Отзыв ещё не дошёл до нашего сервера; приложение продолжает попытки.</string>
+    <string name="ZenlyDataConsentStatusReconsent">Текст согласия обновлён — ознакомьтесь снова.</string>
+    <string name="ZenlyDataConsentStatusLinkEnded">Связь с нашим сервером прекращена. Чтобы аккаунт привязывался автоматически, дайте согласие снова.</string>
+    <string name="ZenlyDataConsentStatusRejected">Не удалось записать ваше согласие. Обновите приложение и дайте согласие снова.</string>
+    <string name="ZenlyDataConsentReadText">Текст согласия</string>
+    <string name="ZenlyDataConsentGrant">Дать согласие</string>
+    <string name="ZenlyDataConsentMyData">Мои данные</string>
+    <string name="ZenlyDataConsentWithdraw">Отозвать согласие</string>
+    <string name="ZenlyDataConsentDelete">Удалить мою учётную запись Zenlygram и данные</string>
+    <string name="ZenlyDataConsentPrivacyPolicy">Политика конфиденциальности</string>
+    <string name="ZenlyDataConsentOperator">Оператор данных: %1$s · %2$s</string>
+    <string name="ZenlyDataConsentStorage">Данные хранятся на сервере в Ташкенте (Узбекистан).</string>
+    <string name="ZenlyDataConsentResetDebug">Reset consent on this device (debug build)</string>
+    <string name="ZenlyDataConsentActiveElsewhere">Согласие для этого аккаунта на сервере всё ещё действует, потому что его снова дали на другом устройстве. Чтобы прекратить обработку, отзовите его на том устройстве или удалите данные на странице zenlygram.org/account/delete.</string>
+    <string name="ZenlyDataConsentDeletePending">Удаление запрошено. Ожидаем подтверждения от сервера.</string>
+
+    <!-- Withdraw confirmation (ui-strings §4) -->
+    <string name="ZenlyDataConsentWithdrawTitle">Отозвать согласие?</string>
+    <string name="ZenlyDataConsentWithdrawText">Ваш профиль, статистика и облачные задачи будут удалены с нашего сервера не позднее следующего рабочего дня после того, как отзыв до него дойдёт. Облачные задачи останутся на этом устройстве как копия только для чтения. Связь этого аккаунта с учётной записью Zenlygram сохранится ради подписки; чтобы удалить и её, и все данные, вместо отзыва удалите учётную запись Zenlygram.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_zero">Будут потеряны %1$d неотправленных изменений задач.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_one">Будет потеряно %1$d неотправленное изменение задач.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_two">Будут потеряны %1$d неотправленных изменения задач.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_few">Будут потеряны %1$d неотправленных изменения задач.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_many">Будут потеряны %1$d неотправленных изменений задач.</string>
+    <string name="ZenlyDataConsentWithdrawUnsent_other">Будут потеряны %1$d неотправленных изменений задач.</string>
+    <string name="ZenlyDataConsentWithdrawRequired">После этого пользоваться Zenlygram с этим аккаунтом можно будет, только снова дав согласие.</string>
+    <string name="ZenlyDataConsentWithdrawOptional">Приложение продолжит работать на этом устройстве и больше не будет отправлять профиль, статистику и облачные задачи этого аккаунта.</string>
+    <string name="ZenlyDataConsentWithdrawConfirm">Отозвать</string>
+    <string name="ZenlyDataConsentWithdrawDeleteInstead">Удалить мою учётную запись Zenlygram и данные</string>
+    <string name="ZenlyDataConsentWithdrawPendingUpload">Это устройство не привязано к нашему серверу, поэтому отзыв нельзя отправить отсюда; он будет отправлен, если вы снова привяжете это устройство. Если вы пользуетесь этим аккаунтом Telegram в Zenlygram на другом устройстве, отзовите согласие и там, или удалите данные на странице zenlygram.org/account/delete, или напишите по адресу, указанному ниже.</string>
+    <string name="ZenlyLogoutWithdrawPending">Отзыв согласия ещё не дошёл до сервера Zenlygram. При выходе приложение отправит его ещё раз; если это не получится, удалите данные на странице zenlygram.org/account/delete.</string>
+
+    <!-- Account deletion (ui-strings §5; ZenlyDeleteText = Deleted, Kept + Telegram, Timing) -->
+    <string name="ZenlyDeleteTitle">Удаление учётной записи Zenlygram</string>
+    <string name="ZenlyDeleteText">Будут удалены ваша учётная запись Zenlygram и данные, которые мы для неё храним: профиль, устройства, статистика, облачные задачи, приглашения и привязка аккаунта. На всех устройствах, привязанных к этой учётной записи, будет выполнен выход из Zenlygram.\n\nПлатёжные записи хранятся только в течение срока, которого требует закон, и из них удаляются данные, по которым можно установить вашу личность. Запись о том, что вы давали и отзывали согласие (номер учётной записи, версии текста и даты), хранится 3 года. Ваш аккаунт Telegram не удаляется.\n\nУдаление начинается сразу и завершается не позднее следующего рабочего дня. Копии в зашифрованных резервных копиях и журналах сервера исчезают в течение 14 дней.</string>
+    <string name="ZenlyDeleteBilling">Если у вас есть подписка, она продолжит продлеваться и оплачиваться, пока вы не отмените её в %1$s. Если она вам больше не нужна, сначала отмените её.</string>
+    <string name="ZenlyDeleteManageSubscription">Управление подпиской</string>
+    <string name="ZenlyDeleteConfirm">Удалить учётную запись и данные</string>
+    <string name="ZenlyDeleteConfirm2Title">Удалить учётную запись Zenlygram?</string>
+    <string name="ZenlyDeleteConfirm2Text">Это действие нельзя отменить.</string>
+    <string name="ZenlyDeleteConfirm2Action">Удалить</string>
+    <string name="ZenlyDeleteDoneTitle">Учётная запись Zenlygram удалена</string>
+    <string name="ZenlyDeleteDoneText">Ваша учётная запись Zenlygram удалена. Копии в других наших сервисах будут удалены не позднее следующего рабочего дня, а копии в зашифрованных резервных копиях и журналах сервера — в течение 14 дней. Если вы продолжите пользоваться Zenlygram с этим аккаунтом, согласие будет запрошено снова.</string>
+    <string name="ZenlyDeleteNotLinked">Этот аккаунт не привязан к серверу Zenlygram с этого устройства. Чтобы удалить учётную запись Zenlygram, откройте страницу zenlygram.org/account/delete и войдите через Telegram.</string>
+    <string name="ZenlyDeleteOpenWeb">Открыть страницу</string>
+    <string name="ZenlyDeleteErrorOffline">Нет подключения. Проверьте интернет и попробуйте ещё раз или воспользуйтесь страницей zenlygram.org/account/delete.</string>
+    <string name="ZenlyDeleteErrorRateLimited">Слишком много попыток. Попробуйте немного позже.</string>
+    <string name="ZenlyDeleteErrorUnavailable">Сервер сейчас недоступен. Попробуйте позже или воспользуйтесь страницей zenlygram.org/account/delete.</string>
+    <string name="ZenlyDeleteFailed">Сейчас не удалось удалить учётную запись. Проверьте подключение и попробуйте ещё раз или воспользуйтесь страницей zenlygram.org/account/delete.</string>
+
+    <!-- My data (ui-strings §6) -->
+    <string name="ZenlyMyDataTitle">Мои данные</string>
+    <string name="ZenlyMyDataLoading">Загрузка…</string>
+    <string name="ZenlyMyDataNotLinked">Этот аккаунт не привязан к серверу Zenlygram с этого устройства, поэтому показывать нечего.</string>
+    <string name="ZenlyMyDataUnavailable">Сейчас не удалось загрузить данные. Попробуйте позже.</string>
+    <string name="ZenlyMyDataErrorOffline">Нет подключения.</string>
+    <string name="ZenlyMyDataErrorUnavailable">Сервер сейчас недоступен. Попробуйте позже.</string>
+    <string name="ZenlyMyDataErrorRateLimited">Слишком много запросов. Попробуйте позже.</string>
+    <string name="ZenlyMyDataRetry">Повторить</string>
+    <string name="ZenlyMyDataSectionAccount">Учётная запись</string>
+    <string name="ZenlyMyDataSectionConsent">Согласие</string>
+    <string name="ZenlyMyDataSectionHistory">История согласия</string>
+    <string name="ZenlyMyDataSectionProfile">Профиль</string>
+    <string name="ZenlyMyDataSectionDevices">Устройства</string>
+    <string name="ZenlyMyDataSectionActivity">Активность</string>
+    <string name="ZenlyMyDataSectionEvents">События статистики (последние 180 дней)</string>
+    <string name="ZenlyMyDataSectionSubscription">Подписка</string>
+    <string name="ZenlyMyDataSectionRetention">Сроки хранения</string>
+    <string name="ZenlyMyDataSourceTelegramAttest">Подтверждено Telegram</string>
+    <string name="ZenlyMyDataSourceTelegramBot">Telegram (через бота)</string>
+    <string name="ZenlyMyDataSourceClient">Из приложения</string>
+    <string name="ZenlyMyDataSourceTelegramSession">Из сессии Telegram</string>
+    <string name="ZenlyMyDataFieldId">ID учётной записи</string>
+    <string name="ZenlyMyDataFieldTelegramId">Telegram ID</string>
+    <string name="ZenlyMyDataFieldCreated">Создана</string>
+    <string name="ZenlyMyDataFieldPhone">Номер телефона</string>
+    <string name="ZenlyMyDataFieldCountry">Страна (по коду телефона)</string>
+    <string name="ZenlyMyDataFieldUsernames">Имена пользователя</string>
+    <string name="ZenlyMyDataFieldFirstName">Имя</string>
+    <string name="ZenlyMyDataFieldLastName">Фамилия</string>
+    <string name="ZenlyMyDataFieldName">Имя и фамилия</string>
+    <string name="ZenlyMyDataFieldLanguage">Язык Telegram</string>
+    <string name="ZenlyMyDataFieldPremium">Telegram Premium</string>
+    <string name="ZenlyMyDataFieldModel">Модель устройства</string>
+    <string name="ZenlyMyDataFieldOs">Операционная система</string>
+    <string name="ZenlyMyDataFieldApp">Версия приложения</string>
+    <string name="ZenlyMyDataFieldVersions">Версии (система / приложение)</string>
+    <string name="ZenlyMyDataFieldLocale">Региональный формат</string>
+    <string name="ZenlyMyDataFieldTimeZone">Часовой пояс</string>
+    <string name="ZenlyMyDataFieldDistribution">Источник установки</string>
+    <string name="ZenlyMyDataFieldFirstSeen">Впервые</string>
+    <string name="ZenlyMyDataFieldLastSeen">Последний раз</string>
+    <string name="ZenlyMyDataFieldFirstActive">Первая активность</string>
+    <string name="ZenlyMyDataFieldLastActive">Последняя активность</string>
+    <string name="ZenlyMyDataFieldActiveDays">Активных дней</string>
+    <string name="ZenlyMyDataFieldSessions30">Сеансы (30 дней)</string>
+    <string name="ZenlyMyDataFieldSeconds30">Время в приложении (30 дней)</string>
+    <string name="ZenlyMyDataEventsTotal">Всего событий</string>
+    <string name="ZenlyMyDataFieldRetained">Срок хранения</string>
+    <string name="ZenlyMyDataPrivacyFeatures">Функции конфиденциальности: событий — %1$d</string>
+</resources>

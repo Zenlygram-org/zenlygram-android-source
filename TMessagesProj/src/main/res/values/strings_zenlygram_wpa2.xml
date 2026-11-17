@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: WP-A part 2 (alternate app icons, contacts selection). -->
+<resources>
+    <!-- App icon names: iOS shows these English names untranslated (ThemeSettingsAppIconItem). -->
+    <string name="ZG_W2_AppIconFlow" translatable="false">Flow</string>
+    <string name="ZG_W2_AppIconGlass" translatable="false">Glass</string>
+    <string name="ZG_W2_AppIconMinimal" translatable="false">Minimal</string>
+    <string name="ZG_W2_AppIconGradient" translatable="false">Gradient</string>
+    <string name="ZG_W2_AppIconCircle" translatable="false">Circle</string>
+    <string name="ZG_W2_AppIconMonochrome" translatable="false">Monochrome</string>
+    <string name="ZG_W2_AppIconOutline" translatable="false">Outline</string>
+    <string name="ZG_W2_AppIconDuotone" translatable="false">Duotone</string>
+    <string name="ZG_W2_AppIconDark" translatable="false">Dark</string>
+    <string name="ZG_W2_AppIconAero" translatable="false">Aero</string>
+    <string name="ZG_W2_AppIconFold" translatable="false">Fold</string>
+    <string name="ZG_W2_AppIconWave" translatable="false">Wave</string>
+    <string name="ZG_W2_AppIconCorner" translatable="false">Corner</string>
+    <string name="ZG_W2_AppIconFocus" translatable="false">Focus</string>
+    <string name="ZG_W2_AppIconBaltic" translatable="false">Baltic</string>
+    <string name="ZG_W2_AppIconNeon" translatable="false">Neon</string>
+    <string name="ZG_W2_AppIconIsometric" translatable="false">Isometric</string>
+    <string name="ZG_W2_AppIconClean" translatable="false">Clean</string>
+    <string name="ZG_W2_AppIconPremium" translatable="false">Premium</string>
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ZENLYGRAM: Russian Android-only strings of the Zenlygram settings screens. See values/strings_zenlygram_android.xml. -->
+<resources>
+    <string name="ZG_SettingsProEntry">Zenlygram Pro</string>
+    <string name="ZG_NewBadge">НОВОЕ</string>
+
+    <string name="ZG_Header_About">О Zenlygram</string>
+    <string name="ZG_About_BasedOn">На основе Telegram для Android %1$s</string>
+    <string name="ZG_About_Website">Сайт</string>
+    <string name="ZG_About_SourceCode">Исходный код</string>
+    <string name="ZG_About_SourceCode_Soon">Zenlygram — свободное ПО (GPL). Ссылка на исходный код появится здесь.</string>
+    <string name="ZG_About_NotAffiliated">Он не аффилирован с Telegram FZ-LLC и подключается к сети Telegram через официальный API.</string>
+
+    <string name="ZG_Header_EditHistory">История изменений</string>
+
+    <string name="ZG_Pro_Features_Header">Возможности Pro</string>
+
+    <string name="ZG_Header_Developer">Для разработчиков</string>
+    <string name="ZG_Developer_PreviewAllRows">Показать все строки</string>
+    <string name="ZG_Developer_PreviewAllRows_Desc">Показывает серым строки функций, которые ещё не перенесены на Android, чтобы проверить вёрстку. Только в отладочных сборках.</string>
+    <string name="ZG_Developer_PreviewAllRows_Banner">Серые строки — функции, которых ещё нет в этой сборке, ими нельзя пользоваться. Чтобы скрыть их, выключите «%1$s» в разделе «%2$s» внизу.</string>
+    <!-- ZENLYGRAM Tasks: BEGIN (org.telegram.zenlygram.tasks; iOS SGTasksL10n) -->
+    <string name="ZG_tasks_tab">Задачи</string>
+    <string name="ZG_tasks_lists_title">Списки</string>
+    <string name="ZG_tasks_filter_all">Все</string>
+    <string name="ZG_tasks_filter_newList">Новый список</string>
+    <string name="ZG_tasks_inbox_title">Входящие</string>
+    <string name="ZG_tasks_a11y_openCountNone">Нет открытых задач</string>
+    <string name="ZG_tasks_a11y_openCount_one">%1$d открытая задача</string>
+    <string name="ZG_tasks_a11y_openCount_few">%1$d открытые задачи</string>
+    <string name="ZG_tasks_a11y_openCount_many">%1$d открытых задач</string>
+    <string name="ZG_tasks_a11y_openCount_other">%1$d открытых задач</string>
+    <string name="ZG_tasks_quickAdd_placeholder">Добавить задачу</string>
+    <string name="ZG_tasks_quickAdd_placeholderInList">Добавить в «%1$s»</string>
+    <string name="ZG_tasks_quickAdd_submit">Добавить задачу</string>
+    <string name="ZG_tasks_completed_header">Выполненные (%1$d)</string>
+    <string name="ZG_tasks_a11y_expanded">Развёрнуто</string>
+    <string name="ZG_tasks_a11y_collapsed">Свёрнуто</string>
+    <string name="ZG_tasks_a11y_completedHint_show">Показывает выполненные задачи</string>
+    <string name="ZG_tasks_a11y_completedHint_hide">Скрывает выполненные задачи</string>
+    <string name="ZG_tasks_empty_noTasks_title">Задач пока нет</string>
+    <string name="ZG_tasks_empty_noTasks_text">Чтобы добавить задачу, введите её в поле ниже.</string>
+    <string name="ZG_tasks_empty_listEmpty_text">В этом списке нет задач. Добавьте задачу в поле ниже.</string>
+    <string name="ZG_tasks_empty_allDone_title">Всё сделано</string>
+    <string name="ZG_tasks_empty_allDone_text">Здесь больше нечего делать.</string>
+    <string name="ZG_tasks_a11y_markDone">Отметить как выполненную</string>
+    <string name="ZG_tasks_a11y_markNotDone">Отметить как невыполненную</string>
+    <string name="ZG_tasks_a11y_stateDone">Выполнена</string>
+    <string name="ZG_tasks_a11y_stateOpen">Не выполнена</string>
+    <string name="ZG_tasks_a11y_editHint">Изменяет задачу</string>
+    <string name="ZG_tasks_action_edit">Изменить</string>
+    <string name="ZG_tasks_taskDeleted">Задача удалена</string>
+    <string name="ZG_tasks_error_generic">Не удалось сохранить изменение. Попробуйте ещё раз.</string>
+    <string name="ZG_tasks_error_restore">Не удалось восстановить задачу. Возможно, её список был удалён.</string>
+    <string name="ZG_tasks_error_titleTooLong">Слишком длинное название. Используйте не более %1$d символов.</string>
+    <string name="ZG_tasks_assignee_title">Исполнитель</string>
+    <string name="ZG_tasks_deadline_title">Срок</string>
+    <string name="ZG_tasks_metadata_none">Нет</string>
+    <string name="ZG_tasks_assignee_remove">Убрать исполнителя</string>
+    <string name="ZG_tasks_deadline_remove">Убрать срок</string>
+    <string name="ZG_tasks_assignee_pickerTitle">Выберите исполнителя</string>
+    <string name="ZG_tasks_editTask_screenTitle">Изменить задачу</string>
+    <string name="ZG_tasks_editTask_nameHeader">Название задачи</string>
+    <string name="ZG_tasks_newTask_placeholder">Задача</string>
+    <string name="ZG_tasks_metadata_localFooter">Исполнитель и срок сохраняются только на этом устройстве. Контакт не получает уведомлений.</string>
+    <string name="ZG_tasks_a11y_assigneeValue">Исполнитель: %1$s</string>
+    <string name="ZG_tasks_a11y_deadlineValue">Срок: %1$s</string>
+    <string name="ZG_tasks_a11y_pickAssigneeHint">Выбирает контакт Telegram. Сохраняется только на этом устройстве; контакт не получает уведомлений.</string>
+    <string name="ZG_tasks_a11y_pickDeadlineHint">Выбирает дату и время</string>
+    <string name="ZG_tasks_assignee_notContact">Выберите один из своих контактов Telegram.</string>
+    <string name="ZG_tasks_relative_today">Сегодня</string>
+    <string name="ZG_tasks_relative_tomorrow">Завтра</string>
+    <string name="ZG_tasks_deadline_nextWeek">Через неделю</string>
+    <string name="ZG_tasks_a11y_deadlineShortcutHint">Меняет дату, время остаётся прежним. Применится после сохранения.</string>
+    <string name="ZG_tasks_deadline_outOfRange">Эту дату нельзя сохранить. Выберите дату с 1970 по 2038 год.</string>
+    <string name="ZG_tasks_discardChanges_title">Выйти без сохранения?</string>
+    <string name="ZG_tasks_discardChanges_text">Изменения не сохранены.</string>
+    <string name="ZG_tasks_discardChanges_keepEditing">Продолжить редактирование</string>
+    <string name="ZG_tasks_discardChanges_discard">Не сохранять</string>
+    <string name="ZG_tasks_calendar_viewList">Список</string>
+    <string name="ZG_tasks_calendar_viewCalendar">Календарь</string>
+    <string name="ZG_tasks_calendar_label">Календарь сроков</string>
+    <string name="ZG_tasks_calendar_noDeadline">Без срока</string>
+    <string name="ZG_tasks_calendar_todayHint">Показывает задачи со сроком на сегодня</string>
+    <string name="ZG_tasks_calendar_noDeadlineHint">Показывает задачи без срока</string>
+    <string name="ZG_tasks_calendar_taskCountNone">Нет задач</string>
+    <string name="ZG_tasks_calendar_taskCount_one">%1$d задача</string>
+    <string name="ZG_tasks_calendar_taskCount_few">%1$d задачи</string>
+    <string name="ZG_tasks_calendar_taskCount_many">%1$d задач</string>
+    <string name="ZG_tasks_calendar_taskCount_other">%1$d задач</string>
+    <string name="ZG_tasks_calendar_monthToggleHint">Показывает или скрывает месяц</string>
+    <string name="ZG_tasks_calendar_monthShown">Месяц показан</string>
+    <string name="ZG_tasks_calendar_monthHidden">Месяц скрыт</string>
+    <string name="ZG_tasks_calendar_previousMonth">Предыдущий месяц</string>
+    <string name="ZG_tasks_calendar_nextMonth">Следующий месяц</string>
+    <string name="ZG_tasks_calendar_chooseMonth">Выбрать месяц и год</string>
+    <string name="ZG_tasks_calendar_emptyDay_title">На этот день задач нет</string>
+    <string name="ZG_tasks_calendar_emptyDay_text">Здесь появятся задачи со сроком на этот день. Выберите другой день или перейдите в Список.</string>
+    <string name="ZG_tasks_calendar_emptyUndated_title">Задач без срока нет</string>
+    <string name="ZG_tasks_calendar_emptyUndated_text">Здесь появятся задачи без срока. Выберите день, чтобы увидеть задачи со сроком.</string>
+    <string name="ZG_tasks_lists_headerCount_one">Списки — %1$d список</string>
+    <string name="ZG_tasks_lists_headerCount_few">Списки — %1$d списка</string>
+    <string name="ZG_tasks_lists_headerCount_many">Списки — %1$d списков</string>
+    <string name="ZG_tasks_lists_headerCount_other">Списки — %1$d списков</string>
+    <string name="ZG_tasks_lists_headerProgress">%1$s · %2$d/%3$d выполнено</string>
+    <string name="ZG_tasks_folders_empty">Списков пока нет. Нажмите «+», чтобы создать список.</string>
+    <string name="ZG_tasks_newFolder_prompt">Введите название списка</string>
+    <string name="ZG_tasks_newFolder_placeholder">Название списка</string>
+    <string name="ZG_tasks_renameFolder_title">Переименовать список</string>
+    <string name="ZG_tasks_action_rename">Переименовать</string>
+    <string name="ZG_tasks_action_open">Открыть</string>
+    <string name="ZG_tasks_deleteFolder_title">Удалить список?</string>
+    <string name="ZG_tasks_deleteFolder_textEmpty">Список будет удалён. Это действие нельзя отменить.</string>
+    <string name="ZG_tasks_deleteFolder_text_one">Список и %1$d задача в нём будут удалены. Это действие нельзя отменить.</string>
+    <string name="ZG_tasks_deleteFolder_text_few">Список и %1$d задачи в нём будут удалены. Это действие нельзя отменить.</string>
+    <string name="ZG_tasks_deleteFolder_text_many">Список и %1$d задач в нём будут удалены. Это действие нельзя отменить.</string>
+    <string name="ZG_tasks_deleteFolder_text_other">Список и %1$d задач в нём будут удалены. Это действие нельзя отменить.</string>
+    <string name="ZG_tasks_addToTasks">Добавить в задачи</string>
+    <string name="ZG_tasks_addedToTasks">Добавлено в задачи</string>
+    <!-- ZENLYGRAM Tasks: END -->
+    <!-- ZENLYGRAM Edit history / kept deleted messages (org.telegram.zenlygram.history): START -->
+    <string name="ZG_History_ShowDeletedMessages_Desc">Сохраняет копию сообщений, удалённых другими, и помечает её значком 🗑. Хранится только на этом устройстве и автоматически удаляется через 30 дней.</string>
+    <string name="ZG_History_EditHistory_Desc">Сохраняет прежние версии изменённых сообщений только на этом устройстве: до 20 на сообщение, каждая удаляется через 30 дней. Открыть: долгое нажатие → «История изменений». При отключении сохранённые версии удаляются.</string>
+    <string name="ZG_History_EditHistory_File">Файл</string>
+    <string name="ZG_History_EditHistory_Media">Медиа</string>
+    <string name="ZG_History_EditHistory_Empty">Прежние версии этого сообщения на этом устройстве не сохранены.</string>
+    <string name="ZG_History_ShowDeletedMessages_Notice">Telegram не сообщает, кто удалил сообщение, поэтому в личных чатах и небольших группах могут сохраниться и сообщения, которые вы удалили у себя на другом устройстве. Не сохраняются: ваши сообщения, «Избранное», служебные и исчезающие сообщения, удаления вместе с вашими сообщениями (например, очистка чата) и чаты, где вы можете удалять чужие сообщения. Хранится не более 5000 сообщений на аккаунт. Очистка кэша Telegram безвозвратно удаляет и медиа сохранённых сообщений, а очистка локальной базы данных («Данные и память» → «Использование памяти») или долгое отсутствие в сети — и сами сохранённые сообщения. Чтобы убрать сохранённое сообщение, удерживайте его → «Удалить». При отключении все сохранённые сообщения удаляются.</string>
+    <!-- ZENLYGRAM Edit history / kept deleted messages: END -->
+    <!-- ZENLYGRAM Media & network (org.telegram.zenlygram.media, Calls > Force TCP): START -->
+    <string name="ZG_Calls_ForceTcpToast">Этот звонок идёт через TCP. Качество может быть ниже.</string>
+    <!-- ZENLYGRAM Media & network: END -->
+    <!-- ZENLYGRAM Profile rows (org.telegram.zenlygram.profile.ZgProfileInfo): START. Grey label under the value. -->
+    <string name="ZG_Profile_DataCenter">Дата-центр</string>
+    <string name="ZG_Profile_CreationDate">Дата создания</string>
+    <!-- ZENLYGRAM Profile rows: END -->
+    <!-- ZENLYGRAM Lock core + Chat Lock (org.telegram.zenlygram.lock, org.telegram.zenlygram.chatlock): BEGIN -->
+    <string name="ZG_Lock_SetPin">Установите PIN</string>
+    <string name="ZG_Lock_SetPinSubtitle">4-значный код</string>
+    <string name="ZG_Lock_ConfirmPin">Подтвердите PIN</string>
+    <string name="ZG_Lock_ConfirmPinSubtitle">Введите код ещё раз</string>
+    <string name="ZG_Lock_SetPassword">Установите пароль</string>
+    <string name="ZG_Lock_SetPasswordSubtitle">Буквенно-цифровой пароль</string>
+    <string name="ZG_Lock_ConfirmPassword">Подтвердите пароль</string>
+    <string name="ZG_Lock_ConfirmPasswordSubtitle">Введите пароль ещё раз</string>
+    <string name="ZG_Lock_EnterPin">Введите PIN</string>
+    <string name="ZG_Lock_EnterPassword">Введите пароль</string>
+    <string name="ZG_Lock_PasswordField">Пароль</string>
+    <string name="ZG_Lock_CodesMismatch">Коды не совпадают</string>
+    <string name="ZG_Lock_PasswordsMismatch">Пароли не совпадают</string>
+    <string name="ZG_Lock_WrongCode">Неверный код</string>
+    <string name="ZG_Lock_WrongPassword">Неверный пароль</string>
+    <string name="ZG_Lock_TooManyAttempts">Слишком много попыток. Повторите через %1$d с.</string>
+    <string name="ZG_Lock_RecoveryHint">Забыли? Используйте вариант ниже.</string>
+    <string name="ZG_Lock_PasswordEmpty">Введите пароль.</string>
+    <string name="ZG_Lock_PasswordNoSpaces">Пароль не может содержать пробелы.</string>
+    <string name="ZG_Lock_CheckFailed">Не удалось проверить код. Попробуйте ещё раз.</string>
+    <string name="ZG_Lock_BiometricChanged">На этом устройстве изменилась биометрия. Введите пин-код.</string>
+    <string name="ZG_Lock_A11y_PinDots">Введено цифр: %1$d из %2$d</string>
+    <string name="ZG_Lock_A11y_Biometric">Разблокировать биометрией</string>
+    <string name="ZG_Lock_UsePincode">Ввести пин-код</string>
+    <string name="ZG_Lock_BiometricOffer_Title">Разблокировать биометрией?</string>
+    <string name="ZG_Lock_BiometricOffer_Text">Используйте отпечаток пальца или лицо, зарегистрированные на этом устройстве, вместо ввода пин-кода. Пин-код продолжит работать.</string>
+    <string name="ZG_Lock_BiometricOffer_Use">Использовать</string>
+    <string name="ZG_Lock_BiometricOffer_Skip">Не сейчас</string>
+    <string name="ZG_Lock_BiometricKeepTitle">Биометрия изменилась</string>
+    <string name="ZG_Lock_BiometricKeepText">После установки этого пин-кода на устройстве добавили или удалили лицо либо отпечаток. Продолжить пользоваться биометрией здесь или открывать только пин-кодом?</string>
+    <string name="ZG_Lock_BiometricKeep">Продолжить с биометрией</string>
+    <string name="ZG_Lock_BiometricPinOnly">Только пин-код</string>
+    <string name="ZG_ChatLock_NeedsSetup">Нужна настройка</string>
+    <string name="ZG_ChatLock_MenuSet">Установить пин-код</string>
+    <string name="ZG_ChatLock_MenuRemove">Удалить пин-код</string>
+    <string name="ZG_ChatLock_LockedChatPreview">Заблокированный чат</string>
+    <string name="ZG_ChatLock_LockedChatA11yHint">Для открытия нужен PIN</string>
+    <string name="ZG_ChatLock_CoverTitle">Этот чат заблокирован</string>
+    <string name="ZG_ChatLock_Unlock">Разблокировать</string>
+    <string name="ZG_ChatLock_ChatIsLocked">Чат заблокирован</string>
+    <string name="ZG_ChatLock_EnterMasterPin">Введите главный пин-код</string>
+    <string name="ZG_ChatLock_EnterMasterPassword">Введите главный пароль</string>
+    <string name="ZG_ChatLock_MasterSubtitle">Откроет чат и удалит его пин-код</string>
+    <string name="ZG_ChatLock_DisableSubtitle">Отключит блокировку чатов и разблокирует все чаты</string>
+    <string name="ZG_ChatLock_RemovePinSubtitle">Введите текущий код для удаления</string>
+    <string name="ZG_ChatLock_RemovePasswordSubtitle">Введите текущий пароль для удаления</string>
+    <string name="ZG_ChatLock_SetMasterPin">Установите главный PIN</string>
+    <string name="ZG_ChatLock_SetMasterPassword">Установите главный пароль</string>
+    <string name="ZG_ChatLock_SetMasterSubtitle">Он откроет любой заблокированный чат, если вы забудете его пин-код.</string>
+    <string name="ZG_ChatLock_SetChatSubtitle">Пин-код для «%1$s»</string>
+    <string name="ZG_ChatLock_ForgotPincode">Забыли пин-код?</string>
+    <string name="ZG_ChatLock_BiometricReason">Разблокировать чат с помощью биометрии</string>
+    <string name="ZG_ChatLock_DisableBiometricReason">Отключить блокировку чатов с помощью биометрии</string>
+    <string name="ZG_ChatLock_ResetButton">Сбросить блокировку чатов</string>
+    <string name="ZG_ChatLock_ResetConfirmTitle">Сбросить блокировку чатов?</string>
+    <string name="ZG_ChatLock_ResetConfirmText">Это удалит главный пин-код и разблокирует все чаты. Сообщения не удаляются.</string>
+    <string name="ZG_ChatLock_ResetAction">Сбросить</string>
+    <string name="ZG_ChatLock_ResetReason">Подтвердите личность для сброса блокировки чатов</string>
+    <string name="ZG_ChatLock_ResetUnavailableTitle">Сброс недоступен</string>
+    <string name="ZG_ChatLock_ResetUnavailableText">Для сброса блокировки чатов нужно доказать, что устройство ваше: неизменившаяся биометрия либо блокировка экрана. Включите блокировку экрана в настройках Android и повторите попытку либо отключите блокировку чатов в настройках Zenlygram с помощью главного пин-кода. Сообщения при этом не теряются.</string>
+    <string name="ZG_ChatLock_ResetChangedText">После установки главного пин-кода отпечатки или лица на этом устройстве изменились, поэтому они больше не могут его заменить. Подтвердите блокировкой экрана, чтобы сбросить блокировку чатов. Сообщения не удаляются.</string>
+    <string name="ZG_ChatLock_LostTitle">Блокировке чатов нужен новый пин-код</string>
+    <string name="ZG_ChatLock_LostText">Пин-коды заблокированных чатов больше нельзя проверить на этом устройстве. Чаты останутся заблокированными, пока вы не зададите для них один новый пин-код или не отключите блокировку чатов. Для обоих действий нужна блокировка экрана. Сообщения не удаляются.</string>
+    <string name="ZG_ChatLock_SetNewPinForLocked">Задать новый пин-код для чатов</string>
+    <string name="ZG_ChatLock_TurnOff">Отключить блокировку чатов</string>
+    <string name="ZG_ChatLock_LostReason">Подтвердите личность, чтобы восстановить блокировку чатов</string>
+    <string name="ZG_ChatLock_TurnOffNoProofText">На этом устройстве нет блокировки экрана, поэтому подтвердить владельца нечем. Отключение блокировки чатов разблокирует все чаты. Сообщения не удаляются.</string>
+    <string name="ZG_ChatLock_Bulletin_Locked">Чат заблокирован</string>
+    <string name="ZG_ChatLock_Bulletin_Unlocked">Пин-код удалён</string>
+    <string name="ZG_ChatLock_Bulletin_On">Блокировка чатов включена. Выберите чат в списке и в меню ⋮ нажмите «Установить пин-код».</string>
+    <string name="ZG_ChatLock_Bulletin_Off">Блокировка чатов отключена. Все чаты разблокированы.</string>
+    <string name="ZG_ChatLock_SaveFailed">Не удалось сохранить пин-код. Попробуйте ещё раз.</string>
+    <!-- ZENLYGRAM Lock core + Chat Lock: END -->
+    <!-- ZENLYGRAM Secret Vault (org.telegram.zenlygram.vault): BEGIN -->
+    <string name="ZG_Vault_AddToVault">Добавить в хранилище</string>
+    <string name="ZG_Vault_RemoveFromVault">Убрать из хранилища</string>
+    <string name="ZG_Vault_RemoveConfirmTitle">Убрать из хранилища?</string>
+    <string name="ZG_Vault_RemoveConfirmText">Этот чат снова появится в списке чатов.</string>
+    <string name="ZG_Vault_RemoveConfirmAction">Убрать</string>
+    <string name="ZG_Vault_ChatHidden">Чат скрыт</string>
+    <string name="ZG_Vault_ChatsHidden">Скрыто чатов: %1$d</string>
+    <string name="ZG_Vault_ChatUnhidden">Чат снова виден</string>
+    <string name="ZG_Vault_HideFailed">Не удалось скрыть чат. Попробуйте ещё раз.</string>
+    <string name="ZG_Vault_SaveFailed">Не удалось сохранить изменение. Попробуйте ещё раз.</string>
+    <string name="ZG_Vault_NoKeystore">Сейчас это устройство не может хранить защищённые данные хранилища, поэтому Секретное хранилище нельзя включить. Попробуйте позже.</string>
+    <string name="ZG_Vault_EmptyTitle">Нет скрытых чатов</string>
+    <string name="ZG_Vault_EmptyText">Скрытые чаты появятся здесь и не будут показываться в основном списке.</string>
+    <string name="ZG_Vault_RevealHint_LongPress">Чтобы открыть хранилище, зажмите название приложения вверху списка чатов.</string>
+    <string name="ZG_Vault_BiometricReason">Подтвердите, что это вы</string>
+    <string name="ZG_Vault_ForgotBiometricReason">Используйте биометрию, чтобы восстановить доступ к скрытым чатам</string>
+    <string name="ZG_Vault_MasterSubtitle">Откроет Секретное хранилище вместо PIN хранилища</string>
+    <string name="ZG_Vault_EnableSubtitle">Введите PIN хранилища, чтобы снова включить Секретное хранилище</string>
+    <string name="ZG_Vault_DisableSubtitle">Выключает Секретное хранилище и снова показывает все скрытые чаты</string>
+    <string name="ZG_Vault_ChangePinSubtitle">Введите текущий PIN хранилища</string>
+    <string name="ZG_Vault_Bulletin_Off">Секретное хранилище выключено. Все скрытые чаты снова в списке.</string>
+    <string name="ZG_Vault_Bulletin_PinChanged">PIN хранилища сохранён</string>
+    <string name="ZG_Vault_UnverifiableTitle">PIN хранилища нельзя проверить</string>
+    <string name="ZG_Vault_UnverifiableText">На этом устройстве не осталось того, чем проверяется сохранённый PIN хранилища, поэтому даже правильный PIN не принимается. Задайте новый PIN, чтобы снова пользоваться хранилищем, — скрытые чаты останутся скрытыми. Потребуется блокировка экрана. С сообщениями ничего не произойдёт.</string>
+    <string name="ZG_Vault_LostTitle">Секретному хранилищу нужен новый PIN</string>
+    <string name="ZG_Vault_LostText">Это устройство потеряло ключ, которым был защищён список скрытых чатов, поэтому эти чаты снова видны. Задайте новый PIN, чтобы снова пользоваться хранилищем, или выключите его. Для обоих действий нужна блокировка экрана. С сообщениями ничего не произойдёт.</string>
+    <string name="ZG_Vault_SetNewPin">Задать новый PIN хранилища</string>
+    <string name="ZG_Vault_TurnOff">Выключить Секретное хранилище</string>
+    <string name="ZG_Vault_RecoveryReason">Подтвердите личность, чтобы восстановить Секретное хранилище</string>
+    <string name="ZG_Vault_NoScreenLockText">На этом устройстве нет блокировки экрана, поэтому подтвердить владельца больше нечем. Продолжить? Сообщения не удаляются.</string>
+    <string name="ZG_Vault_Continue">Продолжить</string>
+    <string name="ZG_Vault_RecoveryUnavailableTitle">Восстановление недоступно</string>
+    <string name="ZG_Vault_RecoveryUnavailableText">PIN хранилища нельзя восстановить на этом устройстве. Это замок внутри приложения, и блокировка экрана устройства для него никогда не принимается: заменить PIN может только биометрия, которая была на устройстве, когда задавали PIN, или главный пин-код блокировки чатов, если он уже существовал в тот момент. Если ни то ни другое не помогает, убрать хранилище можно, только выйдя из этого аккаунта Telegram в Zenlygram и войдя снова (или переустановив приложение). Скрытые чаты тогда вернутся, но вместе с этим на устройстве удалятся секретные чаты этого аккаунта и сохранённые Zenlygram удалённые и изменённые сообщения. Облачные чаты останутся в Telegram.</string>
+    <string name="ZG_Vault_TryAgainTitle">Попробуйте через минуту</string>
+    <string name="ZG_Vault_TryAgainText">Сейчас PIN хранилища нельзя проверить. Разблокируйте устройство, подождите немного и попробуйте снова.</string>
+    <string name="ZG_Vault_Settings_RecoveryNotice">Секретным хранилищем нельзя пользоваться на этом устройстве, пока не задан новый PIN. Нажмите «Секретное хранилище», чтобы восстановить или выключить его. Сообщения не затрагиваются.</string>
+    <string name="ZG_Vault_NoRecoveryTitle">Этот PIN нельзя будет восстановить</string>
+    <string name="ZG_Vault_NoRecoveryText">На этом телефоне не настроен отпечаток пальца (или другая надёжная биометрия), а у блокировки чатов нет главного пин-кода. Если вы забудете PIN хранилища, в приложении ничто не сможет открыть хранилище или выключить его. Сохраните PIN в надёжном месте или сначала добавьте отпечаток в настройках телефона либо настройте блокировку чатов.</string>
+    <string name="ZG_Vault_NoRecoveryContinue">Всё равно задать PIN</string>
+    <!-- ZENLYGRAM Secret Vault: END -->
+    <!-- ZENLYGRAM chatlist-chats: BEGIN -->
+    <string name="ZG_ChatlistChats_CompactNote">Также включает вид списка чатов в две строки.</string>
+    <string name="ZG_ChatlistChats_SameAsTelegram">То же, что «%1$s» в настройках Telegram.</string>
+    <string name="ZG_ChatlistChats_SwipeNote">Если выключено, свайп по списку переключает папки.</string>
+    <string name="ZG_ChatlistChats_ChannelPanelDesc">Показывать панель с кнопкой звука внизу каналов, на которые вы подписаны. Кнопка «Присоединиться» остаётся всегда.</string>
+    <!-- ZENLYGRAM chatlist-chats: END -->
+    <!-- ZENLYGRAM wide-channel-posts: BEGIN -->
+    <string name="ZG_wide_channel_posts_SideButtonsNote">Боковые кнопки (поделиться, пересказ от ИИ, быстрый перевод) переносятся в меню сообщения: нажмите на пост и удерживайте.</string>
+    <!-- ZENLYGRAM wide-channel-posts: END -->
+    <!-- ZENLYGRAM Folders, tabs, stories (org.telegram.zenlygram.chatlist): BEGIN -->
+    <string name="ZG_FoldersTabsStories_HideTabBar_Desc">Скрыть нижнюю панель вкладок. Контакты, звонки, настройки, профиль и аккаунты переместятся в меню ⋮ списка чатов, а также задачи, если их вкладка включена.</string>
+    <string name="ZG_FoldersTabsStories_ShowCalls_Desc">Показывать вкладку «Звонки» вместо вкладки «Настройки». Настройки будут в меню ⋮ списка чатов. Действует для текущего аккаунта (это настройка Telegram).</string>
+    <string name="ZG_FoldersTabsStories_SwitchAccount">Сменить аккаунт</string>
+    <string name="ZG_FoldersTabsStories_CompactNames_Desc">Уменьшает расстояние между вкладками папок, чтобы помещалось больше папок.</string>
+    <!-- ZENLYGRAM Folders, tabs, stories: END -->
+    <!-- ZENLYGRAM Composing & input, message menu, stickers (input-stickers): START -->
+    <string name="ZG_InputStickers_SendWithEnterKey">Отправка клавишей Enter</string>
+    <string name="ZG_InputStickers_SendWithEnterKey_Desc">Enter отправляет сообщение. На физической клавиатуре Shift+Enter добавляет новую строку. Это та же настройка, что и «Отправка по Enter» в настройках чатов Telegram.</string>
+    <string name="ZG_InputStickers_ContextShowSaveGallery_Desc">Показывать «Сохранить в галерею» для фото и видео в меню сообщения.</string>
+    <string name="ZG_InputStickers_SelectFromUser_Limit">За один раз можно выбрать только %1$d последних загруженных сообщений.</string>
+    <string name="ZG_InputStickers_SelectFromUser_None">Других загруженных сообщений этого автора нет.</string>
+    <string name="ZG_InputStickers_Json_Error">Не удалось показать это сообщение в виде JSON.</string>
+    <string name="ZG_InputStickers_Json_Copied">JSON скопирован в буфер обмена.</string>
+    <!-- ZENLYGRAM input-stickers: END -->
+    <!-- ZENLYGRAM Translate & voice (org.telegram.zenlygram.translate, org.telegram.zenlygram.voice): START -->
+    <string name="ZG_Translate_Notice_Telegram">Автоматического переключения на другой сервис нет. Без Telegram Premium перевод целых чатов работает только через %1$s.</string>
+    <string name="ZG_Translate_Notice_Google">Быстрый перевод и перевод целых чатов (вместе с закреплённым сообщением и цитатами в ответах) отправляют текст с устройства в Google Переводчик. Окно перевода в меню сообщения использует Telegram, а Google Переводчик — только там, где Telegram не может перевести.</string>
+    <string name="ZG_Translate_TelegramUnavailable">Telegram не может переводить здесь сообщения. Чтобы переводить их, выберите %1$s в настройках Zenlygram → Перевод сообщений → Сервис.</string>
+    <string name="ZG_Translate_ByGoogle">Переводы здесь выполняет **Google Переводчик**.</string>
+    <string name="ZG_QuickTranslate_Desc">Показывать кнопку перевода рядом с входящими сообщениями; нажмите её ещё раз, чтобы увидеть оригинал. У широких постов каналов она в меню сообщения. Не предлагается в секретных чатах, для сообщений с запретом копирования и для сохранённых копий удалённых сообщений (копию, переведённую до удаления, можно вернуть к оригиналу).</string>
+    <!-- ZENLYGRAM Translate & voice: END -->
+    <!-- ZENLYGRAM Extras A (org.telegram.zenlygram.dialogs / autoaccept / pins / reminder / download): START -->
+    <string name="ZG_ExtrasA_BlockForeignUsers_Notice">Скрывает личные чаты, код страны которых отличается от вашего, только в списке «Все чаты»: в папках, архиве и поиске они остаются. Только локальный визуальный фильтр — никого не блокирует и не может скрыть тех, кто скрывает свой номер.</string>
+    <string name="ZG_ExtrasA_AutoAcceptRequests_Notice">Одобряет всех, кто подаёт заявку на вступление, во всех группах и каналах, где вы можете добавлять участников, во всех ваших аккаунтах. Выключите, чтобы проверять заявки самостоятельно.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Title">Непрочитанные сообщения</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_one">У вас %1$d непрочитанное сообщение. Не забудьте его просмотреть.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_few">У вас %1$d непрочитанных сообщения. Не забудьте их просмотреть.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_many">У вас %1$d непрочитанных сообщений. Не забудьте их просмотреть.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_Body_other">У вас %1$d непрочитанных сообщений. Не забудьте их просмотреть.</string>
+    <string name="ZG_ExtrasA_UnreadReminder_NotificationsOff">Уведомления для Zenlygram выключены, поэтому напоминание не может появиться.</string>
+    <!-- ZENLYGRAM Extras A: END -->
+    <!-- ZENLYGRAM extras-b: View First Message, Round Video from Gallery -->
+    <string name="ZG_ExtrasB_ViewFirstMessage">Первое сообщение</string>
+    <string name="ZG_ExtrasB_SendAsRoundVideo">Отправить как видеосообщение</string>
+    <string name="ZG_ExtrasB_RoundVideoUnsupported">Это видео нельзя превратить в видеосообщение на этом устройстве.</string>
+    <!-- ZENLYGRAM extras-b: END -->
+    <!-- ZENLYGRAM Phase 2 review fixes: START -->
+    <string name="ZG_Translate_Backend_TelegramOnly">Только Telegram (без Google)</string>
+    <string name="ZG_Translate_Notice_Default">Как в официальном приложении: там, где Telegram не переводит сам, текст может уйти в Google Переводчик. Чтобы Google не использовался никогда, выберите «%1$s». Без Telegram Premium перевод целых чатов работает только через %2$s.</string>
+    <string name="ZG_QuickTranslate_MenuItem">Быстрый перевод</string>
+    <string name="ZG_ContextMenu_Enabled">Пункты Zenlygram</string>
+    <string name="ZG_ContextMenu_Enabled_Desc">Добавляет в меню сообщения пункты Zenlygram («Сохранить в Избранное», «Выбрать от Автора», JSON и другие); выключенные ниже пункты уходят в подменю «Zenlygram». Если выключено, этих пунктов нет. «История изменений», «Добавить в задачи» и пункты удалённых сообщений и широких постов зависят от своих настроек.</string>
+    <string name="ZG_ExtrasB_RoundVideoFromGallery_Notice">В чате откройте меню вложений, выберите одно видео, затем нажмите и удерживайте «Отправить» и выберите «Отправить как видеосообщение». Недоступно для видео с подписью, ценой, спойлером, обложкой или изменениями.</string>
+    <string name="ZG_FoldersTabsStories_ShowTasks_Desc">Показывать вкладку «Задачи» на панели вкладок. Если скрыть её, из меню сообщения пропадёт «Добавить в задачи», а из меню ⋮ — «Задачи»; задачи сохраняются и открываются через «Задачи» в разделе «Инструменты» ниже.</string>
+    <string name="ZG_FoldersTabsStories_BottomTab_Desc">Показывать папки панелью внизу экрана.</string>
+    <string name="ZG_FoldersTabsStories_RememberLast">Открывать последнюю папку</string>
+    <string name="ZG_FoldersTabsStories_RememberLast_Desc">Открывать последнюю использованную папку при запуске.</string>
+    <string name="ZG_FoldersTabsStories_AllChatsHidden_Desc">Скрыть вкладку папки «Все чаты».</string>
+    <string name="ZG_Settings_DisabledHint_TurnOff">Сначала выключите «%1$s».</string>
+    <string name="ZG_Settings_DisabledHint_TurnOn">Сначала включите «%1$s».</string>
+    <string name="ZG_Developer_Unlocked">Параметры для разработчиков теперь показаны внизу этого экрана.</string>
+    <string name="ZG_ExtrasB_RoundVideoDrops">У видеосообщения не может быть подписи, цены, спойлера, обложки или изменений. Уберите их, чтобы отправить это видео как видеосообщение.</string>
+    <string name="ZG_QuickTranslate_Unavailable_Notice">С выбранным сервисом Telegram не переводит сообщения для этого аккаунта, поэтому кнопка быстрого перевода не появится. Чтобы пользоваться ею, выберите %1$s в пункте «Сервис» выше.</string>
+    <!-- ZENLYGRAM Phase 2 review fixes: END -->
+</resources>
